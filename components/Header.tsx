@@ -29,8 +29,8 @@ export default function Header() {
       {/* ── Top Banner ── */}
       <div
         style={{
-          backgroundColor: "#1A202C",
-          borderBottom: "1px solid #2D3748",
+          backgroundColor: "#1E2D4B",
+          borderBottom: "1px solid #2A3F5F",
         }}
       >
         <div
@@ -47,8 +47,8 @@ export default function Header() {
           <div
             style={{
               position: "relative",
-              width: "clamp(100px, 12vw, 140px)",
-              height: "clamp(100px, 12vw, 140px)",
+              width: "clamp(110px, 14vw, 160px)",
+              height: "clamp(110px, 14vw, 160px)",
               flexShrink: 0,
             }}
           >
@@ -57,7 +57,7 @@ export default function Header() {
               alt="The CAPIS Project logo"
               fill
               style={{ objectFit: "contain" }}
-              sizes="(max-width: 768px) 100px, 140px"
+              sizes="(max-width: 768px) 110px, 160px"
               priority
             />
           </div>
@@ -67,7 +67,7 @@ export default function Header() {
             <h1
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "clamp(1.75rem, 4vw, 3rem)",
+                fontSize: "clamp(1.75rem, 4vw, 3.25rem)",
                 fontWeight: 700,
                 color: "#FFFFFF",
                 lineHeight: 1.1,
@@ -81,8 +81,8 @@ export default function Header() {
               style={{
                 fontFamily: "var(--font-body)",
                 fontSize: "clamp(0.875rem, 2vw, 1.25rem)",
-                color: "#A0AEC0",
-                margin: "8px 0 0 0",
+                color: "#8BA4C7",
+                margin: "10px 0 0 0",
                 lineHeight: 1.5,
               }}
             >
@@ -138,18 +138,18 @@ export default function Header() {
                     fontWeight: 500,
                     whiteSpace: "nowrap",
                     borderBottom: active
-                      ? "3px solid var(--color-accent)"
+                      ? "3px solid #3C7887"
                       : "3px solid transparent",
-                    color: active ? "var(--color-accent)" : "var(--color-text)",
+                    color: active ? "#3C7887" : "#1E2D4B",
                     textDecoration: "none",
                     transition: "color 150ms, border-color 150ms",
                     marginBottom: "-1px",
                   }}
                   onMouseEnter={(e) => {
-                    if (!active) e.currentTarget.style.color = "var(--color-accent)";
+                    if (!active) e.currentTarget.style.color = "#3C7887";
                   }}
                   onMouseLeave={(e) => {
-                    if (!active) e.currentTarget.style.color = "var(--color-text)";
+                    if (!active) e.currentTarget.style.color = "#1E2D4B";
                   }}
                 >
                   {link.label}
@@ -167,7 +167,7 @@ export default function Header() {
               justifyContent: "center",
               padding: "8px",
               borderRadius: "6px",
-              color: "var(--color-text)",
+              color: "#1E2D4B",
               background: "none",
               border: "1px solid var(--color-border)",
               cursor: "pointer",
