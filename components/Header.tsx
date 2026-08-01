@@ -27,21 +27,23 @@ export default function Header() {
     <>
       <header className="sticky top-0 z-40 border-b border-border bg-surface/95 backdrop-blur-sm">
         <div className="mx-auto flex h-16 max-w-content items-center justify-between px-4 sm:px-6 lg:px-8">
+          {/* Logo */}
           <Link
             href="/"
-            className="font-display text-lg font-semibold tracking-tight text-text no-underline transition-colors hover:text-accent"
+            className="font-display text-base font-semibold tracking-tight text-text no-underline transition-colors hover:text-accent whitespace-nowrap"
           >
             The CAPIS Project
           </Link>
 
-          <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
+          {/* Desktop nav — only shows on XL screens (1280px+) to prevent crowding */}
+          <nav className="hidden xl:flex items-center gap-1.5" aria-label="Main navigation">
             {NAV_LINKS.map((link) => {
               const active = isLinkActive(link.href, pathname);
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`rounded-md px-3 py-1.5 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
+                  className={`rounded-md px-2.5 py-1.5 text-xs font-medium transition-colors whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
                     active
                       ? "bg-accent text-white"
                       : "text-text-muted hover:bg-accent-soft hover:text-text"
@@ -53,18 +55,23 @@ export default function Header() {
             })}
           </nav>
 
+          {/* Mobile hamburger — shows on LG and below */}
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-md p-2 text-text-muted hover:bg-accent-soft hover:text-text lg:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            className="inline-flex xl:hidden items-center justify-center rounded-md p-2 text-text-muted hover:bg-accent-soft hover:text-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
             aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
             onClick={() => setMenuOpen((prev) => !prev)}
           >
             {menuOpen ? (
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+              </svg>
             ) : (
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/>
+              </svg>
             )}
           </button>
         </div>
