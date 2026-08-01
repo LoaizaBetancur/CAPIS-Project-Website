@@ -25,32 +25,35 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-border bg-surface/95 backdrop-blur-sm">
-        <div className="mx-auto flex h-16 max-w-content items-center justify-between px-4 sm:px-6 lg:px-8">
-          {/* Logo */}
+      <header className="sticky top-0 z-40 border-b bg-white/95 backdrop-blur-sm" style={{ borderColor: "var(--color-border)" }}>
+        <div className="mx-auto flex h-16 max-w-[1280px] items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
-            className="font-display text-base font-semibold tracking-tight text-text no-underline transition-colors hover:text-accent whitespace-nowrap"
+            className="font-semibold tracking-tight text-[#1A202C] no-underline transition-colors hover:text-[#2B6CB0] whitespace-nowrap"
+            style={{ fontFamily: "var(--font-display)" }}
           >
             The CAPIS Project
           </Link>
 
-          {/* Desktop nav — flat horizontal row, all links visible */}
-          <nav
-            className="hidden xl:flex items-center"
-            aria-label="Main navigation"
-          >
+          <nav className="hidden xl:flex items-center" aria-label="Main navigation">
             {NAV_LINKS.map((link) => {
               const active = isLinkActive(link.href, pathname);
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-4 py-5 text-sm font-medium transition-colors whitespace-nowrap border-b-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
-                    active
-                      ? "border-accent text-accent"
-                      : "border-transparent text-text-muted hover:text-text hover:border-border"
-                  }`}
+                  className="px-4 py-5 text-sm font-medium transition-colors whitespace-nowrap border-b-2"
+                  style={{
+                    fontFamily: "var(--font-body)",
+                    color: active ? "#2B6CB0" : "#4A5568",
+                    borderColor: active ? "#2B6CB0" : "transparent",
+                  }}
+                  onMouseEnter={(e) => {
+                    if (!active) e.currentTarget.style.borderColor = "#E2E8F0";
+                  }}
+                  onMouseLeave={(e) => {
+                    if (!active) e.currentTarget.style.borderColor = "transparent";
+                  }}
                 >
                   {link.label}
                 </Link>
@@ -58,10 +61,9 @@ export default function Header() {
             })}
           </nav>
 
-          {/* Mobile hamburger — hidden on xl and up */}
           <button
             type="button"
-            className="inline-flex xl:hidden items-center justify-center rounded-md p-2 text-text-muted hover:bg-accent-soft hover:text-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            className="inline-flex xl:hidden items-center justify-center rounded-md p-2 text-[#4A5568] hover:bg-[#EBF4FF] hover:text-[#1A202C]"
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
             aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
