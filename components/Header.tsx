@@ -26,7 +26,7 @@ export default function Header() {
 
   return (
     <>
-      {/* ── Top Banner (like COMBAT's maroon banner) ── */}
+      {/* ── Top Banner ── */}
       <div
         style={{
           backgroundColor: "#1A202C",
@@ -37,18 +37,18 @@ export default function Header() {
           style={{
             maxWidth: "1280px",
             margin: "0 auto",
-            padding: "24px",
+            padding: "32px 24px",
             display: "flex",
             alignItems: "center",
-            gap: "24px",
+            gap: "28px",
           }}
         >
           {/* Large Logo */}
           <div
             style={{
               position: "relative",
-              width: "80px",
-              height: "80px",
+              width: "clamp(100px, 12vw, 140px)",
+              height: "clamp(100px, 12vw, 140px)",
               flexShrink: 0,
             }}
           >
@@ -57,7 +57,7 @@ export default function Header() {
               alt="The CAPIS Project logo"
               fill
               style={{ objectFit: "contain" }}
-              sizes="80px"
+              sizes="(max-width: 768px) 100px, 140px"
               priority
             />
           </div>
@@ -67,7 +67,7 @@ export default function Header() {
             <h1
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "clamp(1.5rem, 4vw, 2.5rem)",
+                fontSize: "clamp(1.75rem, 4vw, 3rem)",
                 fontWeight: 700,
                 color: "#FFFFFF",
                 lineHeight: 1.1,
@@ -80,19 +80,23 @@ export default function Header() {
             <p
               style={{
                 fontFamily: "var(--font-body)",
-                fontSize: "clamp(0.875rem, 2vw, 1.125rem)",
+                fontSize: "clamp(0.875rem, 2vw, 1.25rem)",
                 color: "#A0AEC0",
-                margin: "4px 0 0 0",
-                lineHeight: 1.4,
+                margin: "8px 0 0 0",
+                lineHeight: 1.5,
               }}
             >
-              Core Athletic Performance-based Intervention Set for Athletes
+              <span style={{ textDecoration: "underline", textUnderlineOffset: "3px", color: "#FFFFFF" }}>C</span>ore{" "}
+              <span style={{ textDecoration: "underline", textUnderlineOffset: "3px", color: "#FFFFFF" }}>A</span>thletic{" "}
+              <span style={{ textDecoration: "underline", textUnderlineOffset: "3px", color: "#FFFFFF" }}>P</span>erformance-based{" "}
+              <span style={{ textDecoration: "underline", textUnderlineOffset: "3px", color: "#FFFFFF" }}>I</span>ntervention{" "}
+              <span style={{ textDecoration: "underline", textUnderlineOffset: "3px", color: "#FFFFFF" }}>S</span>et for Athletes
             </p>
           </div>
         </div>
       </div>
 
-      {/* ── Navigation Bar (white, like COMBAT) ── */}
+      {/* ── Navigation Bar ── */}
       <header
         style={{
           position: "sticky",
@@ -113,7 +117,6 @@ export default function Header() {
             height: "56px",
           }}
         >
-          {/* Desktop nav — flat horizontal row */}
           <nav
             className="hidden xl:flex"
             style={{ alignItems: "center", height: "100%" }}
@@ -155,7 +158,6 @@ export default function Header() {
             })}
           </nav>
 
-          {/* Mobile hamburger */}
           <button
             type="button"
             className="xl:hidden"
