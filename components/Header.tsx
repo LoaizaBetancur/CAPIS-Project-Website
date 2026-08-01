@@ -26,62 +26,97 @@ export default function Header() {
 
   return (
     <>
-      <header
+      {/* ── Top Banner (like COMBAT's maroon banner) ── */}
+      <div
         style={{
-          position: "sticky",
-          top: 0,
-          zIndex: 40,
-          borderBottom: "1px solid var(--color-border)",
-          backgroundColor: "rgba(255,255,255,0.95)",
-          backdropFilter: "blur(4px)",
+          backgroundColor: "#1A202C",
+          borderBottom: "1px solid #2D3748",
         }}
       >
         <div
           style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            height: "64px",
             maxWidth: "1280px",
             margin: "0 auto",
-            padding: "0 24px",
+            padding: "24px",
+            display: "flex",
+            alignItems: "center",
+            gap: "24px",
           }}
         >
-          {/* Logo + Title */}
-          <Link
-            href="/"
+          {/* Large Logo */}
+          <div
             style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "12px",
-              textDecoration: "none",
+              position: "relative",
+              width: "80px",
+              height: "80px",
+              flexShrink: 0,
             }}
           >
             <Image
               src="/images/capis-logo.png"
               alt="The CAPIS Project logo"
-              width={40}
-              height={40}
+              fill
               style={{ objectFit: "contain" }}
+              sizes="80px"
+              priority
             />
-            <span
+          </div>
+
+          {/* Project Title */}
+          <div>
+            <h1
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "16px",
-                fontWeight: 600,
-                letterSpacing: "-0.01em",
-                color: "var(--color-text)",
-                whiteSpace: "nowrap",
+                fontSize: "clamp(1.5rem, 4vw, 2.5rem)",
+                fontWeight: 700,
+                color: "#FFFFFF",
+                lineHeight: 1.1,
+                letterSpacing: "-0.02em",
+                margin: 0,
               }}
             >
-              The CAPIS Project
-            </span>
-          </Link>
+              THE CAPIS PROJECT
+            </h1>
+            <p
+              style={{
+                fontFamily: "var(--font-body)",
+                fontSize: "clamp(0.875rem, 2vw, 1.125rem)",
+                color: "#A0AEC0",
+                margin: "4px 0 0 0",
+                lineHeight: 1.4,
+              }}
+            >
+              Core Athletic Performance-based Intervention Set for Athletes
+            </p>
+          </div>
+        </div>
+      </div>
 
-          {/* Desktop nav */}
+      {/* ── Navigation Bar (white, like COMBAT) ── */}
+      <header
+        style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 40,
+          backgroundColor: "#FFFFFF",
+          borderBottom: "1px solid var(--color-border)",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1280px",
+            margin: "0 auto",
+            padding: "0 24px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            height: "56px",
+          }}
+        >
+          {/* Desktop nav — flat horizontal row */}
           <nav
             className="hidden xl:flex"
-            style={{ alignItems: "center" }}
+            style={{ alignItems: "center", height: "100%" }}
             aria-label="Main navigation"
           >
             {NAV_LINKS.map((link) => {
@@ -91,30 +126,27 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   style={{
-                    display: "inline-block",
-                    padding: "20px 16px",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    height: "100%",
+                    padding: "0 20px",
                     fontFamily: "var(--font-body)",
-                    fontSize: "14px",
+                    fontSize: "15px",
                     fontWeight: 500,
                     whiteSpace: "nowrap",
                     borderBottom: active
-                      ? "2px solid var(--color-accent)"
-                      : "2px solid transparent",
-                    color: active ? "var(--color-accent)" : "var(--color-muted)",
+                      ? "3px solid var(--color-accent)"
+                      : "3px solid transparent",
+                    color: active ? "var(--color-accent)" : "var(--color-text)",
                     textDecoration: "none",
                     transition: "color 150ms, border-color 150ms",
+                    marginBottom: "-1px",
                   }}
                   onMouseEnter={(e) => {
-                    if (!active) {
-                      e.currentTarget.style.color = "var(--color-text)";
-                      e.currentTarget.style.borderBottomColor = "var(--color-border)";
-                    }
+                    if (!active) e.currentTarget.style.color = "var(--color-accent)";
                   }}
                   onMouseLeave={(e) => {
-                    if (!active) {
-                      e.currentTarget.style.color = "var(--color-muted)";
-                      e.currentTarget.style.borderBottomColor = "transparent";
-                    }
+                    if (!active) e.currentTarget.style.color = "var(--color-text)";
                   }}
                 >
                   {link.label}
@@ -133,10 +165,11 @@ export default function Header() {
               justifyContent: "center",
               padding: "8px",
               borderRadius: "6px",
-              color: "var(--color-muted)",
+              color: "var(--color-text)",
               background: "none",
               border: "1px solid var(--color-border)",
               cursor: "pointer",
+              marginLeft: "auto",
             }}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
