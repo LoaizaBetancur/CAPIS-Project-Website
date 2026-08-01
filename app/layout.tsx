@@ -27,19 +27,19 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "PhD Research Project — Advancing Clinical Research",
-    template: "%s | PhD Research Project",
+    default: "The CAPIS Project",
+    template: "%s | The CAPIS Project",
   },
   description:
-    "A PhD research project advancing evidence-based clinical practice through systematic review, Delphi consensus, and implementation science.",
-  metadataBase: new URL("https://phdresearchproject.edu"),
+    "The CAPIS project: Core Athletic Performance-based Intervention Set for Athletes. An international research project to develop a core outcome set for athletic performance-based training interventions.",
+  metadataBase: new URL("https://capis-project-website.vercel.app"),
   openGraph: {
     type: "website",
     locale: "en_AU",
-    siteName: "PhD Research Project",
-    title: "PhD Research Project — Advancing Clinical Research",
+    siteName: "The CAPIS Project",
+    title: "The CAPIS Project",
     description:
-      "Advancing evidence-based clinical practice through systematic review, Delphi consensus, and implementation science.",
+      "Core Athletic Performance-based Intervention Set for Athletes.",
   },
 };
 
@@ -49,18 +49,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${sourceSerif4.variable} ${inter.variable} ${jetbrainsMono.variable}`}
-    >
-      <body className="flex min-h-screen flex-col">
-        <a href="#main-content" className="skip-link">
+    <html lang="en" className={`${sourceSerif4.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
+      <body>
+        <a href="#main" className="skip-link">
           Skip to main content
         </a>
         <Header />
-        <main id="main-content" className="flex-1">
-          {children}
-        </main>
+        <main id="main">{children}</main>
         <Footer />
       </body>
     </html>
