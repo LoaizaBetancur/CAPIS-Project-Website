@@ -44,22 +44,26 @@ export default function UsefulLinksPage() {
   return (
     <>
       <SectionWrapper background="bg" spacing="xl">
-        <div className="mx-auto max-w-prose text-center">
-          <h1 className="text-display-lg mb-4">Useful links</h1>
-          <p className="text-lead text-text-muted">
+        <div className="mx-auto max-w-[70ch] text-center">
+          <h1 className="font-semibold mb-4" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2rem, 4vw, 3rem)", lineHeight: 1.15, color: "#1A202C" }}>
+            Useful links
+          </h1>
+          <p className="text-lg leading-relaxed" style={{ color: "#4A5568" }}>
             Related organisations, tools, and further reading.
           </p>
         </div>
       </SectionWrapper>
 
       <SectionWrapper background="surface">
-        <div className="mx-auto max-w-content">
+        <div className="mx-auto max-w-[1280px]">
           <div className="grid gap-6 md:grid-cols-2">
             {links.map((link) => (
               <Card key={link.url} href={link.url}>
-                <h3 className="font-display text-lg font-semibold mb-2">{link.title}</h3>
-                <p className="text-sm text-text-muted mb-4">{link.description}</p>
-                <span className="text-sm font-medium text-accent">Visit website →</span>
+                <h3 className="font-semibold mb-2" style={{ fontFamily: "var(--font-display)", fontSize: "1.125rem", color: "#1A202C" }}>
+                  {link.title}
+                </h3>
+                <p className="text-sm mb-4" style={{ color: "#4A5568" }}>{link.description}</p>
+                <span className="text-sm font-medium" style={{ color: "#2B6CB0" }}>Visit website →</span>
               </Card>
             ))}
           </div>
