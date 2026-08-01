@@ -4,14 +4,16 @@
 
 /* ── Design tokens ── */
 :root {
-  --color-bg: #F9F8F6;
+  --color-bg: #FDF8F3;
   --color-surface: #FFFFFF;
-  --color-text: #1A1D24;
-  --color-muted: #5F6B7A;
-  --color-border: #E2E4E9;
-  --color-accent: #2E5A88;
-  --color-accent-soft: #E8F0F8;
-  --color-success: #3A7D5A;
+  --color-text: #1A202C;
+  --color-muted: #4A5568;
+  --color-border: #E2E8F0;
+  --color-accent: #2B6CB0;
+  --color-accent-soft: #EBF4FF;
+  --color-success: #38A169;
+  --color-warm: #ED8936;
+  --color-warm-soft: #FFFAF0;
   --font-display: "Source Serif 4", Georgia, serif;
   --font-body: "Inter", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
@@ -38,8 +40,8 @@
   /* Skip-to-content link */
   .skip-link {
     @apply sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100]
-           focus:bg-accent focus:text-white focus:px-4 focus:py-2 focus:rounded-md
-           focus:shadow-overlay focus:outline-none;
+      focus:bg-accent focus:text-white focus:px-4 focus:py-2 focus:rounded-md
+      focus:shadow-overlay focus:outline-none;
   }
 
   /* Focus ring */
