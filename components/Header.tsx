@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import MobileMenu from "./MobileMenu";
 
@@ -46,23 +47,38 @@ export default function Header() {
             padding: "0 24px",
           }}
         >
-          {/* Logo */}
+          {/* Logo + Title */}
           <Link
             href="/"
             style={{
-              fontFamily: "var(--font-display)",
-              fontSize: "16px",
-              fontWeight: 600,
-              letterSpacing: "-0.01em",
-              color: "var(--color-text)",
+              display: "flex",
+              alignItems: "center",
+              gap: "12px",
               textDecoration: "none",
-              whiteSpace: "nowrap",
             }}
           >
-            The CAPIS Project
+            <Image
+              src="/images/capis-logo.png"
+              alt="The CAPIS Project logo"
+              width={40}
+              height={40}
+              style={{ objectFit: "contain" }}
+            />
+            <span
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "16px",
+                fontWeight: 600,
+                letterSpacing: "-0.01em",
+                color: "var(--color-text)",
+                whiteSpace: "nowrap",
+              }}
+            >
+              The CAPIS Project
+            </span>
           </Link>
 
-          {/* Desktop nav — flat horizontal row */}
+          {/* Desktop nav */}
           <nav
             className="hidden xl:flex"
             style={{ alignItems: "center" }}
