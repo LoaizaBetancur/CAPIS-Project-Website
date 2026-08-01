@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     template: "%s | The CAPIS Project",
   },
   description:
-    "The CAPIS project: Core Athletic Performance-based Intervention Set for Athletes. An international research project to develop a core outcome set for athletic performance-based training interventions.",
+    "The CAPIS project: Core Athletic Performance-based Intervention Set for Athletes. An international five-phase research project to develop a core outcome set for plyometric training interventions in Tier 3, 4, or 5 football players.",
   metadataBase: new URL("https://capis-project-website.vercel.app"),
   openGraph: {
     type: "website",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "The CAPIS Project",
     title: "The CAPIS Project",
     description:
-      "Core Athletic Performance-based Intervention Set for Athletes.",
+      "Core Athletic Performance-based Intervention Set for Athletes. Developing a core outcome set for plyometric training in elite football.",
   },
 };
 
