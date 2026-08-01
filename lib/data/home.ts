@@ -1,8 +1,3 @@
-/**
- * Homepage content — source-of-truth data.
- * All scientific claims derived from the research protocol.
- */
-
 export interface OverviewCard {
   title: string;
   description: string;
@@ -24,11 +19,11 @@ export interface LatestPub {
 
 export const heroContent = {
   eyebrow: "Welcome to the CAPIS research project!",
-  title: " The CAPIS project: Core Athletic Performance-based Intervention Set for Athletes",
+  title: "The CAPIS project: Core Athletic Performance-based Intervention Set for Athletes",
   subtitle:
-    "An international multi-phase research project to develop a outcome domain list that shoudl be measured for all trials for athletic performance-based training interventions in athletes.",
+    "An international multi-phase research project to develop an outcome domain list that should be measured for all trials of athletic performance-based training interventions in athletes.",
   primaryCta: { label: "About the Project", href: "/about" },
-  secondaryCta: { label: "View Protocol", href: "/resources" },
+  secondaryCta: { label: "View Protocol", href: "/resources/researchers" },
 } as const;
 
 export const overviewCards: OverviewCard[] = [
@@ -41,13 +36,13 @@ export const overviewCards: OverviewCard[] = [
   {
     title: "Focus groups",
     description:
-      "Dicussions with football players classifiet as Tier 3, 4 or 5 and their coaches, strength and conditioning coaches, carers, director of perfomance and sports scientists to identify what outcome domains are important to them.",
+      "Discussions with football players classified as Tier 3, 4 or 5 and their coaches, strength and conditioning coaches, carers, director of performance and sports scientists to identify what outcome domains are important to them.",
     icon: "group interview",
   },
   {
     title: "e-Delphi survey",
     description:
-      "A two e-Delphi surveys to tell us what you think the most important wanted and unwanted outcome domains are for plyometric training interventions in football players.",
+      "Two e-Delphi surveys to tell us what you think the most important wanted and unwanted outcome domains are for plyometric training interventions in football players.",
     icon: "delphi",
   },
   {
@@ -60,7 +55,7 @@ export const overviewCards: OverviewCard[] = [
 
 export const highlightStats: HighlightStat[] = [
   { value: "5", label: "COS development phases" },
-  { value: "4", label: "Interest-holders groups" },
+  { value: "4", label: "Interest-holder groups" },
   { value: "2", label: "e-Delphi surveys" },
   { value: "1", label: "Core Outcome Set" },
 ] as const;
@@ -84,20 +79,15 @@ export const latestPublications: LatestPub[] = [
   },
 ];
 
-/**
- * Icon lookup returns an SVG path description string.
- * These are simple representative shapes — replace with project-specific
- * custom illustrations as the PhD develops.
- */
 export function getIconSvg(icon: OverviewCard["icon"]): string {
   switch (icon) {
     case "review":
-      return `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="2" y="4" width="28" height="24" rx="3" fill="var(--color-accent-soft)" stroke="var(--color-accent)" stroke-width="1.5"/><path d="M8 12h12M8 17h16M8 22h16" stroke="var(--color-accent)" stroke-width="1.8" stroke-linecap="round"/></svg>`;
+      return `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>`;
     case "delphi":
-      return `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="11" cy="16" r="5" fill="var(--color-accent-soft)" stroke="var(--color-accent)" stroke-width="1.5"/><circle cx="21" cy="16" r="5" fill="var(--color-accent-soft)" stroke="var(--color-accent)" stroke-width="1.5"/><circle cx="16" cy="9" r="5" fill="var(--color-accent-soft)" stroke="var(--color-accent)" stroke-width="1.5"/><circle cx="16" cy="23" r="5" fill="var(--color-accent-soft)" stroke="var(--color-accent)" stroke-width="1.5"/></svg>`;
+      return `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`;
     case "group interview":
-      return `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M4 27L12 17L16 20L28 7" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="28" cy="7" r="3" fill="var(--color-accent-soft)" stroke="var(--color-accent)" stroke-width="1.5"/><circle cx="4" cy="27" r="3" fill="var(--color-accent-soft)" stroke="var(--color-accent)" stroke-width="1.5"/></svg>`;
+      return `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`;
     case "consensus":
-      return `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="13" r="6" fill="var(--color-accent-soft)" stroke="var(--color-accent)" stroke-width="1.5"/><path d="M7 28c0-4.97 4.03-9 9-9s9 4.03 9 9" fill="var(--color-accent-soft)" stroke="var(--color-accent)" stroke-width="1.5"/></svg>`;
+      return `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>`;
   }
 }
