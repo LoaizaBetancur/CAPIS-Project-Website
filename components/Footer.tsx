@@ -58,7 +58,7 @@ export default function Footer() {
 
         <div className="mt-10 border-t border-border pt-6 text-center text-sm text-text-muted space-y-2">
           <p>© {new Date().getFullYear()} The CAPIS Project. All rights reserved.</p>
-          <p>Faculty of Health Sciences, University of Adelaide</p>
+          <p>School of Public Health, Adelaide University</p>
           <p className="text-xs">
             Ethics approval: HREC/HREC-1/2026/1233(v5) · COMET ID: 3589
           </p>
