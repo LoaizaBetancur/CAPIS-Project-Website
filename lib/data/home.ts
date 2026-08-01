@@ -1,3 +1,8 @@
+/**
+ * Homepage content — source-of-truth data.
+ * All scientific claims derived from the CAPIS study protocol.
+ */
+
 export interface OverviewCard {
   title: string;
   description: string;
@@ -18,10 +23,10 @@ export interface LatestPub {
 }
 
 export const heroContent = {
-  eyebrow: "Welcome to the CAPIS research project!",
+  eyebrow: "Core Outcome Set Development",
   title: "The CAPIS project: Core Athletic Performance-based Intervention Set for Athletes",
   subtitle:
-    "An international multi-phase research project to develop an outcome domain list that should be measured for all trials of athletic performance-based training interventions in athletes.",
+    "An international five-phase research project to develop a core outcome set for plyometric training interventions in Tier 3, 4, or 5 football players.",
   primaryCta: { label: "About the Project", href: "/about" },
   secondaryCta: { label: "View Protocol", href: "/resources/researchers" },
 } as const;
@@ -30,25 +35,25 @@ export const overviewCards: OverviewCard[] = [
   {
     title: "Scoping Review",
     description:
-      "A review of scientific literature to identify and see what outcome domains are currently being used in athletic performance-based training interventions.",
+      "A comprehensive review of the literature to identify all outcome domains reported in plyometric training studies with Tier 3, 4, or 5 football players.",
     icon: "review",
   },
   {
-    title: "Focus groups",
+    title: "Focus Groups",
     description:
-      "Discussions with football players classified as Tier 3, 4 or 5 and their coaches, strength and conditioning coaches, carers, director of performance and sports scientists to identify what outcome domains are important to them.",
+      "Semi-structured interviews with players, coaches, and experts to identify outcomes that matter in practice but may be missing from research.",
     icon: "group interview",
   },
   {
-    title: "e-Delphi survey",
+    title: "e-Delphi Survey",
     description:
-      "Two e-Delphi surveys to tell us what you think the most important wanted and unwanted outcome domains are for plyometric training interventions in football players.",
+      "Two rounds of online surveys where interest-holders vote on the most important outcome domains using a 9-point Likert scale.",
     icon: "delphi",
   },
   {
-    title: "Outcome consensus",
+    title: "Consensus Meeting",
     description:
-      "After completion of the e-Delphi phases, an online half-day consensus meeting to reach an agreement on the final core outcome set domains (COS) for plyometric training interventions in football players.",
+      "A half-day online meeting to reach final agreement on the core outcome set that all future plyometric training trials should measure.",
     icon: "consensus",
   },
 ] as const;
@@ -56,7 +61,7 @@ export const overviewCards: OverviewCard[] = [
 export const highlightStats: HighlightStat[] = [
   { value: "5", label: "COS development phases" },
   { value: "4", label: "Interest-holder groups" },
-  { value: "2", label: "e-Delphi surveys" },
+  { value: "2", label: "e-Delphi rounds" },
   { value: "1", label: "Core Outcome Set" },
 ] as const;
 
