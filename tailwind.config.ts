@@ -21,35 +21,24 @@ const config: Config = {
           soft: "var(--color-accent-soft)",
         },
         success: "var(--color-success)",
+        warm: {
+          DEFAULT: "var(--color-warm)",
+          soft: "var(--color-warm-soft)",
+        },
       },
       fontFamily: {
         display: ['"Source Serif 4"', "Georgia", "serif"],
         body: ["Inter", "system-ui", "sans-serif"],
         mono: ['"JetBrains Mono"', "monospace"],
       },
-      borderRadius: {
-        sm: "4px",
-        md: "8px",
-        lg: "12px",
-        xl: "16px",
-      },
-      spacing: {
-        xs: "4px",
-        "2xl": "48px",
-        "3xl": "64px",
-        "4xl": "96px",
-      },
       maxWidth: {
-        "content": "1280px",
+        content: "1280px",
+        prose: "70ch",
       },
       boxShadow: {
         raised: "0 1px 3px rgba(26,29,36,0.06)",
         overlay: "0 4px 16px rgba(26,29,36,0.10)",
-      },
-      transitionDuration: {
-        "150": "150ms",
-        "300": "300ms",
-        "500": "500ms",
+        soft: "0 2px 8px rgba(43,108,176,0.08)",
       },
     },
   },
