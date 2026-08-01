@@ -30,7 +30,8 @@ export default function Footer() {
             </div>
             <p className="text-sm text-text-muted leading-relaxed">
               Core Athletic Performance-based Intervention Set for Athletes. 
-              An international multi-phase research project.
+              Developing a core outcome set for plyometric training interventions 
+              in Tier 3, 4, or 5 football players.
             </p>
           </div>
 
@@ -55,9 +56,18 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-10 border-t border-border pt-6 text-center text-sm text-text-muted">
+        <div className="mt-10 border-t border-border pt-6 text-center text-sm text-text-muted space-y-2">
           <p>© {new Date().getFullYear()} The CAPIS Project. All rights reserved.</p>
-          <p className="mt-1">Faculty of Health Sciences, University of Adelaide</p>
+          <p>Faculty of Health Sciences, University of Adelaide</p>
+          <p className="text-xs">
+            Ethics approval: HREC/HREC-1/2026/1233(v5) · COMET ID: 3589
+          </p>
+          <p className="text-xs">
+            Contact:{" "}
+            <a href="mailto:andresfelipe.loaizabetancur@adelaide.edu.au" className="text-accent hover:underline">
+              andresfelipe.loaizabetancur@adelaide.edu.au
+            </a>
+          </p>
         </div>
       </div>
     </footer>
