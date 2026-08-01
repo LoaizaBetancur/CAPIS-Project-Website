@@ -7,7 +7,7 @@ import StageCard from "@/components/StageCard";
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "The CAPIS project: Core Athletic Performance-based Intervention Set for Athletes." 
+    "The CAPIS project: Core Athletic Performance-based Intervention Set for Athletes." ;
     "An international five-phase research project to develop a core outcome set for plyometric training interventions in Tier 3, 4, or 5 football players.",
 };
 
