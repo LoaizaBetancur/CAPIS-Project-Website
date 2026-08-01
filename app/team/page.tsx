@@ -54,10 +54,7 @@ export default function TeamPage() {
         <div className="mx-auto max-w-prose text-center">
           <h1 className="text-display-lg mb-4">Study Team</h1>
           <p className="text-lead text-text-muted">
-            This project brings together doctoral researchers and experienced supervisors 
-            from Australia, Canada, and the United Kingdom — each contributing essential 
-            expertise to ensure the research is rigorous, relevant, and grounded in real-world 
-            athletic performance needs.
+            Meet the people behind the CAPIS project.
           </p>
         </div>
       </SectionWrapper>
