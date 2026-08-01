@@ -25,34 +25,80 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 border-b bg-white/95 backdrop-blur-sm" style={{ borderColor: "var(--color-border)" }}>
-        <div className="mx-auto flex h-16 max-w-[1280px] items-center justify-between px-4 sm:px-6 lg:px-8">
+      <header
+        style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 40,
+          borderBottom: "1px solid var(--color-border)",
+          backgroundColor: "rgba(255,255,255,0.95)",
+          backdropFilter: "blur(4px)",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            height: "64px",
+            maxWidth: "1280px",
+            margin: "0 auto",
+            padding: "0 24px",
+          }}
+        >
+          {/* Logo */}
           <Link
             href="/"
-            className="font-semibold tracking-tight text-[#1A202C] no-underline transition-colors hover:text-[#2B6CB0] whitespace-nowrap"
-            style={{ fontFamily: "var(--font-display)" }}
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "16px",
+              fontWeight: 600,
+              letterSpacing: "-0.01em",
+              color: "var(--color-text)",
+              textDecoration: "none",
+              whiteSpace: "nowrap",
+            }}
           >
             The CAPIS Project
           </Link>
 
-          <nav className="hidden xl:flex items-center" aria-label="Main navigation">
+          {/* Desktop nav — flat horizontal row */}
+          <nav
+            className="hidden xl:flex"
+            style={{ alignItems: "center" }}
+            aria-label="Main navigation"
+          >
             {NAV_LINKS.map((link) => {
               const active = isLinkActive(link.href, pathname);
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="px-4 py-5 text-sm font-medium transition-colors whitespace-nowrap border-b-2"
                   style={{
+                    display: "inline-block",
+                    padding: "20px 16px",
                     fontFamily: "var(--font-body)",
-                    color: active ? "#2B6CB0" : "#4A5568",
-                    borderColor: active ? "#2B6CB0" : "transparent",
+                    fontSize: "14px",
+                    fontWeight: 500,
+                    whiteSpace: "nowrap",
+                    borderBottom: active
+                      ? "2px solid var(--color-accent)"
+                      : "2px solid transparent",
+                    color: active ? "var(--color-accent)" : "var(--color-muted)",
+                    textDecoration: "none",
+                    transition: "color 150ms, border-color 150ms",
                   }}
                   onMouseEnter={(e) => {
-                    if (!active) e.currentTarget.style.borderColor = "#E2E8F0";
+                    if (!active) {
+                      e.currentTarget.style.color = "var(--color-text)";
+                      e.currentTarget.style.borderBottomColor = "var(--color-border)";
+                    }
                   }}
                   onMouseLeave={(e) => {
-                    if (!active) e.currentTarget.style.borderColor = "transparent";
+                    if (!active) {
+                      e.currentTarget.style.color = "var(--color-muted)";
+                      e.currentTarget.style.borderBottomColor = "transparent";
+                    }
                   }}
                 >
                   {link.label}
@@ -61,9 +107,21 @@ export default function Header() {
             })}
           </nav>
 
+          {/* Mobile hamburger */}
           <button
             type="button"
-            className="inline-flex xl:hidden items-center justify-center rounded-md p-2 text-[#4A5568] hover:bg-[#EBF4FF] hover:text-[#1A202C]"
+            className="xl:hidden"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "8px",
+              borderRadius: "6px",
+              color: "var(--color-muted)",
+              background: "none",
+              border: "1px solid var(--color-border)",
+              cursor: "pointer",
+            }}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
             aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
