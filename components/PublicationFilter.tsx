@@ -57,7 +57,7 @@ export default function PublicationFilter({
   }, [publications, activeType, search]);
 
   const counts = useMemo(() => {
-    const c: Record<PubType | "all", number> = { all: publications.length };
+    const c: Record<PubType | "all", number> = { all: publications.length, protocol: 0, "systematic-review": 0, empirical: 0, commentary: 0 };
     for (const t of TYPE_ORDER) {
       c[t] = publications.filter((p) => p.type === t).length;
     }
