@@ -76,16 +76,8 @@ export default function TeamPage() {
           <h2 className="text-display-md mb-4">Collaborating Institutions</h2>
           <div className="grid gap-4 sm:grid-cols-3">
             <div className="rounded-lg border border-border bg-surface p-6 text-center">
-              <p className="font-display font-semibold text-text">University of Adelaide</p>
+              <p className="font-display font-semibold text-text">Adelaide University</p>
               <p className="text-sm text-text-muted mt-1">Australia</p>
-            </div>
-            <div className="rounded-lg border border-border bg-surface p-6 text-center">
-              <p className="font-display font-semibold text-text">University of Ottawa</p>
-              <p className="text-sm text-text-muted mt-1">Canada</p>
-            </div>
-            <div className="rounded-lg border border-border bg-surface p-6 text-center">
-              <p className="font-display font-semibold text-text">Robert Gordon University</p>
-              <p className="text-sm text-text-muted mt-1">United Kingdom</p>
             </div>
           </div>
         </div>
