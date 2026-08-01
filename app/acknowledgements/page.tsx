@@ -45,7 +45,7 @@ export default function AcknowledgementsPage() {
       />
 
       {/* ── Funding Sources ── */}
-      <SectionWrapper background="base" spacing="lg">
+      <SectionWrapper background="bg" spacing="lg">
         <div className="mb-8 flex items-center gap-3">
           <span className="text-2xl" aria-hidden="true">
             🏆
@@ -154,7 +154,7 @@ export default function AcknowledgementsPage() {
       </SectionWrapper>
 
       {/* ── Citation cta ── */}
-      <SectionWrapper background="accentSoft" spacing="md">
+      <SectionWrapper background="accent-soft" spacing="md">
         <div className="mx-auto max-w-2xl text-center">
           <h3 className="font-display text-xl font-semibold text-text-primary">
             How to Cite This Research

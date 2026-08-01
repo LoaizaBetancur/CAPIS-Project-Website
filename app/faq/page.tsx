@@ -46,7 +46,7 @@ export default function FAQPage() {
         if (categoryItems.length === 0) return null;
 
         return (
-          <SectionWrapper key={cat} background="base" spacing="lg">
+          <SectionWrapper key={cat} background="bg" spacing="lg">
             {/* Category header */}
             <div className="mb-8 flex items-center gap-4">
               <span className="text-2xl" aria-hidden="true">
@@ -74,7 +74,7 @@ export default function FAQPage() {
       })}
 
       {/* ── Didn't find answer ── */}
-      <SectionWrapper background="accentSoft" spacing="md">
+      <SectionWrapper background="accent-soft" spacing="md">
         <div className="mx-auto max-w-2xl text-center">
           <h3 className="font-display text-xl font-semibold text-text-primary">
             Didn't find your question?

@@ -30,7 +30,7 @@ export default function ContactPage() {
       />
 
       {/* ── Two-column: details + form ── */}
-      <SectionWrapper background="base" spacing="lg">
+      <SectionWrapper background="bg" spacing="lg">
         <div className="grid gap-10 lg:grid-cols-3">
           {/* Left column — contact details */}
           <aside className="lg:col-span-1">
@@ -133,7 +133,7 @@ export default function ContactPage() {
       </SectionWrapper>
 
       {/* ── Land acknowledgement ── */}
-      <SectionWrapper background="accentSoft" spacing="sm">
+      <SectionWrapper background="accent-soft" spacing="lg">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs text-muted leading-relaxed">
             This research is conducted on Kaurna Country. We acknowledge the

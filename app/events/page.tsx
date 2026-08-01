@@ -199,7 +199,7 @@ export default function EventsPage() {
 
       {/* ── Upcoming Events ── */}
       {hasUpcoming && (
-        <SectionWrapper background="base" spacing="lg">
+        <SectionWrapper background="bg" spacing="lg">
           <div className="mb-8 flex items-center gap-4">
             <h2 className="font-display text-2xl font-semibold tracking-tight text-text-primary sm:text-3xl">
               Upcoming Events
@@ -218,7 +218,7 @@ export default function EventsPage() {
       )}
 
       {!hasUpcoming && (
-        <SectionWrapper background="base" spacing="lg">
+        <SectionWrapper background="bg" spacing="lg">
           <div className="mx-auto max-w-lg text-center">
             <h2 className="font-display text-2xl font-semibold text-text-primary">
               No Upcoming Events
@@ -258,7 +258,7 @@ export default function EventsPage() {
       )}
 
       {/* ── Calendar Subscribe ── */}
-      <SectionWrapper background="accentSoft" spacing="md">
+      <SectionWrapper background="accent-soft" spacing="md">
         <div className="mx-auto max-w-2xl text-center">
           <h3 className="font-display text-xl font-semibold text-text-primary">
             Add to Your Calendar

@@ -43,7 +43,7 @@ export default function GetInvolvedPage() {
         const audiencePathways = pathways.filter((p) => p.audience === audience);
 
         return (
-          <SectionWrapper key={audience} background="base" spacing="lg">
+          <SectionWrapper key={audience} background="bg" spacing="lg">
             {/* Section header */}
             <div className="mb-10 flex items-center gap-4">
               <span className="text-3xl" aria-hidden="true">
@@ -121,7 +121,7 @@ export default function GetInvolvedPage() {
       })}
 
       {/* ── General collaboration ── */}
-      <SectionWrapper background="accentSoft" spacing="md">
+      <SectionWrapper background="accent-soft" spacing="md">
         <div className="mx-auto max-w-2xl text-center">
           <h3 className="font-display text-xl font-semibold text-text-primary">
             Not sure which pathway fits you?
@@ -143,7 +143,7 @@ export default function GetInvolvedPage() {
       </SectionWrapper>
 
       {/* ── Ethical note ── */}
-      <SectionWrapper background="base" spacing="sm">
+      <SectionWrapper background="bg" spacing="lg">
         <div className="mx-auto max-w-xl text-center">
           <p className="text-xs text-muted leading-relaxed">
             All involvement pathways operate under the approved research protocol

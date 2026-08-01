@@ -55,7 +55,7 @@ export default function UpdatesPage() {
       {years.map((year) => {
         const items = grouped.get(year)!;
         return (
-          <SectionWrapper key={year} background="base" spacing="lg">
+          <SectionWrapper key={year} background="bg" spacing="lg">
             {/* Year heading */}
             <div className="mb-10 flex items-center gap-5">
               <h2 className="font-display text-3xl font-semibold tracking-tight text-text-primary sm:text-4xl">
@@ -131,7 +131,7 @@ export default function UpdatesPage() {
       })}
 
       {/* ── Subscribe CTA ── */}
-      <SectionWrapper background="accentSoft" spacing="lg">
+      <SectionWrapper background="accent-soft" spacing="lg">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-2xl font-semibold text-text-primary sm:text-3xl">
             Stay Informed
@@ -153,7 +153,7 @@ export default function UpdatesPage() {
       </SectionWrapper>
 
       {/* ── RSS / Feeds ── */}
-      <SectionWrapper background="base" spacing="md">
+      <SectionWrapper background="bg" spacing="md">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm text-muted">
             Updates are also available via{" "}
