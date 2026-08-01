@@ -64,7 +64,7 @@ export default function MediaPage() {
         const meta = CATEGORY_META[cat];
 
         return (
-          <SectionWrapper key={cat} background="base" spacing="lg">
+          <SectionWrapper key={cat} background="bg" spacing="lg">
             {/* Category heading */}
             <div className="mb-8 flex items-center gap-3">
               <span className="text-2xl" aria-hidden="true">
@@ -149,7 +149,7 @@ export default function MediaPage() {
       })}
 
       {/* ── Usage & Citation note ── */}
-      <SectionWrapper background="accentSoft" spacing="md">
+      <SectionWrapper background="accent-soft" spacing="md">
         <div className="mx-auto max-w-2xl text-center">
           <h3 className="font-display text-xl font-semibold text-text-primary">
             Citation & Usage
@@ -173,7 +173,7 @@ export default function MediaPage() {
       </SectionWrapper>
 
       {/* ── Request materials ── */}
-      <SectionWrapper background="base" spacing="sm">
+      <SectionWrapper background="bg" spacing="lg">
         <div className="mx-auto max-w-xl text-center">
           <p className="text-sm text-muted">
             Can't find what you're looking for?{" "}
