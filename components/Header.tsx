@@ -35,18 +35,21 @@ export default function Header() {
             The CAPIS Project
           </Link>
 
-          {/* Desktop nav — only shows on XL screens (1280px+) to prevent crowding */}
-          <nav className="hidden xl:flex items-center gap-1.5" aria-label="Main navigation">
+          {/* Desktop nav — flat horizontal row, all links visible */}
+          <nav
+            className="hidden xl:flex items-center"
+            aria-label="Main navigation"
+          >
             {NAV_LINKS.map((link) => {
               const active = isLinkActive(link.href, pathname);
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`rounded-md px-2.5 py-1.5 text-xs font-medium transition-colors whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
+                  className={`px-4 py-5 text-sm font-medium transition-colors whitespace-nowrap border-b-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
                     active
-                      ? "bg-accent text-white"
-                      : "text-text-muted hover:bg-accent-soft hover:text-text"
+                      ? "border-accent text-accent"
+                      : "border-transparent text-text-muted hover:text-text hover:border-border"
                   }`}
                 >
                   {link.label}
@@ -55,7 +58,7 @@ export default function Header() {
             })}
           </nav>
 
-          {/* Mobile hamburger — shows on LG and below */}
+          {/* Mobile hamburger — hidden on xl and up */}
           <button
             type="button"
             className="inline-flex xl:hidden items-center justify-center rounded-md p-2 text-text-muted hover:bg-accent-soft hover:text-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
