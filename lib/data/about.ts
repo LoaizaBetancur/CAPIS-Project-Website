@@ -1,3 +1,8 @@
+/**
+ * About page content — source-of-truth data.
+ * All scientific claims derived from the CAPIS study protocol.
+ */
+
 export interface StudyPhase {
   phase: number;
   title: string;
@@ -21,7 +26,7 @@ export const heroContent = {
   eyebrow: "About the Project",
   title: "What is The CAPIS Project?",
   subtitle:
-    "Athletes and sport-related professionals need the best evidence about which athletic performance-based training interventions work best and are safe. The CAPIS project aims to identify the most relevant results for athletic performance-based training interventions in athletes.",
+    "The CAPIS project aims to identify a subset of core outcome set (COS) domains for plyometric training interventions in adult football players classified as Tiers 3, 4, or 5.",
   primaryCta: { label: "View Methods", href: "/resources/researchers" },
   secondaryCta: { label: "Download Protocol", href: "/resources/researchers" },
 } as const;
@@ -29,73 +34,82 @@ export const heroContent = {
 export const backgroundContent = {
   heading: "Why is the CAPIS project needed?",
   paragraphs: [
-    "Sport research studies should consistently measure and report the results of the athletic performance-based training interventions. We call these results outcomes, and they can be positive and unwanted. Outcomes are not always measured and reported in the same manner, making it difficult to compare or combine the results of research.",
-    "The CAPIS project will help us do this by agreeing on which athletic performance outcomes should be measured in sport research studies. We call this 'Core Outcome Set'.",
+    "Football research studies should consistently measure and report the results of athletic performance-based training interventions. We call these results outcomes, and they can be positive or unwanted. When studies measure different outcomes in diverse ways, it becomes difficult to compare or combine them.",
+    "The CAPIS project will help us do this by agreeing on which athletic performance outcomes should be measured in plyometric training research studies. We call this agreed-upon minimum list a 'Core Outcome Set (COS)'.",
   ],
 } as const;
 
 export const takepartContent = {
   heading: "Why will you ask me to take part?",
   paragraphs: [
-    "We will invite you to take part because you are a key professional in athletic performance-based training interventions. Your routine or research experiences are really important. We want to know what is important to you when implementing or performing athletic performance-based training interventions and what impact it has on you.",
+    "We will invite you to take part because you are a key professional in athletic performance-based training interventions. Your routine or research experiences are really important. We want to know what is important to you when implementing or performing plyometric training interventions and what impact it has on you.",
   ],
 } as const;
 
 export const studyPhases: StudyPhase[] = [
   {
     phase: 1,
-    title: "Systematic Review & Evidence Mapping",
-    timeframe: "Year 1",
+    title: "Scoping Review",
+    timeframe: "Phase 1",
     description:
-      "A comprehensive systematic review following PRISMA 2020 guidelines to map the existing evidence landscape, identify gaps, and establish the current state of outcome reporting in the target clinical domain.",
+      "A comprehensive scoping review following JBI and PRISMA-ScR guidelines to identify all reported outcome domains in RCTs, non-RCTs, and qualitative studies of plyometric training interventions in Tier 3, 4, or 5 football players.",
     methods: [
-      "PRISMA-compliant systematic review protocol",
-      "Multi-database search strategy (MEDLINE, Embase, CINAHL, Cochrane)",
+      "Search MEDLINE, Embase, CINAHL, PsycINFO, Web of Science, and SPORTDiscus",
+      "Include unpublished studies via ICTRP, ClinicalTrials.gov, and grey literature",
       "Dual independent screening and data extraction",
-      "Risk of bias assessment (ROB 2 / ROBINS-I)",
-      "Evidence gap map visualisation",
+      "Group outcomes into domains using COMET taxonomy",
     ],
   },
   {
     phase: 2,
-    title: "Modified e-Delphi Consensus Study",
-    timeframe: "Year 1–2",
+    title: "Focus Group Interviews",
+    timeframe: "Phase 2",
     description:
-      "A structured, multi-round online Delphi process with an international expert panel to establish consensus on core outcome measures, definitions, and best-practice recommendations.",
+      "Semi-structured focus group interviews with practitioners, academics, researchers, and policymakers to explore perspectives and identify outcome domains that may be missing from the literature.",
     methods: [
-      "International expert panel recruitment (n ≥ 50)",
-      "Multi-round online voting with controlled feedback",
-      "Pre-defined consensus thresholds (≥ 70% agreement)",
-      "Qualitative analysis of free-text responses",
-      "Stability assessment between rounds",
+      "Maximum variation sampling across geographic locations",
+      "5–10 participants per focus group",
+      "Conducted in English or Spanish via Microsoft Teams",
+      "Conventional deductive content analysis using NVivo",
     ],
   },
   {
     phase: 3,
-    title: "Implementation & Dissemination",
-    timeframe: "Year 2–3",
+    title: "Winnowing and Binning",
+    timeframe: "Phase 3",
     description:
-      "Translating consensus findings into actionable clinical tools, implementation guidance, and peer-reviewed outputs.",
+      "Online meetings with each interest-holder group to organise and refine the preliminary outcome domain list into a clear, manageable set of candidate outcomes for the e-Delphi surveys.",
     methods: [
-      "Implementation framework mapping (CFIR / TIDieR)",
-      "Stakeholder consultation workshops",
-      "Development of clinician-facing toolkits",
-      "Peer-reviewed publication series",
-      "Conference presentations and open-access dissemination",
+      "OMERACT-inspired winnowing and binning approach",
+      "No more than 30 unique preliminary outcome domains presented",
+      "Pilot test with at least 3 participants from each group",
+      "Review and adjustment by the steering group",
     ],
   },
   {
     phase: 4,
-    title: "Consumer & Stakeholder Engagement",
-    timeframe: "Years 1–3",
+    title: "e-Delphi Consensus Study",
+    timeframe: "Phase 4",
     description:
-      "Ongoing throughout the project lifecycle, this phase ensures that consumer voices, practitioner perspectives, and policy needs are embedded in the research from design through to dissemination.",
+      "Two rounds of online Delphi surveys with an international expert panel to establish consensus on core outcome domains using a 9-point Likert scale and controlled feedback between rounds.",
     methods: [
-      "Consumer advisory group meetings",
-      "Survey of clinician priorities and needs",
-      "Co-design workshops for toolkit development",
-      "Plain-language summary production",
-      "Social media and stakeholder newsletter updates",
+      "International expert panel recruitment (target n ≥ 120 across 4 groups)",
+      "9-point Likert scale (1–3 not important; 4–6 important; 7–9 critical)",
+      "70/15 consensus definition for inclusion/exclusion",
+      "Personalised reminders at weeks 2, 3, and 48 hours before closing",
+    ],
+  },
+  {
+    phase: 5,
+    title: "Consensus Meeting",
+    timeframe: "Phase 5",
+    description:
+      "A half-day online consensus meeting with representatives from all interest-holder groups to reach final agreement on the core outcome set domains.",
+    methods: [
+      "Stratified purposive sampling (up to 60 participants)",
+      "Presentation of Round 2 results to all groups",
+      "Discussion and anonymous voting on outcomes without consensus",
+      "Finalisation of the CAPIS core outcome set",
     ],
   },
 ] as const;
@@ -104,47 +118,52 @@ export const projectGoals: ProjectGoal[] = [
   {
     title: "Identify Evidence Gaps",
     description:
-      "Systematically map the current evidence base to identify where research is missing, inconsistent, or of low quality.",
+      "Systematically map the current evidence base to identify where research is missing, inconsistent, or of low quality in plyometric training outcomes.",
   },
   {
     title: "Build Expert Consensus",
     description:
-      "Bring together an international, multidisciplinary panel to establish agreement where evidence alone cannot provide definitive answers.",
+      "Bring together an international, multidisciplinary panel of interest-holders to establish agreement on which outcomes matter most.",
   },
   {
     title: "Standardise Outcome Measures",
     description:
-      "Develop a core outcome set that researchers and clinicians can adopt, enabling meaningful comparison across studies.",
+      "Develop a core outcome set that researchers and clinicians can adopt, enabling meaningful comparison across plyometric training trials.",
   },
   {
     title: "Translate to Practice",
     description:
-      "Produce actionable guidance, toolkits, and recommendations that clinicians and guideline developers can implement directly.",
+      "Produce actionable guidance that trialists, journal editors, and peer reviewers can use to reduce selective reporting and research waste.",
   },
 ] as const;
 
 export const teamTeaser = {
   heading: "Meet the Team",
   description:
-    "The project is led by a doctoral candidate under the supervision of experienced researchers at the University of Adelaide, with guidance from an international expert advisory panel.",
+    "The project is led by Andrés F. Loaiza-Betancur, a doctoral candidate at the University of Adelaide, under the supervision of experienced researchers with international methodological expertise.",
   cta: { label: "View Full Team", href: "/team" },
 } as const;
 
 export const collaborators: CollaboratorTeaser[] = [
   {
-    name: "PhD Candidate",
-    role: "Doctoral Researcher",
-    affiliation: "Faculty of Health Sciences, University of Adelaide",
+    name: "Andrés F. Loaiza-Betancur",
+    role: "PhD Candidate & Lead Researcher",
+    affiliation: "JBI, School of Public Health, University of Adelaide",
   },
   {
-    name: "Primary Supervisor",
-    role: "Professor of [Discipline]",
-    affiliation: "University of Adelaide",
+    name: "Jennifer Stone",
+    role: "Primary Supervisor",
+    affiliation: "JBI, School of Public Health, University of Adelaide",
   },
   {
-    name: "Co-Supervisor",
-    role: "Associate Professor, Biostatistics",
-    affiliation: "University of Adelaide",
+    name: "Peter Tugwell",
+    role: "Methodological Advisor",
+    affiliation: "University of Ottawa, Canada",
+  },
+  {
+    name: "Paul A. Swinton",
+    role: "Methodological Advisor",
+    affiliation: "Robert Gordon University, Aberdeen, UK",
   },
 ] as const;
 
