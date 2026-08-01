@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import SectionWrapper from "@/components/SectionWrapper";
 import Card from "@/components/Card";
-import Button from "@/components/Button";
 
 export const metadata: Metadata = {
   title: "Useful links",
@@ -15,9 +14,19 @@ const links = [
     url: "https://www.comet-initiative.org/",
   },
   {
+    title: "OMERACT",
+    description: "Outcome Measures in Rheumatology — an international initiative that develops core outcome measurement sets for clinical trials.",
+    url: "https://omeract.org/",
+  },
+  {
     title: "University of Adelaide",
     description: "Faculty of Health Sciences, where the CAPIS project is based.",
     url: "https://www.adelaide.edu.au/health/",
+  },
+  {
+    title: "JBI (Joanna Briggs Institute)",
+    description: "Global leader in evidence-based healthcare, providing guidance for systematic reviews and evidence synthesis.",
+    url: "https://jbi.global/",
   },
   {
     title: "PROSPERO",
@@ -25,9 +34,9 @@ const links = [
     url: "https://www.crd.york.ac.uk/prospero/",
   },
   {
-    title: "Cochrane Library",
-    description: "Collection of databases containing high-quality evidence for healthcare decision making.",
-    url: "https://www.cochranelibrary.com/",
+    title: "ClinicalTrials.gov",
+    description: "Database of privately and publicly funded clinical studies conducted around the world.",
+    url: "https://clinicaltrials.gov/",
   },
 ];
 
