@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Resources for practitioners",
-  description: "Information sheets and resources for coaches taking part in the CAPIS project.",
+  description: "Information sheets and resources for practitioners taking part in the CAPIS project.",
 };
 
 const NAVY = "#2A3F5F";
