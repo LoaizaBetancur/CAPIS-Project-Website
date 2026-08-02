@@ -16,34 +16,22 @@ const participants = [
   {
     name: "Athletes",
     description: "Tier 3, 4, or 5 football players (≥18 years) participating in plyometric training interventions.",
-    color: "bg-blue-100 text-blue-700",
-    icon: (
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4"/><path d="M18 21v-2a4 4 0 0 0-4-4H10a4 4 0 0 0-4 4v2"/></svg>
-    ),
+    icon: "🏃",
   },
   {
     name: "Coaches & Performance Staff",
     description: "Strength and conditioning coaches, football coaches, and sports physicians working with elite players.",
-    color: "bg-green-100 text-green-700",
-    icon: (
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m22 21-3-3"/><path d="m19 18 3 3"/></svg>
-    ),
+    icon: "🏋️",
   },
   {
     name: "Academics & Researchers",
     description: "Sport science lecturers, students, trialists, and systematic reviewers in athletic performance research.",
-    color: "bg-purple-100 text-purple-700",
-    icon: (
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 7v14"/><path d="M3 18a9 9 0 0 1 9-9 9 9 0 0 1 9 9"/></svg>
-    ),
+    icon: "🎓",
   },
   {
     name: "Policymakers",
     description: "Chief performance officers and directors of performance involved in athletic performance decision-making.",
-    color: "bg-orange-100 text-orange-700",
-    icon: (
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-    ),
+    icon: "📋",
   },
 ];
 
@@ -83,16 +71,16 @@ const stages = [
 export default function HomePage() {
   return (
     <>
-      {/* ── HERO: Text LEFT, Image RIGHT ── */}
+      {/* ── HERO: Text LEFT, Video RIGHT ── */}
       <section style={{ backgroundColor: NAVY }}>
         <div
           style={{
             maxWidth: "1280px",
             margin: "0 auto",
-            padding: "48px 24px",
+            padding: "40px 24px",
             display: "grid",
             alignItems: "center",
-            gap: "48px",
+            gap: "40px",
             gridTemplateColumns: "1fr 1fr",
           }}
           className="hero-grid"
@@ -126,12 +114,12 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* RIGHT: Video / Image */}
+          {/* RIGHT: Video */}
           <div
             style={{
               position: "relative",
               width: "100%",
-              borderRadius: "16px",
+              borderRadius: "12px",
               overflow: "hidden",
               aspectRatio: "16/9",
               backgroundColor: "#1A2A40",
@@ -291,7 +279,7 @@ export default function HomePage() {
       {/* ── DIVIDER ── */}
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
-      {/* ── Participants ── */}
+      {/* ── Participants (COMBAT style) ── */}
       <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto", textAlign: "center" }}>
           <h2
@@ -308,10 +296,26 @@ export default function HomePage() {
           >
             Participants
           </h2>
-          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568", marginBottom: "32px", maxWidth: "600px", marginLeft: "auto", marginRight: "auto" }}>
+          <p
+            style={{
+              fontSize: "15px",
+              lineHeight: 1.7,
+              color: "#4A5568",
+              marginBottom: "40px",
+              maxWidth: "600px",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
             We are recruiting four key interest-holder groups to join our consensus study.
           </p>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div
+            style={{
+              display: "grid",
+              gap: "24px",
+              gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+            }}
+          >
             {participants.map((p) => (
               <ParticipantCard key={p.name} {...p} />
             ))}
@@ -322,9 +326,9 @@ export default function HomePage() {
       {/* ── DIVIDER ── */}
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
-      {/* ── Stages ── */}
+      {/* ── How will we do the project? (COMBAT style) ── */}
       <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto", textAlign: "center" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2
             style={{
               fontFamily: "var(--font-display)",
@@ -334,15 +338,47 @@ export default function HomePage() {
               lineHeight: 1.3,
               textDecoration: "underline",
               textUnderlineOffset: "4px",
-              marginBottom: "16px",
+              marginBottom: "12px",
+              textAlign: "center",
             }}
           >
             How will we do the project?
           </h2>
-          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568", marginBottom: "32px", maxWidth: "600px", marginLeft: "auto", marginRight: "auto" }}>
-            This project involves five phases, following the COMET and OMERACT methodological guidance.
+          <p
+            style={{
+              fontSize: "15px",
+              lineHeight: 1.7,
+              color: "#4A5568",
+              marginBottom: "12px",
+              textAlign: "center",
+              maxWidth: "700px",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
+            This project involves five phases.
           </p>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <p
+            style={{
+              fontSize: "14px",
+              lineHeight: 1.6,
+              color: "#4A5568",
+              marginBottom: "32px",
+              textAlign: "center",
+              maxWidth: "700px",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
+            You would have been invited to take part in Stage 2 or Stage 3. You can find out more about each stage from the videos and information sheets in the resources page!
+          </p>
+          <div
+            style={{
+              display: "grid",
+              gap: "20px",
+              gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+            }}
+          >
             {stages.map((stage) => (
               <StageCard key={stage.number} {...stage} />
             ))}
@@ -377,7 +413,12 @@ export default function HomePage() {
           </p>
           <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568", marginBottom: "24px" }}>
             The video below explains more. Further information from the COMET Initiative:{" "}
-            <a href="https://www.comet-initiative.org/" target="_blank" rel="noopener noreferrer" style={{ color: TEAL, textDecoration: "underline" }}>
+            <a
+              href="https://www.comet-initiative.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: TEAL, textDecoration: "underline" }}
+            >
               COMET Plain Language Summary
             </a>
           </p>
@@ -409,7 +450,284 @@ export default function HomePage() {
       {/* ── DIVIDER ── */}
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
-      {/* ── Project Information (WHITE section, like COMBAT) ── */}
+      {/* ── Latest Publications ── */}
+      <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+          <h2
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
+              fontWeight: 600,
+              color: "#1A202C",
+              lineHeight: 1.3,
+              textDecoration: "underline",
+              textUnderlineOffset: "4px",
+              marginBottom: "32px",
+              textAlign: "center",
+            }}
+          >
+            Latest Publications
+          </h2>
+          <div
+            style={{
+              display: "grid",
+              gap: "16px",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            }}
+          >
+            <article
+              style={{
+                borderRadius: "8px",
+                border: "1px solid #E2E8F0",
+                backgroundColor: "#FFFFFF",
+                padding: "24px",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  color: TEAL,
+                  marginBottom: "8px",
+                }}
+              >
+                Published
+              </p>
+              <h3
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "16px",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  marginBottom: "8px",
+                  lineHeight: 1.3,
+                }}
+              >
+                A critical appraisal of systematic reviews assessing chronic velocity-based resistance training
+              </h3>
+              <p style={{ fontSize: "13px", color: "#4A5568", marginBottom: "8px" }}>
+                PLOS ONE · 2026
+              </p>
+              <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#4A5568" }}>
+                DOI: 10.1371/journal.pone.0342992
+              </p>
+            </article>
+
+            <article
+              style={{
+                borderRadius: "8px",
+                border: "1px solid #E2E8F0",
+                backgroundColor: "#FFFFFF",
+                padding: "24px",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  color: TEAL,
+                  marginBottom: "8px",
+                }}
+              >
+                Published
+              </p>
+              <h3
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "16px",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  marginBottom: "8px",
+                  lineHeight: 1.3,
+                }}
+              >
+                Physical activity for the management of obesity in children up to the age of 9 years
+              </h3>
+              <p style={{ fontSize: "13px", color: "#4A5568", marginBottom: "8px" }}>
+                Cochrane Database of Systematic Reviews · 2026
+              </p>
+              <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#4A5568" }}>
+                DOI: 10.1002/14651858.CD015988
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* ── DIVIDER ── */}
+      <div style={{ height: "4px", backgroundColor: NAVY }} />
+
+      {/* ── Presentations & Conferences (YOUR REAL EVENTS) ── */}
+      <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+          <h2
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
+              fontWeight: 600,
+              color: "#1A202C",
+              lineHeight: 1.3,
+              textDecoration: "underline",
+              textUnderlineOffset: "4px",
+              marginBottom: "16px",
+            }}
+          >
+            Presentations & Conferences
+          </h2>
+          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568", marginBottom: "24px" }}>
+            The CAPIS project has been accepted for presentation at the following international conferences.
+          </p>
+
+          <div
+            style={{
+              display: "grid",
+              gap: "16px",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            }}
+          >
+            {/* Event 1: JBI iGNITE */}
+            <div
+              style={{
+                borderRadius: "8px",
+                border: "1px solid #E2E8F0",
+                backgroundColor: "#FFFFFF",
+                padding: "20px",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  color: TEAL,
+                  marginBottom: "8px",
+                }}
+              >
+                Poster Presentation
+              </p>
+              <h3
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "16px",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  marginBottom: "6px",
+                }}
+              >
+                JBI iGNITE 2026
+              </h3>
+              <p style={{ fontSize: "13px", color: "#4A5568", marginBottom: "4px" }}>
+                Online · 24–25 September 2026
+              </p>
+              <p style={{ fontSize: "12px", color: "#4A5568", marginBottom: "10px" }}>
+                Session 2 — Friday 25 September, 9:05–9:50am ACST
+              </p>
+              <p style={{ fontSize: "12px", color: "#4A5568", fontStyle: "italic" }}>
+                &ldquo;Core outcome set of athletic performance training-based interventions: a scoping review&rdquo;
+              </p>
+            </div>
+
+            {/* Event 2: WCSPT */}
+            <div
+              style={{
+                borderRadius: "8px",
+                border: "1px solid #E2E8F0",
+                backgroundColor: "#FFFFFF",
+                padding: "20px",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  color: TEAL,
+                  marginBottom: "8px",
+                }}
+              >
+                Poster Accepted
+              </p>
+              <h3
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "16px",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  marginBottom: "6px",
+                }}
+              >
+                WCSPT 2026
+              </h3>
+              <p style={{ fontSize: "13px", color: "#4A5568", marginBottom: "4px" }}>
+                World Congress of Sports Physiotherapy
+              </p>
+              <p style={{ fontSize: "12px", color: "#4A5568", marginBottom: "10px" }}>
+                4–5 December 2026
+              </p>
+              <p style={{ fontSize: "12px", color: "#4A5568", fontStyle: "italic" }}>
+                &ldquo;Core outcome set of athletic performance training-based interventions: a scoping review&rdquo;
+              </p>
+              <p style={{ fontSize: "11px", color: "#4A5568", marginTop: "6px" }}>
+                To be published in <em>International Journal of Sports Physical Therapy (IJSPT)</em>
+              </p>
+            </div>
+
+            {/* Event 3: Cochrane Colloquium */}
+            <div
+              style={{
+                borderRadius: "8px",
+                border: "1px solid #E2E8F0",
+                backgroundColor: "#FFFFFF",
+                padding: "20px",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  color: TEAL,
+                  marginBottom: "8px",
+                }}
+              >
+                Poster Accepted
+              </p>
+              <h3
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "16px",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  marginBottom: "6px",
+                }}
+              >
+                Cochrane Colloquium 2026
+              </h3>
+              <p style={{ fontSize: "13px", color: "#4A5568", marginBottom: "4px" }}>
+                Krakow, Poland · 8–10 December 2026
+              </p>
+              <p style={{ fontSize: "12px", color: "#4A5568", marginBottom: "10px" }}>
+                Theme 5.5: Strengthening evidence literacy for researchers, communities, politicians, media, and decision-makers
+              </p>
+              <p style={{ fontSize: "12px", color: "#4A5568", fontStyle: "italic" }}>
+                &ldquo;Core outcome set of athletic performance training-based interventions: a scoping review&rdquo;
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── DIVIDER ── */}
+      <div style={{ height: "4px", backgroundColor: NAVY }} />
+
+      {/* ── Project Information (WHITE section) ── */}
       <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2
@@ -429,12 +747,26 @@ export default function HomePage() {
 
           <div style={{ maxWidth: "700px" }}>
             <div style={{ marginBottom: "20px" }}>
-              <h3 style={{ fontSize: "14px", fontWeight: 600, color: "#1A202C", textDecoration: "underline", textUnderlineOffset: "3px", marginBottom: "6px" }}>
+              <h3
+                style={{
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  textDecoration: "underline",
+                  textUnderlineOffset: "3px",
+                  marginBottom: "6px",
+                }}
+              >
                 Registration
               </h3>
               <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4A5568" }}>
                 This Study is registered with the COMET database as Study 3589 (
-                <a href="https://www.comet-initiative.org/Studies/Details/3589" target="_blank" rel="noopener noreferrer" style={{ color: TEAL, textDecoration: "underline" }}>
+                <a
+                  href="https://www.comet-initiative.org/Studies/Details/3589"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: TEAL, textDecoration: "underline" }}
+                >
                   https://www.comet-initiative.org/Studies/Details/3589
                 </a>
                 ).
@@ -442,7 +774,16 @@ export default function HomePage() {
             </div>
 
             <div style={{ marginBottom: "20px" }}>
-              <h3 style={{ fontSize: "14px", fontWeight: 600, color: "#1A202C", textDecoration: "underline", textUnderlineOffset: "3px", marginBottom: "6px" }}>
+              <h3
+                style={{
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  textDecoration: "underline",
+                  textUnderlineOffset: "3px",
+                  marginBottom: "6px",
+                }}
+              >
                 Ethics
               </h3>
               <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4A5568" }}>
@@ -451,7 +792,16 @@ export default function HomePage() {
             </div>
 
             <div style={{ marginBottom: "20px" }}>
-              <h3 style={{ fontSize: "14px", fontWeight: 600, color: "#1A202C", textDecoration: "underline", textUnderlineOffset: "3px", marginBottom: "6px" }}>
+              <h3
+                style={{
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  textDecoration: "underline",
+                  textUnderlineOffset: "3px",
+                  marginBottom: "6px",
+                }}
+              >
                 Sponsor
               </h3>
               <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4A5568" }}>
@@ -460,12 +810,24 @@ export default function HomePage() {
             </div>
 
             <div>
-              <h3 style={{ fontSize: "14px", fontWeight: 600, color: "#1A202C", textDecoration: "underline", textUnderlineOffset: "3px", marginBottom: "6px" }}>
+              <h3
+                style={{
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  textDecoration: "underline",
+                  textUnderlineOffset: "3px",
+                  marginBottom: "6px",
+                }}
+              >
                 Contact
               </h3>
               <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4A5568" }}>
                 The Research Sponsor can be contacted at{" "}
-                <a href="mailto:andresfelipe.loaizabetancur@adelaide.edu.au" style={{ color: TEAL, textDecoration: "underline" }}>
+                <a
+                  href="mailto:andresfelipe.loaizabetancur@adelaide.edu.au"
+                  style={{ color: TEAL, textDecoration: "underline" }}
+                >
                   andresfelipe.loaizabetancur@adelaide.edu.au
                 </a>
               </p>
@@ -473,9 +835,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* ── DIVIDER ── */}
-      <div style={{ height: "4px", backgroundColor: NAVY }} />
     </>
   );
 }
