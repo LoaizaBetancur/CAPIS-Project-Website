@@ -15,7 +15,7 @@ const leadInvestigator = {
   role: "PhD Candidate & Lead Researcher",
   affiliation: "JBI, School of Public Health, University of Adelaide",
   bio: "Andrés leads all phases of the CAPIS research programme — from the scoping review and focus groups through to the Delphi consensus and dissemination. He is supported by an Adelaide University research scholarship.",
-  image: "/images/andres.jpg",
+  image: "/images/andres.png",
   email: "andresfelipe.loaizabetancur@adelaide.edu.au",
 };
 
@@ -25,7 +25,7 @@ const studyTeam = [
     role: "Primary Supervisor",
     affiliation: "JBI, School of Public Health, University of Adelaide",
     bio: "Jennifer provides overall methodological guidance for the CAPIS project, contributing expertise in evidence synthesis, systematic review methodology, and implementation science.",
-    image: "/images/team/jennifer.jpg",
+    image: "/images/team/jennifer.png",
     email: "jennifer.stone@adelaide.edu.au",
   },
   {
