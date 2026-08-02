@@ -662,7 +662,7 @@ export default function HomePage() {
                 World Congress of Sports Physiotherapy
               </p>
               <p style={{ fontSize: "12px", color: "#2D3748", marginBottom: "10px" }}>
-                4–5 December 2026
+                Bern, Switzerland · 4–5 December 2026
               </p>
               <p style={{ fontSize: "12px", color: "#2D3748", fontStyle: "italic" }}>
                 &ldquo;Core outcome set of athletic performance training-based interventions: a scoping review&rdquo;
