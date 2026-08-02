@@ -132,7 +132,7 @@ export default function HomePage() {
           >
             <iframe
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0 }}
-              src="https://www.youtube.com/embed/D0Q9vypSYeE?si=1NipWQnKrAGCmBVv"
+              src="https://www.youtube.com/embed/qK6XxV4yRr4?si=DAsv1dEYuqvMcIXV"
               title="CAPIS Project video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -461,7 +461,7 @@ export default function HomePage() {
           >
             <iframe
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0 }}
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/qK6XxV4yRr4?si=DAsv1dEYuqvMcIXV"
               title="What are core outcome sets?"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
