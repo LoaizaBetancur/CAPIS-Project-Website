@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 const NAVY = "#2A3F5F";
