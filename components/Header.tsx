@@ -20,78 +20,35 @@ function isLinkActive(href: string, pathname: string): boolean {
   return pathname.startsWith(href);
 }
 
+const NAVY = "#2A3F5F";
+
 export default function Header() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
-      {/* ── Top Banner ── */}
-      <div
-        style={{
-          backgroundColor: "#1E2D4B",
-          borderBottom: "1px solid #2A3F5F",
-        }}
-      >
+      {/* ── Top Banner: Logo Only ── */}
+      <div style={{ backgroundColor: NAVY }}>
         <div
           style={{
             maxWidth: "1280px",
             margin: "0 auto",
-            padding: "32px 24px",
+            padding: "16px 24px",
             display: "flex",
             alignItems: "center",
-            gap: "28px",
+            justifyContent: "center",
           }}
         >
-          {/* Large Logo */}
-          <div
-            style={{
-              position: "relative",
-              width: "clamp(110px, 14vw, 160px)",
-              height: "clamp(110px, 14vw, 160px)",
-              flexShrink: 0,
-            }}
-          >
+          <div style={{ position: "relative", height: "100px", width: "300px" }}>
             <Image
               src="/images/capis-logo.png"
-              alt="The CAPIS Project logo"
+              alt="The CAPIS Project"
               fill
               style={{ objectFit: "contain" }}
-              sizes="(max-width: 768px) 110px, 160px"
+              sizes="300px"
               priority
             />
-          </div>
-
-          {/* Project Title */}
-          <div>
-            <h1
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "clamp(1.75rem, 4vw, 3.25rem)",
-                fontWeight: 700,
-                color: "#FFFFFF",
-                lineHeight: 1.1,
-                letterSpacing: "-0.02em",
-                margin: 0,
-              }}
-            >
-              THE CAPIS PROJECT
-            </h1>
-            <p
-              style={{
-                fontFamily: "var(--font-body)",
-                fontSize: "clamp(0.875rem, 2vw, 1.25rem)",
-                color: "#8BA4C7",
-                margin: "10px 0 0 0",
-                lineHeight: 1.5,
-              }}
-            >
-              <span style={{ textDecoration: "underline", textUnderlineOffset: "3px", color: "#FFFFFF" }}>C</span>ore{" "}
-              <span style={{ textDecoration: "underline", textUnderlineOffset: "3px", color: "#FFFFFF" }}>A</span>thletic{" "}
-              <span style={{ textDecoration: "underline", textUnderlineOffset: "3px", color: "#FFFFFF" }}>P</span>erformance-based{" "}
-              <span style={{ textDecoration: "underline", textUnderlineOffset: "3px", color: "#FFFFFF" }}>I</span>ntervention{" "}
-              <span style={{ textDecoration: "underline", textUnderlineOffset: "3px", color: "#FFFFFF" }}>S</span>et for Athletes
-            </p>
           </div>
         </div>
       </div>
@@ -103,7 +60,7 @@ export default function Header() {
           top: 0,
           zIndex: 40,
           backgroundColor: "#FFFFFF",
-          borderBottom: "1px solid var(--color-border)",
+          borderBottom: "1px solid #E2E8F0",
         }}
       >
         <div
@@ -113,8 +70,8 @@ export default function Header() {
             padding: "0 24px",
             display: "flex",
             alignItems: "center",
-            justifyContent: "space-between",
-            height: "56px",
+            justifyContent: "center",
+            height: "48px",
           }}
         >
           <nav
@@ -134,13 +91,13 @@ export default function Header() {
                     height: "100%",
                     padding: "0 20px",
                     fontFamily: "var(--font-body)",
-                    fontSize: "15px",
+                    fontSize: "14px",
                     fontWeight: 500,
                     whiteSpace: "nowrap",
                     borderBottom: active
                       ? "3px solid #3C7887"
                       : "3px solid transparent",
-                    color: active ? "#3C7887" : "#1E2D4B",
+                    color: active ? "#3C7887" : "#1A202C",
                     textDecoration: "none",
                     transition: "color 150ms, border-color 150ms",
                     marginBottom: "-1px",
@@ -149,7 +106,7 @@ export default function Header() {
                     if (!active) e.currentTarget.style.color = "#3C7887";
                   }}
                   onMouseLeave={(e) => {
-                    if (!active) e.currentTarget.style.color = "#1E2D4B";
+                    if (!active) e.currentTarget.style.color = "#1A202C";
                   }}
                 >
                   {link.label}
@@ -165,13 +122,12 @@ export default function Header() {
               display: "inline-flex",
               alignItems: "center",
               justifyContent: "center",
-              padding: "8px",
-              borderRadius: "6px",
-              color: "#1E2D4B",
+              padding: "6px",
+              borderRadius: "4px",
+              color: "#1A202C",
               background: "none",
-              border: "1px solid var(--color-border)",
+              border: "1px solid #E2E8F0",
               cursor: "pointer",
-              marginLeft: "auto",
             }}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
@@ -179,11 +135,11 @@ export default function Header() {
             onClick={() => setMenuOpen((prev) => !prev)}
           >
             {menuOpen ? (
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
               </svg>
             ) : (
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M4 12h16"/><path d="M4 18h16"/><path d="M4 6h16"/>
               </svg>
             )}
