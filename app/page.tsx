@@ -71,7 +71,7 @@ const stages = [
 export default function HomePage() {
   return (
     <>
-      {/* ── HERO: Text LEFT, Video RIGHT ── */}
+      {/* ── HERO ── */}
       <section style={{ backgroundColor: NAVY }}>
         <div
           style={{
@@ -110,7 +110,11 @@ export default function HomePage() {
                 maxWidth: "500px",
               }}
             >
-              Core Athletic Performance-based Intervention Set for Athletes
+              <span style={{ fontWeight: 700, textDecoration: "underline", textUnderlineOffset: "3px", color: "#FFFFFF" }}>C</span>ore{" "}
+              <span style={{ fontWeight: 700, textDecoration: "underline", textUnderlineOffset: "3px", color: "#FFFFFF" }}>A</span>thletic{" "}
+              <span style={{ fontWeight: 700, textDecoration: "underline", textUnderlineOffset: "3px", color: "#FFFFFF" }}>P</span>erformance-based{" "}
+              <span style={{ fontWeight: 700, textDecoration: "underline", textUnderlineOffset: "3px", color: "#FFFFFF" }}>I</span>ntervention{" "}
+              <span style={{ fontWeight: 700, textDecoration: "underline", textUnderlineOffset: "3px", color: "#FFFFFF" }}>S</span>et for Athletes
             </p>
           </div>
 
@@ -136,7 +140,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── DIVIDER ── */}
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
       {/* ── What is CAPIS? ── */}
@@ -167,7 +170,7 @@ export default function HomePage() {
             >
               What is The CAPIS Project?
             </h2>
-            <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568" }}>
+            <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#2D3748" }}>
               Athletes and sport-related professionals need the best evidence about which 
               athletic performance-based training interventions work best and are safe. 
               The CAPIS project aims to identify a subset of core outcome set (COS) domains 
@@ -181,7 +184,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── DIVIDER ── */}
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
       {/* ── Why needed? ── */}
@@ -212,14 +214,14 @@ export default function HomePage() {
             >
               Why is this project needed?
             </h2>
-            <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568", marginBottom: "12px" }}>
+            <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#2D3748", marginBottom: "12px" }}>
               Football research studies should consistently measure and report the results of 
               athletic performance-based training interventions. We call these results{" "}
               <strong>outcomes</strong>, and they can be positive or unwanted. 
               When studies measure different outcomes in diverse ways, it becomes 
               difficult to compare or combine them.
             </p>
-            <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568" }}>
+            <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#2D3748" }}>
               This project will agree on which outcomes should always be measured in plyometric 
               training research studies. We call this agreed-upon minimum list a{" "}
               <strong>Core Outcome Set (COS)</strong>.
@@ -231,7 +233,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── DIVIDER ── */}
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
       {/* ── Why participate? ── */}
@@ -262,7 +263,7 @@ export default function HomePage() {
             >
               Why have you asked me to take part?
             </h2>
-            <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568" }}>
+            <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#2D3748" }}>
               We will invite you to take part because you are a key professional in athletic 
               performance-based training interventions. Your routine or research experiences 
               are really important. We want to know what is important to you when 
@@ -276,10 +277,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── DIVIDER ── */}
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
-      {/* ── Participants (COMBAT style) ── */}
+      {/* ── Participants ── */}
       <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto", textAlign: "center" }}>
           <h2
@@ -300,7 +300,7 @@ export default function HomePage() {
             style={{
               fontSize: "15px",
               lineHeight: 1.7,
-              color: "#4A5568",
+              color: "#2D3748",
               marginBottom: "40px",
               maxWidth: "600px",
               marginLeft: "auto",
@@ -323,10 +323,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── DIVIDER ── */}
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
-      {/* ── How will we do the project? (COMBAT style) ── */}
+      {/* ── Stages ── */}
       <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2
@@ -348,7 +347,7 @@ export default function HomePage() {
             style={{
               fontSize: "15px",
               lineHeight: 1.7,
-              color: "#4A5568",
+              color: "#2D3748",
               marginBottom: "12px",
               textAlign: "center",
               maxWidth: "700px",
@@ -362,7 +361,7 @@ export default function HomePage() {
             style={{
               fontSize: "14px",
               lineHeight: 1.6,
-              color: "#4A5568",
+              color: "#2D3748",
               marginBottom: "32px",
               textAlign: "center",
               maxWidth: "700px",
@@ -386,10 +385,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── DIVIDER ── */}
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
-      {/* ── What is COS? (with embedded video) ── */}
+      {/* ── What is COS? ── */}
       <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2
@@ -406,12 +404,12 @@ export default function HomePage() {
           >
             What is a core outcome set?
           </h2>
-          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568", marginBottom: "8px" }}>
+          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#2D3748", marginBottom: "8px" }}>
             A core outcome set (COS) is an agreed standardised collection of outcomes that 
             should be measured and reported in all clinical trials for a specific condition 
             or intervention.
           </p>
-          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568", marginBottom: "24px" }}>
+          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#2D3748", marginBottom: "24px" }}>
             The video below explains more. Further information from the COMET Initiative:{" "}
             <a
               href="https://www.comet-initiative.org/"
@@ -447,10 +445,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── DIVIDER ── */}
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
-      {/* ── Latest Publications ── */}
+      {/* ── Publications ── */}
       <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2
@@ -507,10 +504,10 @@ export default function HomePage() {
               >
                 A critical appraisal of systematic reviews assessing chronic velocity-based resistance training
               </h3>
-              <p style={{ fontSize: "13px", color: "#4A5568", marginBottom: "8px" }}>
+              <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "8px" }}>
                 PLOS ONE · 2026
               </p>
-              <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#4A5568" }}>
+              <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
                 DOI: 10.1371/journal.pone.0342992
               </p>
             </article>
@@ -547,10 +544,10 @@ export default function HomePage() {
               >
                 Physical activity for the management of obesity in children up to the age of 9 years
               </h3>
-              <p style={{ fontSize: "13px", color: "#4A5568", marginBottom: "8px" }}>
+              <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "8px" }}>
                 Cochrane Database of Systematic Reviews · 2026
               </p>
-              <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#4A5568" }}>
+              <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
                 DOI: 10.1002/14651858.CD015988
               </p>
             </article>
@@ -558,10 +555,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── DIVIDER ── */}
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
-      {/* ── Presentations & Conferences (YOUR REAL EVENTS) ── */}
+      {/* ── Presentations & Conferences ── */}
       <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2
@@ -578,7 +574,7 @@ export default function HomePage() {
           >
             Presentations & Conferences
           </h2>
-          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568", marginBottom: "24px" }}>
+          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#2D3748", marginBottom: "24px" }}>
             The CAPIS project has been accepted for presentation at the following international conferences.
           </p>
 
@@ -589,7 +585,6 @@ export default function HomePage() {
               gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
             }}
           >
-            {/* Event 1: JBI iGNITE */}
             <div
               style={{
                 borderRadius: "8px",
@@ -621,18 +616,17 @@ export default function HomePage() {
               >
                 JBI iGNITE 2026
               </h3>
-              <p style={{ fontSize: "13px", color: "#4A5568", marginBottom: "4px" }}>
+              <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "4px" }}>
                 Online · 24–25 September 2026
               </p>
-              <p style={{ fontSize: "12px", color: "#4A5568", marginBottom: "10px" }}>
+              <p style={{ fontSize: "12px", color: "#2D3748", marginBottom: "10px" }}>
                 Session 2 — Friday 25 September, 9:05–9:50am ACST
               </p>
-              <p style={{ fontSize: "12px", color: "#4A5568", fontStyle: "italic" }}>
+              <p style={{ fontSize: "12px", color: "#2D3748", fontStyle: "italic" }}>
                 &ldquo;Core outcome set of athletic performance training-based interventions: a scoping review&rdquo;
               </p>
             </div>
 
-            {/* Event 2: WCSPT */}
             <div
               style={{
                 borderRadius: "8px",
@@ -664,21 +658,20 @@ export default function HomePage() {
               >
                 WCSPT 2026
               </h3>
-              <p style={{ fontSize: "13px", color: "#4A5568", marginBottom: "4px" }}>
+              <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "4px" }}>
                 World Congress of Sports Physiotherapy
               </p>
-              <p style={{ fontSize: "12px", color: "#4A5568", marginBottom: "10px" }}>
+              <p style={{ fontSize: "12px", color: "#2D3748", marginBottom: "10px" }}>
                 4–5 December 2026
               </p>
-              <p style={{ fontSize: "12px", color: "#4A5568", fontStyle: "italic" }}>
+              <p style={{ fontSize: "12px", color: "#2D3748", fontStyle: "italic" }}>
                 &ldquo;Core outcome set of athletic performance training-based interventions: a scoping review&rdquo;
               </p>
-              <p style={{ fontSize: "11px", color: "#4A5568", marginTop: "6px" }}>
+              <p style={{ fontSize: "11px", color: "#2D3748", marginTop: "6px" }}>
                 To be published in <em>International Journal of Sports Physical Therapy (IJSPT)</em>
               </p>
             </div>
 
-            {/* Event 3: Cochrane Colloquium */}
             <div
               style={{
                 borderRadius: "8px",
@@ -710,13 +703,13 @@ export default function HomePage() {
               >
                 Cochrane Colloquium 2026
               </h3>
-              <p style={{ fontSize: "13px", color: "#4A5568", marginBottom: "4px" }}>
+              <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "4px" }}>
                 Krakow, Poland · 8–10 December 2026
               </p>
-              <p style={{ fontSize: "12px", color: "#4A5568", marginBottom: "10px" }}>
+              <p style={{ fontSize: "12px", color: "#2D3748", marginBottom: "10px" }}>
                 Theme 5.5: Strengthening evidence literacy for researchers, communities, politicians, media, and decision-makers
               </p>
-              <p style={{ fontSize: "12px", color: "#4A5568", fontStyle: "italic" }}>
+              <p style={{ fontSize: "12px", color: "#2D3748", fontStyle: "italic" }}>
                 &ldquo;Core outcome set of athletic performance training-based interventions: a scoping review&rdquo;
               </p>
             </div>
@@ -724,10 +717,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── DIVIDER ── */}
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
-      {/* ── Project Information (WHITE section) ── */}
+      {/* ── Project Information ── */}
       <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2
@@ -759,7 +751,7 @@ export default function HomePage() {
               >
                 Registration
               </h3>
-              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4A5568" }}>
+              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#2D3748" }}>
                 This Study is registered with the COMET database as Study 3589 (
                 <a
                   href="https://www.comet-initiative.org/Studies/Details/3589"
@@ -786,7 +778,7 @@ export default function HomePage() {
               >
                 Ethics
               </h3>
-              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4A5568" }}>
+              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#2D3748" }}>
                 Ethics approval: HREC/HREC-1/2026/1233(v5)
               </p>
             </div>
@@ -804,7 +796,7 @@ export default function HomePage() {
               >
                 Sponsor
               </h3>
-              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4A5568" }}>
+              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#2D3748" }}>
                 JBI, School of Public Health, University of Adelaide
               </p>
             </div>
@@ -822,7 +814,7 @@ export default function HomePage() {
               >
                 Contact
               </h3>
-              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4A5568" }}>
+              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#2D3748" }}>
                 The Research Sponsor can be contacted at{" "}
                 <a
                   href="mailto:andresfelipe.loaizabetancur@adelaide.edu.au"
