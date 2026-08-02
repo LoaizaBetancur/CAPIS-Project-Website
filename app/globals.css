@@ -32,3 +32,11 @@ body {
   background-color: var(--color-accent-soft);
   color: var(--color-text);
 }
+/* Mobile responsive grids */
+@media (max-width: 1024px) {
+  .hero-grid,
+  .content-grid,
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
