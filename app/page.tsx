@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Button from "@/components/Button";
 import ParticipantCard from "@/components/ParticipantCard";
 import StageCard from "@/components/StageCard";
