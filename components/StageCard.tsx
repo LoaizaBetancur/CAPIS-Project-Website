@@ -7,13 +7,51 @@ interface StageCardProps {
 
 export default function StageCard({ number, title, description, image }: StageCardProps) {
   return (
-    <div className="flex flex-col items-center rounded-xl border border-border bg-surface p-6 text-center shadow-raised">
-      <div className="mb-4 text-5xl">{image}</div>
-      <div className="mb-3 flex h-8 w-8 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">
-        {number}
+    <div
+      style={{
+        backgroundColor: "#FFFFFF",
+        border: "1px solid #E2E8F0",
+        borderRadius: "12px",
+        padding: "20px",
+        textAlign: "left",
+      }}
+    >
+      {/* Image area like COMBAT */}
+      <div
+        style={{
+          backgroundColor: "#F7FAFC",
+          borderRadius: "8px",
+          height: "140px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          marginBottom: "16px",
+          fontSize: "72px",
+          lineHeight: 1,
+        }}
+      >
+        {image}
       </div>
-      <h3 className="font-display text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-sm text-text-muted leading-relaxed">{description}</p>
+      <h3
+        style={{
+          fontFamily: "var(--font-display)",
+          fontSize: "16px",
+          fontWeight: 600,
+          color: "#1A202C",
+          marginBottom: "8px",
+        }}
+      >
+        Stage {number}
+      </h3>
+      <p
+        style={{
+          fontSize: "13px",
+          lineHeight: 1.6,
+          color: "#4A5568",
+        }}
+      >
+        {description}
+      </p>
     </div>
   );
 }
