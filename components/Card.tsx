@@ -1,31 +1,53 @@
-import Link from "next/link";
-
-interface CardProps {
-  children: React.ReactNode;
-  className?: string;
-  href?: string;
-  highlighted?: boolean;
-  as?: "article" | "div";
+interface ParticipantCardProps {
+  name: string;
+  description: string;
+  icon: React.ReactNode;
 }
 
-export default function Card({
-  children,
-  className = "",
-  href,
-  highlighted = false,
-  as: Tag = "div",
-}: CardProps) {
-  const baseClasses = `rounded-lg border bg-surface p-6 transition-all duration-300 ${
-    highlighted ? "border-accent-soft shadow-raised ring-1 ring-accent-soft/50" : "border-border shadow-raised"
-  } ${href ? "cursor-pointer hover:-translate-y-0.5 hover:shadow-overlay" : ""} ${className}`;
-
-  if (href) {
-    return (
-      <Link href={href} className={`block no-underline ${baseClasses}`}>
-        {children}
-      </Link>
-    );
-  }
-
-  return <Tag className={baseClasses}>{children}</Tag>;
+export default function ParticipantCard({ name, description, icon }: ParticipantCardProps) {
+  return (
+    <div style={{ textAlign: "center" }}>
+      <div
+        style={{
+          backgroundColor: "#F7FAFC",
+          border: "1px solid #E2E8F0",
+          borderRadius: "12px",
+          padding: "24px",
+          marginBottom: "12px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          minHeight: "140px",
+        }}
+      >
+        <div style={{ fontSize: "64px", lineHeight: 1 }}>{icon}</div>
+      </div>
+      <div
+        style={{
+          display: "inline-block",
+          border: "1px solid #1A202C",
+          padding: "6px 16px",
+          fontSize: "13px",
+          fontWeight: 500,
+          color: "#1A202C",
+          fontFamily: "var(--font-body)",
+        }}
+      >
+        {name}
+      </div>
+      <p
+        style={{
+          fontSize: "13px",
+          color: "#2D3748",
+          marginTop: "8px",
+          lineHeight: 1.5,
+          maxWidth: "220px",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+      >
+        {description}
+      </p>
+    </div>
+  );
 }
