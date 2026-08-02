@@ -10,8 +10,8 @@ const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Study Team", href: "/team" },
   { label: "Resources for athletes", href: "/resources/athletes" },
-  { label: "Resources for coaches", href: "/resources/coaches" },
-  { label: "Resources for researchers", href: "/resources/researchers" },
+  { label: "Resources for practitioners", href: "/resources/coaches" },
+  { label: "Resources for researchers & academics href: "/resources/researchers" },
   { label: "Useful links", href: "/useful-links" },
 ];
 
