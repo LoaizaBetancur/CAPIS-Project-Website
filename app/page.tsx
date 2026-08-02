@@ -131,7 +131,7 @@ export default function HomePage() {
           >
             <iframe
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0 }}
-              src="https://youtu.be/g1MZi2mzK1U?si=Mn0zXm8hdNnqxvgs"
+              src="https://www.youtube.com/embed/D0Q9vypSYeE?si=1NipWQnKrAGCmBVv"
               title="CAPIS Project video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
