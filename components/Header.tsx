@@ -34,19 +34,19 @@ export default function Header() {
           style={{
             maxWidth: "1280px",
             margin: "0 auto",
-            padding: "20px 24px",
+            padding: "32px 24px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
           }}
         >
-          <div style={{ position: "relative", height: "110px", width: "360px" }}>
+          <div style={{ position: "relative", height: "150px", width: "500px" }}>
             <Image
               src="/images/capis-logo.png"
               alt="The CAPIS Project"
               fill
               style={{ objectFit: "contain" }}
-              sizes="360px"
+              sizes="500px"
               priority
             />
           </div>
@@ -101,12 +101,6 @@ export default function Header() {
                     textDecoration: "none",
                     transition: "color 150ms, border-color 150ms",
                     marginBottom: "-1px",
-                  }}
-                  onMouseEnter={(e) => {
-                    if (!active) e.currentTarget.style.color = "#3C7887";
-                  }}
-                  onMouseLeave={(e) => {
-                    if (!active) e.currentTarget.style.color = "#1A202C";
                   }}
                 >
                   {link.label}
