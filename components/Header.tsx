@@ -34,19 +34,19 @@ export default function Header() {
           style={{
             maxWidth: "1280px",
             margin: "0 auto",
-            padding: "32px 24px",
+            padding: "48px 24px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
           }}
         >
-          <div style={{ position: "relative", height: "150px", width: "500px" }}>
+          <div style={{ position: "relative", height: "220px", width: "700px" }}>
             <Image
               src="/images/capis-logo.png"
               alt="The CAPIS Project"
               fill
               style={{ objectFit: "contain" }}
-              sizes="500px"
+              sizes="700px"
               priority
             />
           </div>
