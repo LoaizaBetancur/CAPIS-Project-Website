@@ -131,7 +131,7 @@ export default function HomePage() {
           >
             <iframe
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0 }}
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/watch?v=D0Q9vypSYeE"
               title="CAPIS Project video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -797,7 +797,7 @@ export default function HomePage() {
                 Sponsor
               </h3>
               <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#2D3748" }}>
-                JBI, School of Public Health, University of Adelaide
+                JBI, School of Public Health, Adelaide University
               </p>
             </div>
 
@@ -815,7 +815,7 @@ export default function HomePage() {
                 Contact
               </h3>
               <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#2D3748" }}>
-                The Research Sponsor can be contacted at{" "}
+                The Research Team can be contacted at{" "}
                 <a
                   href="mailto:andresfelipe.loaizabetancur@adelaide.edu.au"
                   style={{ color: TEAL, textDecoration: "underline" }}
