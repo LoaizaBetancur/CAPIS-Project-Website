@@ -228,7 +228,7 @@ export default function TeamPage() {
                 marginTop: "12px",
               }}
             >
-              The people behind the research
+              Meet the research team behind the CAPIS project.
             </p>
           </div>
           <div
