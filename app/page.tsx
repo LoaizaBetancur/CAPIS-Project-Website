@@ -237,7 +237,15 @@ export default function HomePage() {
             </p>
           </div>
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <span style={{ fontSize: "120px" }}>🤔</span>
+            <div style={{ position: "relative", width: "280px", height: "220px" }}>
+              <Image
+                src="/images/why-pic.jpg"
+                alt="Graphic representing the CAPIS project"
+                fill
+                style={{ objectFit: "contain" }}
+                sizes="280px"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -281,7 +289,15 @@ export default function HomePage() {
             </p>
           </div>
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <span style={{ fontSize: "120px" }}>✋</span>
+            <div style={{ position: "relative", width: "280px", height: "220px" }}>
+              <Image
+                src="/images/take-part-pic.jpg"
+                alt="Graphic representing the CAPIS project"
+                fill
+                style={{ objectFit: "contain" }}
+                sizes="280px"
+              />
+            </div>
           </div>
         </div>
       </section>
