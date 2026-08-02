@@ -28,25 +28,25 @@ export default function Header() {
 
   return (
     <>
-      {/* ── Top Banner: Logo Only ── */}
+      {/* ── Top Banner: Big Logo Only ── */}
       <div style={{ backgroundColor: NAVY }}>
         <div
           style={{
             maxWidth: "1280px",
             margin: "0 auto",
-            padding: "16px 24px",
+            padding: "20px 24px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
           }}
         >
-          <div style={{ position: "relative", height: "100px", width: "300px" }}>
+          <div style={{ position: "relative", height: "110px", width: "360px" }}>
             <Image
               src="/images/capis-logo.png"
               alt="The CAPIS Project"
               fill
               style={{ objectFit: "contain" }}
-              sizes="300px"
+              sizes="360px"
               priority
             />
           </div>
@@ -89,7 +89,7 @@ export default function Header() {
                     display: "inline-flex",
                     alignItems: "center",
                     height: "100%",
-                    padding: "0 20px",
+                    padding: "0 18px",
                     fontFamily: "var(--font-body)",
                     fontSize: "14px",
                     fontWeight: 500,
