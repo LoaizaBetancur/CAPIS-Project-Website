@@ -37,7 +37,7 @@ export default function ResourcesForCoachesPage() {
             >
               RESOURCES
               <br />
-              FOR COACHES
+              FOR PRACTITIONERS
             </h1>
             <p
               style={{
