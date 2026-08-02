@@ -80,10 +80,40 @@ const stages = [
   },
 ];
 
+const publications = [
+  {
+    title: "A critical appraisal of systematic reviews assessing chronic velocity-based resistance training",
+    journal: "PLOS ONE",
+    year: 2026,
+    doi: "10.1371/journal.pone.0342992",
+  },
+  {
+    title: "Physical activity for the management of obesity in children up to the age of 9 years",
+    journal: "Cochrane Database of Systematic Reviews",
+    year: 2026,
+    doi: "10.1002/14651858.CD015988",
+  },
+];
+
+const events = [
+  {
+    title: "COMET Initiative Annual Meeting",
+    role: "Poster Presentation",
+    location: "Virtual",
+    date: "2025",
+  },
+  {
+    title: "ACSM Annual Meeting",
+    role: "Accepted Abstract",
+    location: "Minneapolis, USA",
+    date: "2026",
+  },
+];
+
 export default function HomePage() {
   return (
     <>
-      {/* ── HERO: Text LEFT, Image RIGHT ── */}
+      {/* ── HERO ── */}
       <section style={{ backgroundColor: NAVY }}>
         <div
           style={{
@@ -97,7 +127,6 @@ export default function HomePage() {
           }}
           className="hero-grid"
         >
-          {/* LEFT: Text */}
           <div>
             <h1
               style={{
@@ -126,7 +155,6 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* RIGHT: Video / Image */}
           <div
             style={{
               position: "relative",
@@ -148,7 +176,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── DIVIDER ── */}
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
       {/* ── What is CAPIS? ── */}
@@ -193,7 +220,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── DIVIDER ── */}
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
       {/* ── Why needed? ── */}
@@ -233,249 +259,4 @@ export default function HomePage() {
             </p>
             <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568" }}>
               This project will agree on which outcomes should always be measured in plyometric 
-              training research studies. We call this agreed-upon minimum list a{" "}
-              <strong>Core Outcome Set (COS)</strong>.
-            </p>
-          </div>
-          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <span style={{ fontSize: "120px" }}>🤔</span>
-          </div>
-        </div>
-      </section>
-
-      {/* ── DIVIDER ── */}
-      <div style={{ height: "4px", backgroundColor: NAVY }} />
-
-      {/* ── Why participate? ── */}
-      <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
-        <div
-          style={{
-            maxWidth: "1280px",
-            margin: "0 auto",
-            display: "grid",
-            alignItems: "center",
-            gap: "48px",
-            gridTemplateColumns: "1fr 1fr",
-          }}
-          className="content-grid"
-        >
-          <div>
-            <h2
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
-                fontWeight: 600,
-                color: "#1A202C",
-                lineHeight: 1.3,
-                textDecoration: "underline",
-                textUnderlineOffset: "4px",
-                marginBottom: "16px",
-              }}
-            >
-              Why have you asked me to take part?
-            </h2>
-            <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568" }}>
-              We will invite you to take part because you are a key professional in athletic 
-              performance-based training interventions. Your routine or research experiences 
-              are really important. We want to know what is important to you when 
-              implementing or performing plyometric training interventions and what impact 
-              it has on you.
-            </p>
-          </div>
-          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <span style={{ fontSize: "120px" }}>✋</span>
-          </div>
-        </div>
-      </section>
-
-      {/* ── DIVIDER ── */}
-      <div style={{ height: "4px", backgroundColor: NAVY }} />
-
-      {/* ── Participants ── */}
-      <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto", textAlign: "center" }}>
-          <h2
-            style={{
-              fontFamily: "var(--font-display)",
-              fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
-              fontWeight: 600,
-              color: "#1A202C",
-              lineHeight: 1.3,
-              textDecoration: "underline",
-              textUnderlineOffset: "4px",
-              marginBottom: "16px",
-            }}
-          >
-            Participants
-          </h2>
-          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568", marginBottom: "32px", maxWidth: "600px", marginLeft: "auto", marginRight: "auto" }}>
-            We are recruiting four key interest-holder groups to join our consensus study.
-          </p>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {participants.map((p) => (
-              <ParticipantCard key={p.name} {...p} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── DIVIDER ── */}
-      <div style={{ height: "4px", backgroundColor: NAVY }} />
-
-      {/* ── Stages ── */}
-      <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto", textAlign: "center" }}>
-          <h2
-            style={{
-              fontFamily: "var(--font-display)",
-              fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
-              fontWeight: 600,
-              color: "#1A202C",
-              lineHeight: 1.3,
-              textDecoration: "underline",
-              textUnderlineOffset: "4px",
-              marginBottom: "16px",
-            }}
-          >
-            How will we do the project?
-          </h2>
-          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568", marginBottom: "32px", maxWidth: "600px", marginLeft: "auto", marginRight: "auto" }}>
-            This project involves five phases, following the COMET and OMERACT methodological guidance.
-          </p>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {stages.map((stage) => (
-              <StageCard key={stage.number} {...stage} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── DIVIDER ── */}
-      <div style={{ height: "4px", backgroundColor: NAVY }} />
-
-      {/* ── What is COS? (with embedded video) ── */}
-      <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
-          <h2
-            style={{
-              fontFamily: "var(--font-display)",
-              fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
-              fontWeight: 600,
-              color: "#1A202C",
-              lineHeight: 1.3,
-              textDecoration: "underline",
-              textUnderlineOffset: "4px",
-              marginBottom: "16px",
-            }}
-          >
-            What is a core outcome set?
-          </h2>
-          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568", marginBottom: "8px" }}>
-            A core outcome set (COS) is an agreed standardised collection of outcomes that 
-            should be measured and reported in all clinical trials for a specific condition 
-            or intervention.
-          </p>
-          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4A5568", marginBottom: "24px" }}>
-            The video below explains more. Further information from the COMET Initiative:{" "}
-            <a href="https://www.comet-initiative.org/" target="_blank" rel="noopener noreferrer" style={{ color: TEAL, textDecoration: "underline" }}>
-              COMET Plain Language Summary
-            </a>
-          </p>
-
-          <div
-            style={{
-              position: "relative",
-              width: "100%",
-              maxWidth: "720px",
-              margin: "0 auto",
-              borderRadius: "12px",
-              overflow: "hidden",
-              aspectRatio: "16/9",
-              backgroundColor: "#1A2A40",
-              border: "1px solid #E2E8F0",
-            }}
-          >
-            <iframe
-              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0 }}
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="What are core outcome sets?"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-      </section>
-
-      {/* ── DIVIDER ── */}
-      <div style={{ height: "4px", backgroundColor: NAVY }} />
-
-      {/* ── Project Information (WHITE section, like COMBAT) ── */}
-      <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
-          <h2
-            style={{
-              fontFamily: "var(--font-display)",
-              fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
-              fontWeight: 600,
-              color: "#1A202C",
-              lineHeight: 1.3,
-              textDecoration: "underline",
-              textUnderlineOffset: "4px",
-              marginBottom: "24px",
-            }}
-          >
-            Project information
-          </h2>
-
-          <div style={{ maxWidth: "700px" }}>
-            <div style={{ marginBottom: "20px" }}>
-              <h3 style={{ fontSize: "14px", fontWeight: 600, color: "#1A202C", textDecoration: "underline", textUnderlineOffset: "3px", marginBottom: "6px" }}>
-                Registration
-              </h3>
-              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4A5568" }}>
-                This Study is registered with the COMET database as Study 3589 (
-                <a href="https://www.comet-initiative.org/Studies/Details/3589" target="_blank" rel="noopener noreferrer" style={{ color: TEAL, textDecoration: "underline" }}>
-                  https://www.comet-initiative.org/Studies/Details/3589
-                </a>
-                ).
-              </p>
-            </div>
-
-            <div style={{ marginBottom: "20px" }}>
-              <h3 style={{ fontSize: "14px", fontWeight: 600, color: "#1A202C", textDecoration: "underline", textUnderlineOffset: "3px", marginBottom: "6px" }}>
-                Ethics
-              </h3>
-              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4A5568" }}>
-                Ethics approval: HREC/HREC-1/2026/1233(v5)
-              </p>
-            </div>
-
-            <div style={{ marginBottom: "20px" }}>
-              <h3 style={{ fontSize: "14px", fontWeight: 600, color: "#1A202C", textDecoration: "underline", textUnderlineOffset: "3px", marginBottom: "6px" }}>
-                Sponsor
-              </h3>
-              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4A5568" }}>
-                JBI, School of Public Health, University of Adelaide
-              </p>
-            </div>
-
-            <div>
-              <h3 style={{ fontSize: "14px", fontWeight: 600, color: "#1A202C", textDecoration: "underline", textUnderlineOffset: "3px", marginBottom: "6px" }}>
-                Contact
-              </h3>
-              <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4A5568" }}>
-                The Research Sponsor can be contacted at{" "}
-                <a href="mailto:andresfelipe.loaizabetancur@adelaide.edu.au" style={{ color: TEAL, textDecoration: "underline" }}>
-                  andresfelipe.loaizabetancur@adelaide.edu.au
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── DIVIDER ── */}
-      <div style={{ height: "4px", backgroundColor: NAVY }} />
-    </>
-  );
-}
+              training research studies. We call this
