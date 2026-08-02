@@ -40,3 +40,10 @@ body {
     grid-template-columns: 1fr !important;
   }
 }
+/* Mobile responsive */
+@media (max-width: 1024px) {
+  .hero-grid,
+  .content-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
