@@ -1,103 +1,309 @@
 import { Metadata } from "next";
-import TeamCard from "@/components/TeamCard";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Study Team",
-  description: "Meet the people behind the CAPIS project.",
+  description: "Meet the research team behind the CAPIS project.",
 };
 
-const coreTeam = {
-  heading: "Core Research Team",
-  description:
-    "The CAPIS project is led by a doctoral candidate under the supervision of experienced researchers at the University of Adelaide, with international methodological guidance.",
-  members: [
-    {
-      name: "Andrés F. Loaiza-Betancur",
-      role: "PhD Candidate & Lead Researcher",
-      affiliation: "JBI, School of Public Health, University of Adelaide",
-      bio: "Andrés leads all phases of the CAPIS research programme — from the scoping review and focus groups through to the Delphi consensus and dissemination. He is supported by an Adelaide University research scholarship.",
-      email: "andresfelipe.loaizabetancur@adelaide.edu.au",
-      image: "/images/team/andres.jpg",
-      category: "core" as const,
-      publications: [
-        {
-          title: "A critical appraisal of systematic reviews assessing chronic velocity-based resistance training",
-          journal: "PLOS ONE",
-          year: 2026,
-          doi: "10.1371/journal.pone.0342992",
-        },
-        {
-          title: "Physical activity for the management of obesity in children up to the age of 9 years",
-          journal: "Cochrane Database of Systematic Reviews",
-          year: 2026,
-          doi: "10.1002/14651858.CD015988",
-        },
-      ],
-      events: [
-        { title: "Accepted: International Conference on Sports Science 2026", location: "Melbourne, Australia" },
-      ],
-    },
-    {
-      name: "Jennifer Stone",
-      role: "Primary Supervisor",
-      affiliation: "JBI, School of Public Health, University of Adelaide",
-      bio: "Jennifer provides overall methodological guidance for the CAPIS project, contributing expertise in evidence synthesis, systematic review methodology, and implementation science.",
-      email: "j.stone@adelaide.edu.au",
-      image: "/images/team/jennifer.jpg",
-      category: "core" as const,
-    },
-    {
-      name: "Peter Tugwell",
-      role: "Methodological Advisor",
-      affiliation: "University of Ottawa, Canada",
-      bio: "Peter contributes methodological expertise in core outcome set development, GRADE methodology, and health services research from the Bruyere Research Institute and Ottawa Hospital Research Institute.",
-      email: "ptugwell@uottawa.ca",
-      image: "/images/team/peter.jpg",
-      category: "core" as const,
-    },
-    {
-      name: "Paul A. Swinton",
-      role: "Methodological Advisor",
-      affiliation: "School of Health, Robert Gordon University, Aberdeen, UK",
-      bio: "Paul provides methodological guidance on evidence synthesis, meta-analysis, and Delphi study design for the CAPIS project.",
-      email: "p.swinton@rgu.ac.uk",
-      image: "/images/team/paul.jpg",
-      category: "core" as const,
-    },
-  ],
+const NAVY = "#2A3F5F";
+const TEAL = "#3C7887";
+
+/* ── Team data (exact text from current site) ── */
+const leadInvestigator = {
+  name: "Andrés F. Loaiza-Betancur",
+  role: "PhD Candidate & Lead Researcher",
+  affiliation: "JBI, School of Public Health, University of Adelaide",
+  bio: "Andrés leads all phases of the CAPIS research programme — from the scoping review and focus groups through to the Delphi consensus and dissemination. He is supported by an Adelaide University research scholarship.",
+  image: "/images/andres.jpg",
+  email: "andresfelipe.loaizabetancur@adelaide.edu.au",
 };
+
+const studyTeam = [
+  {
+    name: "Jennifer Stone",
+    role: "Primary Supervisor",
+    affiliation: "JBI, School of Public Health, University of Adelaide",
+    bio: "Jennifer provides overall methodological guidance for the CAPIS project, contributing expertise in evidence synthesis, systematic review methodology, and implementation science.",
+    image: "/images/team/jennifer.jpg",
+    email: "jennifer.stone@adelaide.edu.au",
+  },
+  {
+    name: "Peter Tugwell",
+    role: "Methodological Advisor",
+    affiliation: "University of Ottawa, Canada",
+    bio: "Peter contributes methodological expertise in core outcome set development, GRADE methodology, and health services research from the Bruyère Research Institute and Ottawa Hospital Research Institute.",
+    image: "/images/team/Peter.jpg",
+    email: "peter.tugwell@uottawa.ca",
+  },
+  {
+    name: "Paul A. Swinton",
+    role: "Methodological Advisor",
+    affiliation: "School of Health, Robert Gordon University, Aberdeen, UK",
+    bio: "Paul provides methodological guidance on evidence synthesis, meta-analysis, and Delphi study design for the CAPIS project.",
+    image: "/images/team/paul.jpg",
+    email: "p.swinton@rgu.ac.uk",
+  },
+];
+
+const publications = [
+  {
+    title: "A critical appraisal of systematic reviews assessing chronic velocity-based resistance training",
+    journal: "PLOS ONE",
+    year: "2026",
+  },
+  {
+    title: "Physical activity for the management of obesity in children up to the age of 9 years",
+    journal: "Cochrane Database of Systematic Reviews",
+    year: "2026",
+  },
+];
+
+const presentations = [
+  {
+    title: "JBI iGNITE 2026",
+    location: "Online",
+    status: "Accepted",
+  },
+  {
+    title: "World Congress of Sports Physiotherapy",
+    location: "Bern, Switzerland",
+    status: "Accepted",
+  },
+  {
+    title: "Cochrane Colloquium 2026",
+    location: "Krakow, Poland",
+    status: "Accepted",
+  },
+];
+
+/* ── Horizontal card matching COMBAT frame ── */
+function ProfileCard({ member }: { member: typeof leadInvestigator }) {
+  return (
+    <div
+      style={{
+        border: `1px solid ${NAVY}`,
+        backgroundColor: "#FFFFFF",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "flex-start",
+        gap: "20px",
+        padding: "20px",
+      }}
+    >
+      {/* Photo left */}
+      <div
+        style={{
+          position: "relative",
+          width: "120px",
+          height: "150px",
+          flexShrink: 0,
+          overflow: "hidden",
+          backgroundColor: "#E2E8F0",
+        }}
+      >
+        <Image
+          src={member.image}
+          alt={`Photo of ${member.name}`}
+          fill
+          style={{ objectFit: "cover" }}
+          sizes="120px"
+        />
+      </div>
+
+      {/* Text right */}
+      <div style={{ flex: 1 }}>
+        <h3
+          style={{
+            fontFamily: "var(--font-display)",
+            fontSize: "16px",
+            fontWeight: 700,
+            color: "#1A202C",
+            marginBottom: "4px",
+          }}
+        >
+          {member.name}
+        </h3>
+        <p
+          style={{
+            fontSize: "13px",
+            fontWeight: 600,
+            color: NAVY,
+            marginBottom: "2px",
+          }}
+        >
+          {member.role}
+        </p>
+        <p
+          style={{
+            fontSize: "12px",
+            color: "#4A5568",
+            marginBottom: "10px",
+            fontStyle: "italic",
+          }}
+        >
+          {member.affiliation}
+        </p>
+        <p
+          style={{
+            fontSize: "13px",
+            lineHeight: 1.6,
+            color: "#2D3748",
+          }}
+        >
+          {member.bio}
+        </p>
+
+        {member.email && (
+          <a
+            href={`mailto:${member.email}`}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "6px",
+              marginTop: "12px",
+              fontSize: "13px",
+              fontWeight: 500,
+              color: TEAL,
+              textDecoration: "none",
+            }}
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+            Email
+          </a>
+        )}
+      </div>
+    </div>
+  );
+}
 
 export default function TeamPage() {
   return (
-    <>
-      {/* Banner */}
-      <div style={{ backgroundColor: "#2A3F5F", padding: "48px 24px" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
-          <h1
+    <main>
+      {/* ── Hero Banner ── */}
+      <section style={{ backgroundColor: NAVY }}>
+        <div
+          style={{
+            maxWidth: "1280px",
+            margin: "0 auto",
+            padding: "48px 24px",
+            display: "grid",
+            alignItems: "center",
+            gap: "40px",
+            gridTemplateColumns: "1fr 1fr",
+          }}
+          className="hero-grid"
+        >
+          <div>
+            <h1
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(2rem, 4vw, 3.5rem)",
+                fontWeight: 700,
+                color: "#FFFFFF",
+                lineHeight: 1.1,
+                margin: 0,
+              }}
+            >
+              STUDY
+              <br />
+              TEAM
+            </h1>
+            <p
+              style={{
+                fontSize: "16px",
+                color: "#B0C4DE",
+                marginTop: "12px",
+              }}
+            >
+              The people behind the research
+            </p>
+          </div>
+          <div
             style={{
-              fontFamily: "var(--font-display)",
-              fontSize: "clamp(2rem, 4vw, 3rem)",
-              fontWeight: 700,
-              color: "#FFFFFF",
-              lineHeight: 1.1,
-              margin: 0,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            Study Team
-          </h1>
-          <p style={{ color: "#B0C4DE", marginTop: "8px", fontSize: "16px" }}>
-            The people behind the research
-          </p>
+            <span style={{ fontSize: "160px" }}>👥</span>
+          </div>
         </div>
-      </div>
+      </section>
 
-      {/* Team Grid */}
+      <div style={{ height: "4px", backgroundColor: NAVY }} />
+
+      {/* ── Lead Investigator ── */}
+      <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+          <h2
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(1.1rem, 2vw, 1.35rem)",
+              fontWeight: 600,
+              color: "#1A202C",
+              textDecoration: "underline",
+              textUnderlineOffset: "4px",
+              marginBottom: "24px",
+              textAlign: "center",
+            }}
+          >
+            Lead Investigator
+          </h2>
+          <ProfileCard member={leadInvestigator} />
+        </div>
+      </section>
+
+      <div style={{ height: "4px", backgroundColor: NAVY }} />
+
+      {/* ── Study Team ── */}
       <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2
             style={{
               fontFamily: "var(--font-display)",
-              fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
+              fontSize: "clamp(1.1rem, 2vw, 1.35rem)",
+              fontWeight: 600,
+              color: "#1A202C",
+              textDecoration: "underline",
+              textUnderlineOffset: "4px",
+              marginBottom: "24px",
+              textAlign: "center",
+            }}
+          >
+            Study Team
+          </h2>
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "24px" }}
+          >
+            {studyTeam.map((member) => (
+              <ProfileCard key={member.name} member={member} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div style={{ height: "4px", backgroundColor: NAVY }} />
+
+      {/* ── Selected Publications (after all profiles) ── */}
+      <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+          <h2
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(1.1rem, 2vw, 1.35rem)",
               fontWeight: 600,
               color: "#1A202C",
               textDecoration: "underline",
@@ -105,18 +311,104 @@ export default function TeamPage() {
               marginBottom: "24px",
             }}
           >
-            {coreTeam.heading}
+            Selected Publications
           </h2>
-          <p style={{ fontSize: "15px", color: "#4A5568", marginBottom: "32px", maxWidth: "700px" }}>
-            {coreTeam.description}
-          </p>
-          <div className="grid gap-6 sm:grid-cols-2">
-            {coreTeam.members.map((m) => (
-              <TeamCard key={m.name} member={m} />
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+          >
+            {publications.map((pub) => (
+              <div
+                key={pub.title}
+                style={{
+                  border: "1px solid #E2E8F0",
+                  borderRadius: "8px",
+                  padding: "20px",
+                  backgroundColor: "#F7FAFC",
+                }}
+              >
+                <h3
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontSize: "15px",
+                    fontWeight: 600,
+                    color: "#1A202C",
+                    marginBottom: "4px",
+                    lineHeight: 1.4,
+                  }}
+                >
+                  {pub.title}
+                </h3>
+                <p style={{ fontSize: "13px", color: "#4A5568" }}>
+                  {pub.journal} · {pub.year}
+                </p>
+              </div>
             ))}
           </div>
         </div>
       </section>
-    </>
+
+      <div style={{ height: "4px", backgroundColor: NAVY }} />
+
+      {/* ── Presentations & Conferences (after all profiles) ── */}
+      <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+          <h2
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(1.1rem, 2vw, 1.35rem)",
+              fontWeight: 600,
+              color: "#1A202C",
+              textDecoration: "underline",
+              textUnderlineOffset: "4px",
+              marginBottom: "24px",
+            }}
+          >
+            Presentations & Conferences
+          </h2>
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+          >
+            {presentations.map((pres) => (
+              <div
+                key={pres.title}
+                style={{
+                  border: "1px solid #E2E8F0",
+                  borderRadius: "8px",
+                  padding: "20px",
+                  backgroundColor: "#FFFFFF",
+                }}
+              >
+                <p
+                  style={{
+                    fontSize: "11px",
+                    fontWeight: 600,
+                    textTransform: "uppercase",
+                    letterSpacing: "0.05em",
+                    color: TEAL,
+                    marginBottom: "8px",
+                  }}
+                >
+                  {pres.status}
+                </p>
+                <h3
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontSize: "15px",
+                    fontWeight: 600,
+                    color: "#1A202C",
+                    marginBottom: "4px",
+                  }}
+                >
+                  {pres.title}
+                </h3>
+                <p style={{ fontSize: "13px", color: "#4A5568" }}>
+                  {pres.location}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
