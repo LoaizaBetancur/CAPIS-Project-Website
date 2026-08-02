@@ -190,6 +190,7 @@ export default function HomePage() {
               />
             </div>
           </div>
+        </div>
       </section>
 
       <div style={{ height: "4px", backgroundColor: NAVY }} />
