@@ -16,7 +16,6 @@ export default function StageCard({ number, title, description, image }: StageCa
         textAlign: "left",
       }}
     >
-      {/* Image area like COMBAT */}
       <div
         style={{
           backgroundColor: "#F7FAFC",
@@ -47,7 +46,7 @@ export default function StageCard({ number, title, description, image }: StageCa
         style={{
           fontSize: "13px",
           lineHeight: 1.6,
-          color: "#4A5568",
+          color: "#2D3748",
         }}
       >
         {description}
