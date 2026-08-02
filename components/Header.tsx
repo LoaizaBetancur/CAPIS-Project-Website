@@ -11,7 +11,7 @@ const NAV_LINKS = [
   { label: "Study Team", href: "/team" },
   { label: "Resources for athletes", href: "/resources/athletes" },
   { label: "Resources for practitioners", href: "/resources/practitioners" },
-  { label: "Resources for researchers & academics href: "/resources/researchers & academics" },
+  { label: "Resources for researchers & academics", href: "/resources/researchers & academics" },
   { label: "Useful links", href: "/useful-links" },
 ];
 
