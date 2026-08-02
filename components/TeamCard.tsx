@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 interface Publication {
@@ -80,7 +82,6 @@ export default function TeamCard({ member }: TeamCardProps) {
         </a>
       )}
 
-      {/* Publications */}
       {member.publications && member.publications.length > 0 && (
         <div className="mt-4 pt-4 border-t" style={{ borderColor: "#E2E8F0" }}>
           <h4 className="text-xs font-semibold uppercase tracking-wide mb-2" style={{ color: "#1A202C" }}>
@@ -98,7 +99,6 @@ export default function TeamCard({ member }: TeamCardProps) {
         </div>
       )}
 
-      {/* Events */}
       {member.events && member.events.length > 0 && (
         <div className="mt-4 pt-4 border-t" style={{ borderColor: "#E2E8F0" }}>
           <h4 className="text-xs font-semibold uppercase tracking-wide mb-2" style={{ color: "#1A202C" }}>
