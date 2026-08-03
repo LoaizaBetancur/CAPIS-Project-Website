@@ -10,19 +10,14 @@ const TEAL = "#3C7887";
 
 const links = [
   {
+    title: "OMERACT Initiative",
+    description: "OMERACT stands for Outcome Measures in Rheumatology, an international network founded in 1992 that builds core measurement sets and includes patients in clinical research.",
+    url: "https://www.omeract.org/",
+  },
+  {
     title: "COMET Initiative",
     description: "The Core Outcome Measures in Effectiveness Trials (COMET) Initiative brings together people interested in the development and application of core outcome sets.",
     url: "https://www.comet-initiative.org/",
-  },
-  {
-    title: "University of Adelaide",
-    description: "The University of Adelaide is a public university located in Adelaide, South Australia.",
-    url: "https://www.adelaide.edu.au/",
-  },
-  {
-    title: "JBI",
-    description: "JBI is an international research organisation based in the Faculty of Health and Medical Sciences at the University of Adelaide.",
-    url: "https://jbi.global/",
   },
 ];
 
