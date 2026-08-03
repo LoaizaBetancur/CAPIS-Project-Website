@@ -819,7 +819,7 @@ export default function HomePage() {
                   marginBottom: "6px",
                 }}
               >
-                Sponsor
+                Affiliation
               </h3>
               <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#2D3748" }}>
                 JBI, School of Public Health, Adelaide University
