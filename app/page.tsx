@@ -224,12 +224,6 @@ export default function HomePage() {
               Why is this project needed?
             </h2>
             <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#2D3748", marginBottom: "12px" }}>
-              Football research studies should consistently measure and report the results of 
-              athletic performance-based training interventions. We call these results{" "}
-              <strong>outcomes</strong>, and they can be positive or unwanted. 
-              When studies measure different outcomes in diverse ways, it becomes 
-              difficult to compare or combine them.
-
               Football research studies should consistently measure and report the important 
               effects of athletic performance training interventions. These effects are assessed 
               using outcomes which can reflect beneficial, neutral, or unwanted changes. 
@@ -238,9 +232,6 @@ export default function HomePage() {
               or combine their findings.
             </p>
             <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#2D3748" }}>
-              This project will agree on which outcomes should always be measured in plyometric 
-              training research studies. We call this agreed-upon minimum list a{" "}
-              <strong>Core Outcome Set (COS)</strong>.
               This project will agree on the minimum set of outcome 
               domains that should always be assessed in plyometric training research studies. 
               We call this agreed-upon minimum list a <strong>core domain set</strong>.
