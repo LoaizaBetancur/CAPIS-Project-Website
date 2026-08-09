@@ -234,7 +234,7 @@ export default function TeamPage() {
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <div style={{ position: "relative", width: "280px", height: "220px" }}>
               <Image
-                src="/images/what-pic.jpg"
+                src="/images/meet.png"
                 alt="Graphic representing the CAPIS project"
                 fill
                 style={{ objectFit: "contain" }}
