@@ -534,10 +534,17 @@ export default function HomePage() {
                 PLOS ONE · 2026
               </p>
               <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
-                DOI: 10.1371/journal.pone.0342992
+                DOI: <a 
+                  href="https://doi.org/10.1371/journal.pone.0342992" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: "#2D3748", textDecoration: "underline", textUnderlineOffset: "2px" }}
+                >
+                  10.1371/journal.pone.0342992
+                </a>
               </p>
             </article>
-
+            
             <article
               style={{
                 borderRadius: "8px",
@@ -574,7 +581,14 @@ export default function HomePage() {
                 Cochrane Database of Systematic Reviews · 2026
               </p>
               <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
-                DOI: 10.1002/14651858.CD015988
+                DOI: <a 
+                  href="https://doi.org/10.1002/14651858.CD015988" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: "#2D3748", textDecoration: "underline", textUnderlineOffset: "2px" }}
+                >
+                  10.1002/14651858.CD015988
+                </a>
               </p>
             </article>
           </div>
