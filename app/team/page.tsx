@@ -41,7 +41,7 @@ const studyTeam = [
     role: "Methodological Advisor",
     affiliation: "School of Health, Robert Gordon University, Aberdeen, UK",
     bio: "Paul provides methodological guidance on evidence synthesis, meta-analysis, and Delphi study design for the CAPIS project.",
-    image: "/images/team/paul.jpg",
+    image: "/images/team/Paul.jpg",
     email: "p.swinton@rgu.ac.uk",
   },
 ];
@@ -231,14 +231,16 @@ export default function TeamPage() {
               Meet the research team behind the CAPIS project.
             </p>
           </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <span style={{ fontSize: "160px" }}>👥</span>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div style={{ position: "relative", width: "280px", height: "220px" }}>
+              <Image
+                src="/images/what-pic.jpg"
+                alt="Graphic representing the CAPIS project"
+                fill
+                style={{ objectFit: "contain" }}
+                sizes="280px"
+              />
+            </div>
           </div>
         </div>
       </section>
