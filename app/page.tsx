@@ -592,6 +592,8 @@ export default function HomePage() {
                 </a>
               </p>
             </article>
+            
+        >
           <article
               style={{
                 borderRadius: "8px",
