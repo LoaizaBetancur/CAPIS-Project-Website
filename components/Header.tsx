@@ -13,6 +13,8 @@ const NAV_LINKS = [
   { label: "Resources for practitioners", href: "/resources/practitioners" },
   { label: "Resources for researchers & academics", href: "/resources/researchers & academics" },
   { label: "Useful links", href: "/useful-links" },
+  { label: "Discussion Forum", href: "/discussion" },
+  { label: "Funding EOI", href: "/funding" },
 ];
 
 function isLinkActive(href: string, pathname: string): boolean {
@@ -89,9 +91,9 @@ export default function Header() {
                     display: "inline-flex",
                     alignItems: "center",
                     height: "100%",
-                    padding: "0 18px",
+                    padding: "0 14px",
                     fontFamily: "var(--font-body)",
-                    fontSize: "14px",
+                    fontSize: "13px",
                     fontWeight: 500,
                     whiteSpace: "nowrap",
                     borderBottom: active
