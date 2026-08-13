@@ -497,6 +497,7 @@ export default function HomePage() {
               gap: "16px",
               gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
             }}
+            >
             <article
               style={{
                 borderRadius: "8px",
