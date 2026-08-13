@@ -497,6 +497,53 @@ export default function HomePage() {
               gap: "16px",
               gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
             }}
+            <article
+              style={{
+                borderRadius: "8px",
+                border: "1px solid #E2E8F0",
+                backgroundColor: "#FFFFFF",
+                padding: "24px",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  color: TEAL,
+                  marginBottom: "8px",
+                }}
+              >
+                Published
+              </p>
+              <h3
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "16px",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  marginBottom: "8px",
+                  lineHeight: 1.3,
+                }}
+              >
+                Physical activity for the management of obesity in children up to the age of 9 years
+              </h3>
+              <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "8px" }}>
+                Cochrane Database of Systematic Reviews · 2026
+              </p>
+              <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
+                DOI: <a 
+                  href="https://doi.org/10.1002/14651858.CD015988" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: "#2D3748", textDecoration: "underline", textUnderlineOffset: "2px" }}
+                >
+                  10.1002/14651858.CD015988
+                </a>
+              </p>
+            </article>
+          
           >
             <article
               style={{
@@ -544,8 +591,7 @@ export default function HomePage() {
                 </a>
               </p>
             </article>
-            
-            <article
+          <article
               style={{
                 borderRadius: "8px",
                 border: "1px solid #E2E8F0",
@@ -575,19 +621,19 @@ export default function HomePage() {
                   lineHeight: 1.3,
                 }}
               >
-                Physical activity for the management of obesity in children up to the age of 9 years
+               Effects of exercise training on blood pressure: An overview of reviews
               </h3>
               <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "8px" }}>
-                Cochrane Database of Systematic Reviews · 2026
+                Journal of Sports Sciences · 2025
               </p>
               <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
                 DOI: <a 
-                  href="https://doi.org/10.1002/14651858.CD015988" 
+                  href="https://doi.org/10.1080/02640414.2025.2549862" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   style={{ color: "#2D3748", textDecoration: "underline", textUnderlineOffset: "2px" }}
                 >
-                  10.1002/14651858.CD015988
+                  10.1080/02640414.2025.2549862
                 </a>
               </p>
             </article>
