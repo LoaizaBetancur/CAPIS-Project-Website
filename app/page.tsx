@@ -545,7 +545,6 @@ export default function HomePage() {
               </p>
             </article>
           
-          >
             <article
               style={{
                 borderRadius: "8px",
@@ -593,7 +592,6 @@ export default function HomePage() {
               </p>
             </article>
             
-        >
           <article
               style={{
                 borderRadius: "8px",
