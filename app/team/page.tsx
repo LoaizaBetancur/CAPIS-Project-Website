@@ -13,8 +13,8 @@ const TEAL = "#3C7887";
 const leadInvestigator = {
   name: "Andrés F. Loaiza-Betancur",
   role: "PhD Candidate & Lead Researcher",
-  affiliation: "JBI, School of Public Health, University of Adelaide",
-  bio: "Andrés leads all phases of the CAPIS research programme — from the scoping review and focus groups through to the Delphi consensus and dissemination. He is supported by an Adelaide University research scholarship.",
+  affiliation: "JBI, School of Public Health, Adelaide University",
+  bio: "Andrés leads all phases of the CAPIS research project — from the scoping review and focus groups through to the Delphi consensus and dissemination. He is supported by an Adelaide University research scholarship.",
   image: "/images/team/andres.png",
   email: "andresfelipe.loaizabetancur@adelaide.edu.au",
 };
@@ -23,7 +23,7 @@ const studyTeam = [
   {
     name: "Jennifer Stone",
     role: "Primary Supervisor",
-    affiliation: "JBI, School of Public Health, University of Adelaide",
+    affiliation: "JBI, School of Public Health,  Adelaide University",
     bio: "Jennifer provides overall methodological guidance for the CAPIS project, contributing expertise in evidence synthesis, systematic review methodology, and implementation science.",
     image: "/images/team/jennifer.png",
     email: "jennifer.stone@adelaide.edu.au",
@@ -32,7 +32,7 @@ const studyTeam = [
     name: "Peter Tugwell",
     role: "Methodological Advisor",
     affiliation: "University of Ottawa, Canada",
-    bio: "Peter contributes methodological expertise in core outcome set development, GRADE methodology, and health services research from the Bruyère Research Institute and Ottawa Hospital Research Institute.",
+    bio: "Peter contributes methodological expertise in core domain set development, GRADE methodology, and health services research from the Bruyère Research Institute and Ottawa Hospital Research Institute.",
     image: "/images/team/Peter.jpg",
     email: "peter.tugwell@uottawa.ca",
   },
@@ -48,14 +48,19 @@ const studyTeam = [
 
 const publications = [
   {
+    title: "Physical activity for the management of obesity in children up to the age of 9 years",
+    journal: "Cochrane Database of Systematic Reviews",
+    year: "2026",
+  },
+  {
     title: "A critical appraisal of systematic reviews assessing chronic velocity-based resistance training",
     journal: "PLOS ONE",
     year: "2026",
   },
   {
-    title: "Physical activity for the management of obesity in children up to the age of 9 years",
-    journal: "Cochrane Database of Systematic Reviews",
-    year: "2026",
+    title: "Effects of exercise training on blood pressure: An overview of reviews",
+    journal: "Journal of Sports Sciences",
+    year: "2025",
   },
 ];
 
