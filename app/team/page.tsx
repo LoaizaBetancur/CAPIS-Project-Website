@@ -317,7 +317,7 @@ export default function TeamPage() {
                 gap: "8px",
               }}
             >
-              🙏 Acknowledgment
+              Acknowledgment
             </h3>
             <p
               style={{
@@ -326,7 +326,8 @@ export default function TeamPage() {
                 color: "#2D3748",
               }}
             >
-              The CAPIS research programme is made possible through the generous support of our funding partners and the invaluable contributions of our stakeholder reference group. We extend our sincere gratitude to the athletes, parents, coaches, clinicians, and administrators who participated in our focus groups and consensus panels. Their lived experience and professional expertise have been fundamental in shaping this work.
+              The CAPIS project would like to extend its sincere gratitude to the following researchers for their valuable contributions and involvement in the project:
+              
             </p>
             <div
               style={{
@@ -336,7 +337,7 @@ export default function TeamPage() {
                 marginTop: "16px",
               }}
             >
-              {["University of Adelaide", "NHMRC", "Sports Medicine Australia", "AFL Research Board"].map(
+              {["M.Sc. Lubin Fernando Betancur Sepúlveda", "PhD María Cinta Gómez", "M.Sc. Andrés M. Echavarría-Rodríguez", "PhD Juan Osvaldo Jimenez Trujillo"].map(
                 (f) => (
                   <span
                     key={f}
