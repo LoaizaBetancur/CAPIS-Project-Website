@@ -206,7 +206,7 @@ export default function FundingPage() {
               <br />
               PhD Candidate & Lead Researcher
               <br />
-              JBI, School of Public Health, University of Adelaide
+              JBI, School of Public Health, Adelaide University
             </p>
             <a
               href="mailto:andresfelipe.loaizabetancur@adelaide.edu.au"
@@ -286,10 +286,6 @@ export default function FundingPage() {
               {
                 title: "Multi-Site Studies",
                 desc: "Partnerships to expand the CAPIS registry or Delphi consensus across institutions and countries.",
-              },
-              {
-                title: "Implementation Research",
-                desc: "Support for translating CAPIS findings into practice across sporting organisations and clinics.",
               },
               {
                 title: "Student & Early-Career Support",
