@@ -696,7 +696,7 @@ export default function HomePage() {
                 Effects of exercise training on blood pressure: An overview of reviews
               </h3>
               <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "8px" }}>
-                PLOS ONE · 2026
+                Journal of Sports Sciences · 2025
               </p>
               <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
                 DOI: <a 
