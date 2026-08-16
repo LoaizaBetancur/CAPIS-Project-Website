@@ -265,6 +265,7 @@ export default function ResourcesForAthletesPage() {
                 Resumen en lenguaje sencillo
                 </a>
             </div>
+          </div> 
 
             {/* Card 3 */}
             <div
@@ -300,40 +301,42 @@ export default function ResourcesForAthletesPage() {
               >
                 A short video explaining what core outcome sets are and why they are important for improving research in football and athletic performance.
               </p>
-              <a
-                href="https://youtu.be/fYMz7wH3wKM"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-block",
-                  padding: "10px 24px",
-                  backgroundColor: NAVY,
-                  color: "#FFFFFF",
-                  textDecoration: "none",
-                  fontSize: "13px",
-                  fontWeight: 600,
-                  borderRadius: "4px",
-                }}
-              >
-                Watch Video
-              </a>
-               <a
-                href="https://www.youtube.com/watch?v=Sb7sZRKC26o"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-block",
-                  padding: "10px 24px",
-                  backgroundColor: NAVY,
-                  color: "#FFFFFF",
-                  textDecoration: "none",
-                  fontSize: "13px",
-                  fontWeight: 600,
-                  borderRadius: "4px",
-                }}
-              >
-                Mira el Video
-              </a>
+                            <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center", marginTop: "16px" }}>
+                <a
+                  href="https://youtu.be/fYMz7wH3wKM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    padding: "10px 24px",
+                    backgroundColor: NAVY,
+                    color: "#FFFFFF",
+                    textDecoration: "none",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    borderRadius: "4px",
+                  }}
+                >
+                  Watch Video
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=Sb7sZRKC26o"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    padding: "10px 24px",
+                    backgroundColor: NAVY,
+                    color: "#FFFFFF",
+                    textDecoration: "none",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    borderRadius: "4px",
+                  }}
+                >
+                  Mira el Video
+                </a>
+              </div>
             </div>
           </div>
         </div>
