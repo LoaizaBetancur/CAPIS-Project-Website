@@ -196,7 +196,7 @@ export default function RelatedProjects() {
           boxShadow: "0 10px 40px rgba(0,0,0,0.08)",
           zIndex: 50,
           overflow: "hidden",
-          maxHeight: open ? "360px" : "0px",
+          maxHeight: open ? "2000px" : "0px",
           opacity: open ? 1 : 0,
           transition: "max-height 250ms ease, opacity 200ms ease",
         }}
