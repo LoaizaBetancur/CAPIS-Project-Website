@@ -469,7 +469,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div style={{ height: "4px", backgroundColor: NAVY }} />
+            <div style={{ height: "4px", backgroundColor: NAVY }} />
 
       {/* ── Related Projects & Thesis Work ── */}
       <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
@@ -494,25 +494,7 @@ export default function HomePage() {
           <RelatedProjects />
         </div>
       </section>
-
-      <div style={{ height: "4px", backgroundColor: NAVY }} />
-
-      {/* ── Publications ── */}
-      <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
-          <h2
-            style={{
-              fontFamily: "var(--font-display)",
-              fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
-              fontWeight: 600,
-              color: "#1A202C",
-              lineHeight: 1.3,
-              textDecoration: "underline",
-              textUnderlineOffset: "4px",
-              marginBottom: "32px",
-              textAlign: "center",
-            }}
-          >
+          
             Latest Publications
           </h2>
           <div
