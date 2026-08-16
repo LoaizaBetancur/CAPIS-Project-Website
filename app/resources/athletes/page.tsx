@@ -284,6 +284,7 @@ export default function ResourcesForAthletesPage() {
               >
                 A simple, jargon-free explanation of what the CAPIS project is, why it matters for football players, and how your input will shape future research.
               </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center", marginTop: "16px" }}>
               <a
                 href="/documents/CAPIS-PLS.pdf"
                 target="_blank"
