@@ -13,7 +13,7 @@ const TEAL = "#3C7887";
 const leadInvestigator = {
   name: "Andrés F. Loaiza-Betancur",
   role: "PhD Candidate & Lead Researcher",
-  affiliation: "JBI, School of Public Health, University of Adelaide",
+  affiliation: "JBI, School of Public Health, Adelaide University",
   bio: "Andrés leads all phases of the CAPIS research programme — from the scoping review and focus groups through to the Delphi consensus and dissemination. He is supported by an Adelaide University research scholarship.",
   image: "/images/team/andres.png",
   email: "andresfelipe.loaizabetancur@adelaide.edu.au",
@@ -23,7 +23,7 @@ const studyTeam = [
   {
     name: "Jennifer Stone",
     role: "Primary Supervisor",
-    affiliation: "JBI, School of Public Health, University of Adelaide",
+    affiliation: "JBI, School of Public Health, Adelaide University",
     bio: "Jennifer provides overall methodological guidance for the CAPIS project, contributing expertise in evidence synthesis, systematic review methodology, and implementation science.",
     image: "/images/team/jennifer.png",
     email: "jennifer.stone@adelaide.edu.au",
@@ -333,7 +333,7 @@ export default function TeamPage() {
                 marginTop: "16px",
               }}
             >
-              {["University of Adelaide", "NHMRC", "Sports Medicine Australia", "AFL Research Board"].map(
+              {["Adelaide University", "NHMRC", "Sports Medicine Australia", "AFL Research Board"].map(
                 (f) => (
                   <span
                     key={f}
