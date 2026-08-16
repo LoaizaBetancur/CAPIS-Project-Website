@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 
 interface Project {
   title: string;
-  status: "Ongoing" | "Recruiting" | "Completed";
+  status: "Ongoing" | "Recruiting" | "Completed" | "Submitted";
   description: string;
   meta: { label: string; value: string }[];
 }
@@ -110,11 +110,11 @@ const projects: Project[] = [
   },
   {
     title: "CAPIS Core Outcome Set Development",
-    status: "Submitted",
+    status: "Ongoing",
     description:
       "The CAPIS study: A core outcome set for plyometric training intervention in Tier 3-5 football players",
     meta: [
-      { label: "📅", value: "2025 – 2026" },
+      { label: "📅", value: "2025 – 2028" },
       { label: "🏷️", value: "Core Outcome Set" },
     ],
   },
