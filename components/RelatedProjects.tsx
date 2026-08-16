@@ -14,7 +14,7 @@ const projects: Project[] = [
     title: "CAPIS Core Outcome Set Development",
     status: "Ongoing",
     description:
-      "A multi-phase study to develop a core outcome set for plyometric training interventions in Tier 3, 4, or 5 football players. Employs scoping reviews, focus groups, and Delphi consensus methodology.",
+      "A multi-phase study to develop a core outcome set for plyometric training interventions in Tier 3, 4, or 5 football players.",
     meta: [
       { label: "📅", value: "2024 – 2026" },
       { label: "👥", value: "45 stakeholders" },
@@ -25,7 +25,7 @@ const projects: Project[] = [
     title: "Youth Sport Concussion Registry",
     status: "Recruiting",
     description:
-      "A prospective registry capturing real-world concussion incidence, management practices, and recovery trajectories across multiple youth sporting codes in Australia. Currently recruiting clubs and schools.",
+      "A prospective registry capturing real-world concussion incidence and recovery trajectories across Australian youth sport.",
     meta: [
       { label: "📅", value: "2025 – 2027" },
       { label: "👥", value: "12 partner clubs" },
@@ -36,7 +36,7 @@ const projects: Project[] = [
     title: "Implementation Toolkit Pilot",
     status: "Ongoing",
     description:
-      "Co-design and pilot testing of a digital implementation toolkit to support sporting organisations in adopting evidence-based concussion protocols. Includes behaviour change techniques and audit tools.",
+      "Co-design and pilot testing of a digital toolkit to support sporting organisations in adopting evidence-based protocols.",
     meta: [
       { label: "📅", value: "2025 – 2026" },
       { label: "👥", value: "8 organisations" },
@@ -47,7 +47,7 @@ const projects: Project[] = [
     title: "Systematic Review: School-Based Interventions",
     status: "Completed",
     description:
-      "Comprehensive systematic review examining the effectiveness of school-based concussion education and management interventions. Published in a leading sports medicine journal.",
+      "Comprehensive review examining the effectiveness of school-based concussion education and management interventions.",
     meta: [
       { label: "📅", value: "2023 – 2024" },
       { label: "📄", value: "42 studies included" },
@@ -58,7 +58,7 @@ const projects: Project[] = [
     title: "Delphi Consensus: Expert Priorities",
     status: "Completed",
     description:
-      "Three-round modified Delphi study with international experts to establish priority areas for youth concussion research. Informed the CAPIS research agenda and funding applications.",
+      "Three-round modified Delphi study with international experts to establish priority areas for youth concussion research.",
     meta: [
       { label: "📅", value: "2023 – 2024" },
       { label: "👥", value: "28 experts" },
@@ -90,7 +90,6 @@ export default function RelatedProjects() {
 
   return (
     <div ref={wrapRef} style={{ position: "relative", maxWidth: "640px" }}>
-      {/* Dropdown trigger */}
       <button
         onClick={() => setOpen((v) => !v)}
         style={{
@@ -107,7 +106,6 @@ export default function RelatedProjects() {
           fontWeight: 500,
           color: selected !== null ? "#1A202C" : "#A0AEC0",
           cursor: "pointer",
-          transition: "border-color 150ms",
         }}
       >
         <span>
@@ -132,7 +130,6 @@ export default function RelatedProjects() {
         </svg>
       </button>
 
-      {/* Dropdown menu */}
       <div
         style={{
           position: "absolute",
@@ -167,7 +164,6 @@ export default function RelatedProjects() {
                 alignItems: "center",
                 borderBottom:
                   idx < projects.length - 1 ? "1px solid #F1F5F9" : "none",
-                transition: "background 100ms",
               }}
               onMouseEnter={(e) =>
                 (e.currentTarget.style.backgroundColor = "#F8FAFC")
@@ -204,7 +200,6 @@ export default function RelatedProjects() {
         })}
       </div>
 
-      {/* Project detail card */}
       {selected !== null && (
         <div
           style={{
@@ -213,7 +208,6 @@ export default function RelatedProjects() {
             border: "1px solid #E2E8F0",
             borderRadius: "8px",
             padding: "20px",
-            animation: "fadeIn 300ms ease",
           }}
         >
           <h4
