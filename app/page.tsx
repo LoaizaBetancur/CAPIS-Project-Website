@@ -3,6 +3,8 @@ import Image from "next/image";
 import ParticipantCard from "@/components/ParticipantCard";
 import StageCard from "@/components/StageCard";
 import RelatedProjects from "@/components/RelatedProjects";
+import RelatedProjects from "@/components/RelatedProjects";
+import RelatedProjects from "@/components/RelatedProjects";
 
 export const metadata: Metadata = {
   title: "Home",
