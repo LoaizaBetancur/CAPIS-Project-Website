@@ -180,26 +180,79 @@ export default function ResourcesForResearchersPage() {
               >
                 Everything you need to know about taking part in the CAPIS project, including what to expect, how the e-Delphi survey works, and how your data will be used.
               </p>
-              <a
-                href="/documents/CAPIS-PIS.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-block",
-                  padding: "10px 24px",
-                  backgroundColor: NAVY,
-                  color: "#FFFFFF",
-                  textDecoration: "none",
-                  fontSize: "13px",
-                  fontWeight: 600,
-                  borderRadius: "4px",
-                }}
-              >
-                View PIS
-              </a>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center" }}>
+                <a
+                  href="/documents/CAPIS-PIS-e.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    padding: "10px 24px",
+                    backgroundColor: NAVY,
+                    color: "#FFFFFF",
+                    textDecoration: "none",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    borderRadius: "4px",
+                  }}
+                >
+                  View PIS - Focus group
+                </a>
+                <a
+                  href="/documents/CAPIS-PIS-e.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    padding: "10px 24px",
+                    backgroundColor: NAVY,
+                    color: "#FFFFFF",
+                    textDecoration: "none",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    borderRadius: "4px",
+                  }}
+                >
+                  View PIS - e-Delphi (soon)
+                </a>
+                <a
+                  href="/documents/CAPIS-PIS-s.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    padding: "10px 24px",
+                    backgroundColor: NAVY,
+                    color: "#FFFFFF",
+                    textDecoration: "none",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    borderRadius: "4px",
+                  }}
+                >
+                  Mira aquí la hoja de información para participantes - Grupo focal
+                </a>
+                <a
+                  href="/documents/CAPIS-PIS-s.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    padding: "10px 24px",
+                    backgroundColor: NAVY,
+                    color: "#FFFFFF",
+                    textDecoration: "none",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    borderRadius: "4px",
+                  }}
+                >
+                  Mira aquí la hoja de información para participantes - encuesta electrónica (pronto)
+                </a>
+              </div>
             </div>
 
-            {/* Card 2 */}
+            {/* ── Card 2: PLS ── */}
             <div
               style={{
                 border: `2px solid ${NAVY}`,
@@ -231,28 +284,47 @@ export default function ResourcesForResearchersPage() {
                   lineHeight: 1.5,
                 }}
               >
-                A simple, jargon-free explanation of what the CAPIS project is, why it matters for researchers, and how your input will shape future research.
+                A simple, jargon-free explanation of what the CAPIS project is, why it matters for football players, and how your input will shape future research.
               </p>
-              <a
-                href="/documents/CAPIS-PLS.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-block",
-                  padding: "10px 24px",
-                  backgroundColor: NAVY,
-                  color: "#FFFFFF",
-                  textDecoration: "none",
-                  fontSize: "13px",
-                  fontWeight: 600,
-                  borderRadius: "4px",
-                }}
-              >
-                View Summary
-              </a>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center" }}>
+                <a
+                  href="/documents/CAPIS-PLS.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    padding: "10px 24px",
+                    backgroundColor: NAVY,
+                    color: "#FFFFFF",
+                    textDecoration: "none",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    borderRadius: "4px",
+                  }}
+                >
+                  Plain Language Summary
+                </a>
+                <a
+                  href="/documents/CAPIS-PLS.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    padding: "10px 24px",
+                    backgroundColor: NAVY,
+                    color: "#FFFFFF",
+                    textDecoration: "none",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    borderRadius: "4px",
+                  }}
+                >
+                  Resumen en lenguaje sencillo
+                </a>
+              </div>
             </div>
 
-            {/* Card 3 */}
+            {/* ── Card 3: Video ── */}
             <div
               style={{
                 border: `2px solid ${NAVY}`,
@@ -286,23 +358,42 @@ export default function ResourcesForResearchersPage() {
               >
                 A short video explaining what core outcome sets are and why they are important for improving research in football and athletic performance.
               </p>
-              <a
-                href="https://www.youtube.com/watch?v=Sb7sZRKC26o"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-block",
-                  padding: "10px 24px",
-                  backgroundColor: NAVY,
-                  color: "#FFFFFF",
-                  textDecoration: "none",
-                  fontSize: "13px",
-                  fontWeight: 600,
-                  borderRadius: "4px",
-                }}
-              >
-                Watch Video
-              </a>
+              <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center" }}>
+                <a
+                  href="https://youtu.be/fYMz7wH3wKM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    padding: "10px 24px",
+                    backgroundColor: NAVY,
+                    color: "#FFFFFF",
+                    textDecoration: "none",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    borderRadius: "4px",
+                  }}
+                >
+                  Watch Video
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=Sb7sZRKC26o"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    padding: "10px 24px",
+                    backgroundColor: NAVY,
+                    color: "#FFFFFF",
+                    textDecoration: "none",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    borderRadius: "4px",
+                  }}
+                >
+                  Mira el Video
+                </a>
+              </div>
             </div>
           </div>
         </div>
