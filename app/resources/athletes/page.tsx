@@ -181,19 +181,20 @@ export default function ResourcesForAthletesPage() {
                 Everything you need to know about taking part in the CAPIS project, including what to expect, how the e-Delphi survey works, and how your data will be used. Available in English and Spanish.
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center", marginTop: "16px" }}>
-  <a href="documents/CAPIS-PIS-e.pdf" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", padding: "10px 24px", backgroundColor: NAVY, color: "#FFFFFF", textDecoration: "none", fontSize: "13px", fontWeight: 600, borderRadius: "4px" }}>
-    View PIS - Focus group
-  </a>
-  <a href="documents/CAPIS-PIS-e.pdf" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", padding: "10px 24px", backgroundColor: NAVY, color: "#FFFFFF", textDecoration: "none", fontSize: "13px", fontWeight: 600, borderRadius: "4px" }}>
-    View PIS - e-Delphi (soon)
-  </a>
-  <a href="documents/CAPIS-PIS-s.pdf" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", padding: "10px 24px", backgroundColor: NAVY, color: "#FFFFFF", textDecoration: "none", fontSize: "13px", fontWeight: 600, borderRadius: "4px" }}>
-    Mira aquí la hoja de información para participantes - Grupo focal
-  </a>
-  <a href="documents/CAPIS-PIS-s.pdf" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", padding: "10px 24px", backgroundColor: NAVY, color: "#FFFFFF", textDecoration: "none", fontSize: "13px", fontWeight: 600, borderRadius: "4px" }}>
-    Mira aquí la hoja de información para participantes - encuesta electrónica (pronto)
-  </a>
-</div>
+              <a href="documents/CAPIS-PIS-e.pdf" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", padding: "10px 24px", backgroundColor: NAVY, color: "#FFFFFF", textDecoration: "none", fontSize: "13px", fontWeight: 600, borderRadius: "4px" }}>
+              View PIS - Focus group
+              </a>
+              <a href="documents/CAPIS-PIS-e.pdf" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", padding: "10px 24px", backgroundColor: NAVY, color: "#FFFFFF", textDecoration: "none", fontSize: "13px", fontWeight: 600, borderRadius: "4px" }}>
+              View PIS - e-Delphi (soon)
+              </a>
+              <a href="documents/CAPIS-PIS-s.pdf" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", padding: "10px 24px", backgroundColor: NAVY, color: "#FFFFFF", textDecoration: "none", fontSize: "13px", fontWeight: 600, borderRadius: "4px" }}>
+              Mira aquí la hoja de información para participantes - Grupo focal
+              </a>
+              <a href="documents/CAPIS-PIS-s.pdf" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", padding: "10px 24px", backgroundColor: NAVY, color: "#FFFFFF", textDecoration: "none", fontSize: "13px", fontWeight: 600, borderRadius: "4px" }}>
+              Mira aquí la hoja de información para participantes - encuesta electrónica (pronto)
+              </a>
+            </div>
+        
             {/* Card 2 */}
             <div
               style={{
