@@ -181,7 +181,9 @@ export default function ResourcesForAthletesPage() {
                 Everything you need to know about taking part in the CAPIS project, including what to expect, how the e-Delphi survey works, and how your data will be used. Available in English and Spanish.
               </p>
               <a
-                href="#"
+                href="/documents/CAPIS-PIS.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   display: "inline-block",
                   padding: "10px 24px",
@@ -193,7 +195,24 @@ export default function ResourcesForAthletesPage() {
                   borderRadius: "4px",
                 }}
               >
-                Access PIS
+                View PIS (English)
+              </a>
+              <a
+                href="/documents/CAPIS-PIS.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-block",
+                  padding: "10px 24px",
+                  backgroundColor: NAVY,
+                  color: "#FFFFFF",
+                  textDecoration: "none",
+                  fontSize: "13px",
+                  fontWeight: 600,
+                  borderRadius: "4px",
+                }}
+              >
+                View PIS (Spanish)
               </a>
             </div>
 
