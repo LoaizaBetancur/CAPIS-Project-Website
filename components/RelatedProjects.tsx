@@ -12,57 +12,110 @@ interface Project {
 const projects: Project[] = [
   {
     title: "CAPIS Core Outcome Set Development",
-    status: "Ongoing",
+    status: "Submitted",
     description:
-      "A multi-phase study to develop a core outcome set for plyometric training interventions in Tier 3, 4, or 5 football players.",
+      "Study protocol for developing a core domain set for plyometric training interventions in Tier 3-5 football players",
     meta: [
-      { label: "📅", value: "2024 – 2026" },
-      { label: "👥", value: "45 stakeholders" },
+      { label: "📅", value: "2025 – 2026" },
       { label: "🏷️", value: "Core Outcome Set" },
     ],
   },
   {
-    title: "Youth Sport Concussion Registry",
-    status: "Recruiting",
-    description:
-      "A prospective registry capturing real-world concussion incidence and recovery trajectories across Australian youth sport.",
-    meta: [
-      { label: "📅", value: "2025 – 2027" },
-      { label: "👥", value: "12 partner clubs" },
-      { label: "🏷️", value: "Epidemiology" },
-    ],
-  },
-  {
-    title: "Implementation Toolkit Pilot",
+    title: "Umbrella review",
     status: "Ongoing",
     description:
-      "Co-design and pilot testing of a digital toolkit to support sporting organisations in adopting evidence-based protocols.",
+      "A critical appraisal of SRMAs assessing the effect of athletic performance training-based interventions in athletes",
+    meta: [
+      { label: "📅", value: "2025 – 2027" },
+      { label: "📄", value: "66 systematic reviews with pairwise meta-analysis" },
+      { label: "🏷️", value: "Thesis: Chapter 2" },
+    ],
+  },
+  {
+    title: "Thesis",
+    status: "Ongoing",
+    description:
+      "Statistical heterogeneity in meta-analyses of athletic performance outcomes in athletes: a scoping review",
+    meta: [
+      { label: "📅", value: "2025 – 2027" },
+      { label: "📄", value: "66 systematic reviews with pairwise meta-analysis" },
+      { label: "🏷️", value: "Chapter 2" },
+    ],
+  },
+  {
+    title: "Thesis",
+    status: "Ongoing",
+    description:
+      "Comparative effectiveness of athletic performance training-based interventions in Tier 3-5 football players: a systematic review and network meta-analysis",
+    meta: [
+      { label: "📅", value: "2025 – 2027" },
+      { label: "📄", value: "144 studies RCTs and NRSIs" },
+      { label: "🏷️", value: "Chapter 2" },
+    ],
+  },
+  {
+    title: "Thesis",
+    status: "Ongoing",
+    description:
+      "Are more studies necessary to investigate the effectiveness of PT in professional football players?",
+    meta: [
+      { label: "📅", value: "2025 – 2028" },
+      { label: "📄", value: "ongoing" },
+      { label: "🏷️", value: "Chapter 2" },
+    ],
+  },
+  {
+    title: "Thesis",
+    status: "Recruiting",
+    description:
+      "Analysis of reporting completeness in plyometric football trials: a systematic review",
+    meta: [
+      { label: "📅", value: "2025 – 2027" },
+      { label: "📄", value: "23 studies RCTs and NRSIs" },
+      { label: "🏷️", value: "Chapter 2"
+    ],
+  },
+  {
+    title: "CAPIS Core Outcome Set Development",
+    status: "Submitted",
+    description:
+      "Study protocol for developing a core domain set for plyometric training interventions in Tier 3-5 football players",
     meta: [
       { label: "📅", value: "2025 – 2026" },
-      { label: "👥", value: "8 organisations" },
-      { label: "🏷️", value: "Implementation" },
+      { label: "📄", value: "144 studies RCTs and NRSIs" },
+      { label: "🏷️", value: "Core Outcome Set" },
     ],
   },
   {
-    title: "Systematic Review: School-Based Interventions",
-    status: "Completed",
+    title: "CAPIS Core Outcome Set Development",
+    status: "Recruiting (ongoing)",
     description:
-      "Comprehensive review examining the effectiveness of school-based concussion education and management interventions.",
+      "Perspectives and priorities on athletic performance outcome domains in football: a qualitative study",
     meta: [
-      { label: "📅", value: "2023 – 2024" },
-      { label: "📄", value: "42 studies included" },
-      { label: "🏷️", value: "Evidence Synthesis" },
+      { label: "📅", value: "2026 – 2027" },
+      { label: "👥", value: "5-10 interest-holders per focus group" },
+      { label: "🏷️", value: "Core Outcome Set" },
     ],
   },
   {
-    title: "Delphi Consensus: Expert Priorities",
-    status: "Completed",
+    title: "CAPIS Core Outcome Set Development",
+    status: "Recruiting (ongoing)",
     description:
-      "Three-round modified Delphi study with international experts to establish priority areas for youth concussion research.",
+      "CAPIS Study: Winnowing and binning preliminary candidate domains for the core outcome set in football",
     meta: [
-      { label: "📅", value: "2023 – 2024" },
-      { label: "👥", value: "28 experts" },
-      { label: "🏷️", value: "Consensus Methods" },
+      { label: "📅", value: "2027" },
+      { label: "👥", value: "open invitation to interest-holder groups" },
+      { label: "🏷️", value: "Core Outcome Set" },
+    ],
+  },
+  {
+    title: "CAPIS Core Outcome Set Development",
+    status: "Submitted",
+    description:
+      "The CAPIS study: A core outcome set for plyometric training intervention in Tier 3-5 football players",
+    meta: [
+      { label: "📅", value: "2025 – 2026" },
+      { label: "🏷️", value: "Core Outcome Set" },
     ],
   },
 ];
