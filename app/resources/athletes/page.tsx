@@ -251,7 +251,9 @@ export default function ResourcesForAthletesPage() {
                 A simple, jargon-free explanation of what the CAPIS project is, why it matters for football players, and how your input will shape future research.
               </p>
               <a
-                href="#"
+                href="/documents/CAPIS-PLS.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   display: "inline-block",
                   padding: "10px 24px",
@@ -263,8 +265,25 @@ export default function ResourcesForAthletesPage() {
                   borderRadius: "4px",
                 }}
               >
-                Access Summary
-              </a>
+                Plain Language Summary (English)
+                </a>
+              <a
+                href="/documents/CAPIS-PLS.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-block",
+                  padding: "10px 24px",
+                  backgroundColor: NAVY,
+                  color: "#FFFFFF",
+                  textDecoration: "none",
+                  fontSize: "13px",
+                  fontWeight: 600,
+                  borderRadius: "4px",
+                }}
+              >
+                Plain Language Summary (Spanish)
+                </a>
             </div>
 
             {/* Card 3 */}
@@ -302,7 +321,9 @@ export default function ResourcesForAthletesPage() {
                 A short video explaining what core outcome sets are and why they are important for improving research in football and athletic performance.
               </p>
               <a
-                href="#"
+                href="https://www.youtube.com/watch?v=Sb7sZRKC26o"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   display: "inline-block",
                   padding: "10px 24px",
@@ -314,46 +335,12 @@ export default function ResourcesForAthletesPage() {
                   borderRadius: "4px",
                 }}
               >
-                Watch Video
+                Watch Video (English)
               </a>
-            </div>
-
-            {/* Card 4 */}
-            <div
-              style={{
-                border: `2px solid ${NAVY}`,
-                backgroundColor: "#FFFFFF",
-                padding: "28px",
-                textAlign: "center",
-              }}
-            >
-              <div style={{ fontSize: "72px", marginBottom: "16px" }}>❓</div>
-              <h3
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: "17px",
-                  fontWeight: 700,
-                  color: "#1A202C",
-                  marginBottom: "8px",
-                  lineHeight: 1.3,
-                }}
-              >
-                FAQ for
-                <br />
-                Athletes
-              </h3>
-              <p
-                style={{
-                  fontSize: "13px",
-                  color: "#2D3748",
-                  marginBottom: "20px",
-                  lineHeight: 1.5,
-                }}
-              >
-                Answers to common questions about participating in the Delphi consensus panel, time commitment, and what happens to your responses.
-              </p>
-              <a
-                href="#"
+               <a
+                href="https://www.youtube.com/watch?v=Sb7sZRKC26o"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   display: "inline-block",
                   padding: "10px 24px",
@@ -365,7 +352,7 @@ export default function ResourcesForAthletesPage() {
                   borderRadius: "4px",
                 }}
               >
-                View FAQ
+                Watch Video (Spanish)
               </a>
             </div>
           </div>
