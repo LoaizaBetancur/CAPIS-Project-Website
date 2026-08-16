@@ -124,6 +124,7 @@ const statusStyles: Record<string, { bg: string; color: string }> = {
   Ongoing: { bg: "#EBF4FF", color: "#2B6CB0" },
   Recruiting: { bg: "#FEF3C7", color: "#B45309" },
   Completed: { bg: "#D1FAE5", color: "#047857" },
+  Submitted: { bg: "#F1F5F9", color: "#64748B" },
 };
 
 export default function RelatedProjects() {
@@ -201,7 +202,7 @@ export default function RelatedProjects() {
         }}
       >
         {projects.map((project, idx) => {
-          const s = statusStyles[project.status];
+          const s = statusStyles[project.status] || { bg: "#F1F5F9", color: "#64748B" };
           return (
             <div
               key={project.title}
