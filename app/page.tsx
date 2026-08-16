@@ -460,7 +460,7 @@ export default function HomePage() {
           >
             <iframe
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0 }}
-              src="https://www.youtube.com/embed/fYMz7wH3wKM?si=YypPlM9fvPXrnIEU"
+              src="https://www.youtube.com/embed/Sb7sZRKC26o?si=VhxJjPb3l-qXeejj"
               title="What are core outcome sets?"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
