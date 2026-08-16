@@ -88,7 +88,7 @@ const projects: Project[] = [
   },
   {
     title: "CAPIS Core Outcome Set Development",
-    status: "Recruiting (ongoing)",
+    status: "Recruiting",
     description:
       "Perspectives and priorities on athletic performance outcome domains in football: a qualitative study",
     meta: [
@@ -99,7 +99,7 @@ const projects: Project[] = [
   },
   {
     title: "CAPIS Core Outcome Set Development",
-    status: "Recruiting (ongoing)",
+    status: "Recruiting",
     description:
       "CAPIS Study: Winnowing and binning preliminary candidate domains for the core outcome set in football",
     meta: [
