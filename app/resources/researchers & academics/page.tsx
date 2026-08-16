@@ -287,7 +287,7 @@ export default function ResourcesForResearchersPage() {
                 A short video explaining what core outcome sets are and why they are important for improving research in football and athletic performance.
               </p>
               <a
-                href="https://www.youtube.com/embed/Sb7sZRKC26o?si=VhxJjPb3l-qXeejj"
+                href="https://www.youtube.com/watch?v=Sb7sZRKC26o"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
