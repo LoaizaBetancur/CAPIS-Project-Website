@@ -195,7 +195,7 @@ export default function ResourcesForAthletesPage() {
                   borderRadius: "4px",
                 }}
               >
-                View PIS (English)
+                View PIS - Focus group
               </a>
               <a
                 href="/documents/CAPIS-PIS.pdf"
@@ -212,7 +212,41 @@ export default function ResourcesForAthletesPage() {
                   borderRadius: "4px",
                 }}
               >
-                View PIS (Spanish)
+                View PIS - e-Delphi (soon)
+              </a
+              <a
+                href="/documents/CAPIS-PIS.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-block",
+                  padding: "10px 24px",
+                  backgroundColor: NAVY,
+                  color: "#FFFFFF",
+                  textDecoration: "none",
+                  fontSize: "13px",
+                  fontWeight: 600,
+                  borderRadius: "4px",
+                }}
+              >
+                Mira aquí la hoja de información para participantes - Grupo focal
+              </a>
+               <a
+                href="/documents/CAPIS-PIS.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-block",
+                  padding: "10px 24px",
+                  backgroundColor: NAVY,
+                  color: "#FFFFFF",
+                  textDecoration: "none",
+                  fontSize: "13px",
+                  fontWeight: 600,
+                  borderRadius: "4px",
+                }}
+              >
+                Mira aquí la hoja de información para participantes - encuesta electrónica (pronto)
               </a>
             </div>
 
@@ -265,7 +299,7 @@ export default function ResourcesForAthletesPage() {
                   borderRadius: "4px",
                 }}
               >
-                Plain Language Summary (English)
+                Plain Language Summary
                 </a>
               <a
                 href="/documents/CAPIS-PLS.pdf"
@@ -282,7 +316,7 @@ export default function ResourcesForAthletesPage() {
                   borderRadius: "4px",
                 }}
               >
-                Plain Language Summary (Spanish)
+                Resumen en lenguaje sencillo
                 </a>
             </div>
 
@@ -335,7 +369,7 @@ export default function ResourcesForAthletesPage() {
                   borderRadius: "4px",
                 }}
               >
-                Watch Video (English)
+                Watch Video
               </a>
                <a
                 href="https://www.youtube.com/watch?v=Sb7sZRKC26o"
@@ -352,7 +386,7 @@ export default function ResourcesForAthletesPage() {
                   borderRadius: "4px",
                 }}
               >
-                Watch Video (Spanish)
+                Mira el Video
               </a>
             </div>
           </div>
