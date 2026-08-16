@@ -106,7 +106,7 @@ export default function TopicList({ initialTopics }: TopicListProps) {
               letterSpacing: "0.05em",
             }}
           >
-            🔥 Trending Topics
+            Trending Topics
           </span>
           <p style={{ fontSize: "12px", color: "#A0AEC0", marginTop: "2px" }}>
             {topics.length} active discussion{topics.length !== 1 ? "s" : ""}
