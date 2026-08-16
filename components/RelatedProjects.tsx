@@ -11,20 +11,20 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "CAPIS Core Outcome Set Development",
+    title: "Study protocol for developing a core domain set for plyometric training interventions in Tier 3-5 football players",
     status: "Submitted",
     description:
-      "Study protocol for developing a core domain set for plyometric training interventions in Tier 3-5 football players",
+      "CAPIS Core Outcome Set Development",
     meta: [
       { label: "📅", value: "2025 – 2026" },
       { label: "🏷️", value: "Core Outcome Set" },
     ],
   },
   {
-    title: "Umbrella review",
+    title: "A critical appraisal of SRMAs assessing the effect of athletic performance training-based interventions in athletes: Umbrella review",
     status: "Ongoing",
     description:
-      "A critical appraisal of SRMAs assessing the effect of athletic performance training-based interventions in athletes",
+      "Thesis",
     meta: [
       { label: "📅", value: "2025 – 2027" },
       { label: "📄", value: "66 systematic reviews with pairwise meta-analysis" },
@@ -32,10 +32,10 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Thesis",
+    title: "Statistical heterogeneity in meta-analyses of athletic performance outcomes in athletes: a scoping review",
     status: "Ongoing",
     description:
-      "Statistical heterogeneity in meta-analyses of athletic performance outcomes in athletes: a scoping review",
+      "Thesis",
     meta: [
       { label: "📅", value: "2025 – 2027" },
       { label: "📄", value: "66 systematic reviews with pairwise meta-analysis" },
@@ -43,10 +43,10 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Thesis",
+    title: "Comparative effectiveness of athletic performance training-based interventions in Tier 3-5 football players: a systematic review and network meta-analysis",
     status: "Ongoing",
     description:
-      "Comparative effectiveness of athletic performance training-based interventions in Tier 3-5 football players: a systematic review and network meta-analysis",
+      "Thesis",
     meta: [
       { label: "📅", value: "2025 – 2027" },
       { label: "📄", value: "144 studies RCTs and NRSIs" },
@@ -54,10 +54,10 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Thesis",
+    title: "A cumulative meta-analysis of plyometric trials for Tier 3-5 football players",
     status: "Ongoing",
     description:
-      "Are more studies necessary to investigate the effectiveness of PT in professional football players?",
+      "Thesis",
     meta: [
       { label: "📅", value: "2025 – 2028" },
       { label: "📄", value: "ongoing" },
@@ -65,10 +65,10 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Thesis",
+    title: "Analysis of reporting completeness in plyometric football trials: a systematic review",
     status: "Recruiting",
     description:
-      "Analysis of reporting completeness in plyometric football trials: a systematic review",
+      "Thesis",
     meta: [
       { label: "📅", value: "2025 – 2027" },
       { label: "📄", value: "23 studies RCTs and NRSIs" },
@@ -76,10 +76,10 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "CAPIS Core Outcome Set Development",
-    status: "Submitted",
+    title: "Core outcome set of athletic performance training-based interventions: a scoping review",
+    status: "Ongoing",
     description:
-      "Study protocol for developing a core domain set for plyometric training interventions in Tier 3-5 football players",
+      "CAPIS Core Outcome Set Development",
     meta: [
       { label: "📅", value: "2025 – 2026" },
       { label: "📄", value: "144 studies RCTs and NRSIs" },
@@ -87,10 +87,10 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "CAPIS Core Outcome Set Development",
+    title: "Perspectives and priorities on athletic performance outcome domains in football: a qualitative study",
     status: "Recruiting",
     description:
-      "Perspectives and priorities on athletic performance outcome domains in football: a qualitative study",
+      "CAPIS Core Outcome Set Development",
     meta: [
       { label: "📅", value: "2026 – 2027" },
       { label: "👥", value: "5-10 interest-holders per focus group" },
@@ -98,10 +98,10 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "CAPIS Core Outcome Set Development",
+    title: "CAPIS Study: Winnowing and binning preliminary candidate domains for the core outcome set in football",
     status: "Recruiting",
     description:
-      "CAPIS Study: Winnowing and binning preliminary candidate domains for the core outcome set in football",
+      "CAPIS Core Outcome Set Development",
     meta: [
       { label: "📅", value: "2027" },
       { label: "👥", value: "open invitation to interest-holder groups" },
@@ -109,10 +109,10 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "CAPIS Core Outcome Set Development",
+    title: "The CAPIS study: A core outcome set for plyometric training intervention in Tier 3-5 football players",
     status: "Ongoing",
     description:
-      "The CAPIS study: A core outcome set for plyometric training intervention in Tier 3-5 football players",
+      "CAPIS Core Outcome Set Development",
     meta: [
       { label: "📅", value: "2025 – 2028" },
       { label: "🏷️", value: "Core Outcome Set" },
