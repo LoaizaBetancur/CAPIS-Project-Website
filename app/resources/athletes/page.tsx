@@ -311,6 +311,7 @@ export default function ResourcesForAthletesPage() {
           </div>
         </div>
       </div>
+    </div>
       </section>
     </main>
   );
