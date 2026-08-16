@@ -172,7 +172,7 @@ export default function HomePage() {
             <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#2D3748" }}>
               Athletes and sport-related professionals need the best evidence about which 
               athletic performance-based training interventions work best and are safe. 
-              The CAPIS project aims to identify a subset of core outcome set (COS) domains 
+              The CAPIS project aims to identify a minimum subset of outcome domains  
               for plyometric training interventions in adult football players classified as 
               Tiers 3, 4, or 5.
             </p>
