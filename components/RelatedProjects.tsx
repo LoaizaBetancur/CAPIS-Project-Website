@@ -72,7 +72,7 @@ const projects: Project[] = [
     meta: [
       { label: "📅", value: "2025 – 2027" },
       { label: "📄", value: "23 studies RCTs and NRSIs" },
-      { label: "🏷️", value: "Chapter 2"
+      { label: "🏷️", value: "Chapter 2"},
     ],
   },
   {
