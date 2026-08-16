@@ -213,7 +213,7 @@ export default function ResourcesForAthletesPage() {
                 }}
               >
                 View PIS - e-Delphi (soon)
-              </a
+              </a>
               <a
                 href="/documents/CAPIS-PIS.pdf"
                 target="_blank"
