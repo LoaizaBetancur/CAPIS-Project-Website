@@ -13,7 +13,6 @@ const TEAL = "#3C7887";
 export default function FundingPage() {
   return (
     <main>
-      {/* ── Hero Banner ── */}
       <section style={{ backgroundColor: NAVY }}>
         <div
           style={{
@@ -80,7 +79,6 @@ export default function FundingPage() {
 
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
-      {/* ── About EOI ── */}
       <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2
@@ -106,10 +104,10 @@ export default function FundingPage() {
               maxWidth: "720px",
             }}
           >
-            The CAPIS project welcomes expressions of interest from researchers, 
-            institutions, funding bodies, and industry partners who wish to collaborate 
-            with or support our work in developing core outcome sets for athletic 
-            performance-based interventions.
+            The CAPIS project welcomes expressions of interest from researchers,
+            institutions, funding bodies, and industry partners who wish to
+            collaborate with or support our work in developing core outcome sets
+            for athletic performance-based interventions.
           </p>
           <p
             style={{
@@ -120,11 +118,9 @@ export default function FundingPage() {
               maxWidth: "720px",
             }}
           >
-            We are particularly interested in partnerships that align with our mission 
-            to improve the consistency and quality of outcome measurement in sports 
-            science research. This includes opportunities for joint grant applications, 
-            in-kind support, data sharing agreements, and multi-site collaborative 
-            studies.
+            We are particularly interested in partnerships that align with our
+            mission to improve the consistency and quality of outcome measurement
+            in sports science research.
           </p>
           <p
             style={{
@@ -135,17 +131,16 @@ export default function FundingPage() {
               maxWidth: "720px",
             }}
           >
-            At this stage, CAPIS is not accepting formal funding applications directly. 
-            However, we are happy to discuss potential collaborations and can provide 
-            letters of support for aligned grant proposals submitted through appropriate 
-            institutional channels.
+            At this stage, CAPIS is not accepting formal funding applications
+            directly. However, we are happy to discuss potential collaborations
+            and can provide letters of support for aligned grant proposals
+            submitted through appropriate institutional channels.
           </p>
         </div>
       </section>
 
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
-      {/* ── Contact ── */}
       <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2
@@ -171,8 +166,8 @@ export default function FundingPage() {
               maxWidth: "720px",
             }}
           >
-            To discuss collaboration or funding opportunities, please contact the 
-            CAPIS research team directly:
+            To discuss collaboration or funding opportunities, please contact
+            the CAPIS research team directly:
           </p>
 
           <div
@@ -206,7 +201,7 @@ export default function FundingPage() {
               <br />
               PhD Candidate & Lead Researcher
               <br />
-              JBI, School of Public Health, Adelaide University
+              JBI, School of Public Health, University of Adelaide
             </p>
             <a
               href="mailto:andresfelipe.loaizabetancur@adelaide.edu.au"
@@ -246,15 +241,15 @@ export default function FundingPage() {
               maxWidth: "560px",
             }}
           >
-            Please include a brief description of your organisation, the nature of 
-            your proposed collaboration, and any relevant timelines in your enquiry.
+            Please include a brief description of your organisation, the nature
+            of your proposed collaboration, and any relevant timelines in your
+            enquiry.
           </p>
         </div>
       </section>
 
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
-      {/* ── What we look for ── */}
       <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2
@@ -286,6 +281,10 @@ export default function FundingPage() {
               {
                 title: "Multi-Site Studies",
                 desc: "Partnerships to expand the CAPIS registry or Delphi consensus across institutions and countries.",
+              },
+              {
+                title: "Implementation Research",
+                desc: "Support for translating CAPIS findings into practice across sporting organisations and clinics.",
               },
               {
                 title: "Student & Early-Career Support",
