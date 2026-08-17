@@ -229,7 +229,7 @@ export default function TeamPage() {
             </p>
           </div>
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <div style={{ position: "relative", width: "280px", height: "220px" }}>
+            <div style={{ position: "relative", width: "500px", height: "400px" }}>
               <Image
                 src="/images/meet.png"
                 alt="Graphic representing the CAPIS project"
