@@ -235,7 +235,7 @@ export default function TeamPage() {
                 alt="Graphic representing the CAPIS project"
                 fill
                 style={{ objectFit: "contain" }}
-                sizes="280px"
+                sizes="500px"
               />
             </div>
           </div>
