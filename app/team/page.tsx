@@ -314,7 +314,7 @@ export default function TeamPage() {
                 marginBottom: "12px",
               }}
             >
-              🙏 Acknowledgment
+            Acknowledgment
             </h3>
             <p
               style={{
@@ -339,8 +339,10 @@ export default function TeamPage() {
                 marginTop: "16px",
               }}
            >
+         </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
