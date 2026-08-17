@@ -338,6 +338,7 @@ export default function TeamPage() {
                 gap: "10px",
                 marginTop: "16px",
               }}
+           >
         </div>
       </section>
 
