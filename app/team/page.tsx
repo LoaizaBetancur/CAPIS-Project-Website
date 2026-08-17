@@ -379,55 +379,221 @@ export default function TeamPage() {
 
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
-      {/* ── Selected Publications ── */}
-      <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
+      {/* ── Publications ── */}
+      <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2
             style={{
               fontFamily: "var(--font-display)",
-              fontSize: "clamp(1.1rem, 2vw, 1.35rem)",
+              fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
               fontWeight: 600,
               color: "#1A202C",
+              lineHeight: 1.3,
               textDecoration: "underline",
               textUnderlineOffset: "4px",
-              marginBottom: "24px",
+              marginBottom: "32px",
+              textAlign: "center",
             }}
           >
-            Selected Publications
+            Latest Publications
           </h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            {publications.map((pub) => (
-              <div
-                key={pub.title}
+          <div
+            style={{
+              display: "grid",
+              gap: "16px",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            }}
+          >
+            <article
+              style={{
+                borderRadius: "8px",
+                border: "1px solid #E2E8F0",
+                backgroundColor: "#FFFFFF",
+                padding: "24px",
+              }}
+            >
+              <p
                 style={{
-                  border: "1px solid #E2E8F0",
-                  borderRadius: "8px",
-                  padding: "20px",
-                  backgroundColor: "#F7FAFC",
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  color: TEAL,
+                  marginBottom: "8px",
                 }}
               >
-                <h3
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    fontSize: "15px",
-                    fontWeight: 600,
-                    color: "#1A202C",
-                    marginBottom: "4px",
-                    lineHeight: 1.4,
-                  }}
+                Published
+              </p>
+              <h3
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "16px",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  marginBottom: "8px",
+                  lineHeight: 1.3,
+                }}
+              >
+                Physical activity for the management of obesity in children up to the age of 9 years
+              </h3>
+              <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "8px" }}>
+                Cochrane Database of Systematic Reviews · 2026
+              </p>
+              <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
+                DOI: <a 
+                  href="https://doi.org/10.1002/14651858.CD015988" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: "#2D3748", textDecoration: "underline", textUnderlineOffset: "2px" }}
                 >
-                  {pub.title}
-                </h3>
-                <p style={{ fontSize: "13px", color: "#4A5568" }}>
-                  {pub.journal} · {pub.year}
-                </p>
-              </div>
-            ))}
+                  10.1002/14651858.CD015988
+                </a>
+              </p>
+            </article>
+
+            <article
+              style={{
+                borderRadius: "8px",
+                border: "1px solid #E2E8F0",
+                backgroundColor: "#FFFFFF",
+                padding: "24px",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  color: TEAL,
+                  marginBottom: "8px",
+                }}
+              >
+                Published
+              </p>
+              <h3
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "16px",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  marginBottom: "8px",
+                  lineHeight: 1.3,
+                }}
+              >
+                Physical activity for the management of obesity in adolescents aged 10 to 19 years
+              </h3>
+              <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "8px" }}>
+                Cochrane Database of Systematic Reviews · 2026
+              </p>
+              <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
+                DOI: <a 
+                  href="https://doi.org/10.1002/14651858.cd015987" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: "#2D3748", textDecoration: "underline", textUnderlineOffset: "2px" }}
+                >
+                  10.1002/14651858.cd015987
+                </a>
+              </p>
+            </article>
+            
+            <article
+              style={{
+                borderRadius: "8px",
+                border: "1px solid #E2E8F0",
+                backgroundColor: "#FFFFFF",
+                padding: "24px",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  color: TEAL,
+                  marginBottom: "8px",
+                }}
+              >
+                Published
+              </p>
+              <h3
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "16px",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  marginBottom: "8px",
+                  lineHeight: 1.3,
+                }}
+              >
+                A critical appraisal of systematic reviews assessing chronic velocity-based resistance training
+              </h3>
+              <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "8px" }}>
+                PLOS ONE · 2026
+              </p>
+              <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
+                DOI: <a 
+                  href="https://doi.org/10.1371/journal.pone.0342992" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: "#2D3748", textDecoration: "underline", textUnderlineOffset: "2px" }}
+                >
+                  10.1371/journal.pone.0342992
+                </a>
+              </p>
+            </article>
+
+            <article
+              style={{
+                borderRadius: "8px",
+                border: "1px solid #E2E8F0",
+                backgroundColor: "#FFFFFF",
+                padding: "24px",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  color: TEAL,
+                  marginBottom: "8px",
+                }}
+              >
+                Published
+              </p>
+              <h3
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "16px",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  marginBottom: "8px",
+                  lineHeight: 1.3,
+                }}
+              >
+                Effects of exercise training on blood pressure: An overview of reviews
+              </h3>
+              <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "8px" }}>
+                Journal of Sports Sciences · 2025
+              </p>
+              <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
+                DOI: <a 
+                  href="https://doi.org/10.1080/02640414.2025.2549862" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  style={{ color: "#2D3748", textDecoration: "underline", textUnderlineOffset: "2px" }}
+                >
+                  10.1080/02640414.2025.2549862
+                </a>
+              </p>
+            </article>
           </div>
         </div>
       </section>
-
-      <div style={{ height: "4px", backgroundColor: NAVY }} />
 
       {/* ── Presentations & Conferences ── */}
       <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
