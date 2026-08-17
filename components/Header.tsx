@@ -42,13 +42,13 @@ export default function Header() {
             justifyContent: "center",
           }}
         >
-          <div style={{ position: "relative", height: "220px", width: "700px" }}>
+          <div style={{ position: "relative", height: "300px", width: "1000px" }}>
             <Image
               src="/images/capis-logo.png"
               alt="The CAPIS Project"
               fill
               style={{ objectFit: "contain" }}
-              sizes="700px"
+              sizes="1000px"
               priority
             />
           </div>
