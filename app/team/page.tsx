@@ -323,35 +323,27 @@ export default function TeamPage() {
                 color: "#2D3748",
               }}
            >
-      The CAPIS project would like to extend its sincere gratitude to the
-      following researchers for their valuable contributions and involvement in
-      the project:
-    </p>
-    <ul
-      style={{
-        fontSize: "14px",
-        lineHeight: 1.7,
-        color: "#2D3748",
-        paddingLeft: "20px",
-        marginTop: "8px",
-      }}
-    >
-      <li>M.Sc. Lubin Fernando Betancur Sepulveda</li>
-      <li>PhD María Cinta Gómez</li>
-      <li>M.Sc. Andrés M. Echavarría-Rodríguez</li>
-      <li>PhD Juan Osvaldo Jiménez Trujillo</li>
-    </ul>
-    <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "10px",
-        marginTop: "16px",
-      }}
-    >
-    </div>
-  </div>
-</section>
+              The CAPIS project would like to extend its sincere gratitude to the
+              following researchers for their valuable contributions and involvement in
+              the project:
+            </p>
+            <ul
+              style={{
+                fontSize: "14px",
+                lineHeight: 1.7,
+                color: "#2D3748",
+                paddingLeft: "20px",
+                marginTop: "8px",
+              }}
+            >
+              <li>M.Sc. Lubin Fernando Betancur Sepulveda</li>
+              <li>PhD María Cinta Gómez</li>
+              <li>M.Sc. Andrés M. Echavarría-Rodríguez</li>
+              <li>PhD Juan Osvaldo Jiménez Trujillo</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
