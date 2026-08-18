@@ -61,7 +61,7 @@ export default function ResourcesForAthletesPage() {
           >
             <div style={{ position: "relative", width: "280px", height: "200px" }}>
               <Image
-                src="/images/players.pic.jpg"
+                src="/images/players.pic8.jpg"
                 alt="Football players training"
                 fill
                 style={{ objectFit: "cover", borderRadius: "12px" }}

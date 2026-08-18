@@ -18,7 +18,7 @@ const participants = [
     name: "Athletes",
     description: "Tier 3, 4, or 5 football players (≥18 years) participating in plyometric training interventions.",
     icon: "🏃",
-    image: "/images/players.pic.jpg",
+    image: "/images/players.pic1..jpg",
   },
   {
     name: "Coaches & Performance Staff",
