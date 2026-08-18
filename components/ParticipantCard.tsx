@@ -1,10 +1,13 @@
+import Image from "next/image";
+
 interface ParticipantCardProps {
   name: string;
   description: string;
   icon: React.ReactNode;
+  image?: string;
 }
 
-export default function ParticipantCard({ name, description, icon }: ParticipantCardProps) {
+export default function ParticipantCard({ name, description, icon, image }: ParticipantCardProps) {
   return (
     <div style={{ textAlign: "center" }}>
       {/* Image area like COMBAT */}
@@ -19,9 +22,22 @@ export default function ParticipantCard({ name, description, icon }: Participant
           alignItems: "center",
           justifyContent: "center",
           minHeight: "140px",
+          overflow: "hidden",
         }}
       >
-        <div style={{ fontSize: "64px", lineHeight: 1 }}>{icon}</div>
+        {image ? (
+          <div style={{ position: "relative", width: "120px", height: "100px" }}>
+            <Image
+              src={image}
+              alt={name}
+              fill
+              style={{ objectFit: "cover", borderRadius: "8px" }}
+              sizes="120px"
+            />
+          </div>
+        ) : (
+          <div style={{ fontSize: "64px", lineHeight: 1 }}>{icon}</div>
+        )}
       </div>
       {/* Label box like COMBAT */}
       <div

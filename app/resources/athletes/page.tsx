@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Resources for Athletes",
@@ -58,7 +59,15 @@ export default function ResourcesForAthletesPage() {
               alignItems: "center",
             }}
           >
-            <span style={{ fontSize: "160px" }}>🏃</span>
+            <div style={{ position: "relative", width: "280px", height: "200px" }}>
+              <Image
+                src="/images/players.pic.jpg"
+                alt="Football players training"
+                fill
+                style={{ objectFit: "cover", borderRadius: "12px" }}
+                sizes="280px"
+              />
+            </div>
           </div>
         </div>
       </section>
