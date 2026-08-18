@@ -16,7 +16,7 @@ export default function ParticipantCard({ name, description, icon, image }: Part
           backgroundColor: "#F7FAFC",
           border: "1px solid #E2E8F0",
           borderRadius: "12px",
-          padding: "24px",
+          padding: "12px",
           marginBottom: "12px",
           display: "flex",
           alignItems: "center",
@@ -26,13 +26,13 @@ export default function ParticipantCard({ name, description, icon, image }: Part
         }}
       >
         {image ? (
-          <div style={{ position: "relative", width: "180px", height: "140px" }}>
+          <div style={{ position: "relative", width: "100%", height: "130px" }}>
             <Image
               src={image}
               alt={name}
               fill
               style={{ objectFit: "cover", borderRadius: "8px" }}
-              sizes="180px"
+              sizes="200px"
             />
           </div>
         ) : (
