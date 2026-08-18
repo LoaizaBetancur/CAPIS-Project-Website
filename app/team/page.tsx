@@ -94,7 +94,7 @@ function ProfileCard({ member }: { member: typeof leadInvestigator }) {
         style={{
           position: "relative",
           width: "140px",
-          height: "140px",
+          height: "160px",
           flexShrink: 0,
           overflow: "hidden",
           borderRadius: "12px",
@@ -106,7 +106,7 @@ function ProfileCard({ member }: { member: typeof leadInvestigator }) {
           src={member.image}
           alt={`Photo of ${member.name}`}
           fill
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", objectPosition: "center 20%" }}
           sizes="140px"
         />
       </div>
