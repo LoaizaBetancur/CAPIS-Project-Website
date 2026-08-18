@@ -93,10 +93,12 @@ function ProfileCard({ member }: { member: typeof leadInvestigator }) {
       <div
         style={{
           position: "relative",
-          width: "120px",
-          height: "150px",
+          width: "140px",
+          height: "140px",
           flexShrink: 0,
           overflow: "hidden",
+          borderRadius: "50%",
+          border: `3px solid ${NAVY}`,
           backgroundColor: "#E2E8F0",
         }}
       >
@@ -105,7 +107,7 @@ function ProfileCard({ member }: { member: typeof leadInvestigator }) {
           alt={`Photo of ${member.name}`}
           fill
           style={{ objectFit: "cover" }}
-          sizes="120px"
+          sizes="140px"
         />
       </div>
 
