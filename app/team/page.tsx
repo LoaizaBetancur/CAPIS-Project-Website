@@ -97,7 +97,7 @@ function ProfileCard({ member }: { member: typeof leadInvestigator }) {
           height: "140px",
           flexShrink: 0,
           overflow: "hidden",
-          borderRadius: "50%",
+          borderRadius: "12px",
           border: `3px solid ${NAVY}`,
           backgroundColor: "#E2E8F0",
         }}
