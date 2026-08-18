@@ -26,13 +26,13 @@ export default function ParticipantCard({ name, description, icon, image }: Part
         }}
       >
         {image ? (
-          <div style={{ position: "relative", width: "80px", height: "80px" }}>
+          <div style={{ position: "relative", width: "120px", height: "120px" }}>
             <Image
               src={image}
               alt={name}
               fill
               style={{ objectFit: "cover", borderRadius: "8px" }}
-              sizes="80px"
+              sizes="120px"
             />
           </div>
         ) : (
