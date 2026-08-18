@@ -42,13 +42,13 @@ const stages = [
     number: 1,
     title: "Scoping Review",
     description: "A comprehensive review of scientific literature to identify all outcome domains already measured in plyometric training studies with Tier 3, 4, or 5 football players.",
-    image: "📚",
+    image: "🔍",
   },
   {
     number: 2,
     title: "Focus Groups",
     description: "Semi-structured interviews with players, coaches, and experts to discover outcomes that matter in practice but may be missing from research.",
-    image: "💬",
+    image: "👥",
   },
   {
     number: 3,
