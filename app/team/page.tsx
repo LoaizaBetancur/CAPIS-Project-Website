@@ -197,10 +197,10 @@ export default function TeamPage() {
           style={{
             maxWidth: "1280px",
             margin: "0 auto",
-            padding: "48px 24px",
+            padding: "20px 24px",
             display: "grid",
             alignItems: "center",
-            gap: "40px",
+            gap: "24px",
             gridTemplateColumns: "1fr 1fr",
           }}
           className="hero-grid"
@@ -224,20 +224,20 @@ export default function TeamPage() {
               style={{
                 fontSize: "16px",
                 color: "#B0C4DE",
-                marginTop: "12px",
+                marginTop: "8px",
               }}
             >
               Meet the research team behind the CAPIS project.
             </p>
           </div>
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <div style={{ position: "relative", width: "500px", height: "400px" }}>
+            <div style={{ position: "relative", width: "400px", height: "320px" }}>
               <Image
                 src="/images/meet.png"
                 alt="Graphic representing the CAPIS project"
                 fill
                 style={{ objectFit: "contain" }}
-                sizes="500px"
+                sizes="400px"
               />
             </div>
           </div>
@@ -247,7 +247,7 @@ export default function TeamPage() {
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
       {/* ── Lead Investigator ── */}
-      <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
+      <section style={{ backgroundColor: "#FFFFFF", padding: "32px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2
             style={{
@@ -270,7 +270,7 @@ export default function TeamPage() {
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
       {/* ── Study Team ── */}
-      <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
+      <section style={{ backgroundColor: "#F7FAFC", padding: "32px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2
             style={{
