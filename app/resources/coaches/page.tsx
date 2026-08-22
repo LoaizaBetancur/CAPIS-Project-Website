@@ -199,6 +199,23 @@ export default function ResourcesForCoachesPage() {
                   View PIS - Focus group
                 </a>
                 <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    padding: "10px 24px",
+                    backgroundColor: "#3C7887",
+                    color: "#FFFFFF",
+                    textDecoration: "none",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    borderRadius: "4px",
+                  }}
+                >
+                  View Consent Form
+                </a>
+                <a
                   href="/documents/CAPIS-PIS-e-practitioners.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
