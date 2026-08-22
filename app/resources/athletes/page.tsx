@@ -229,23 +229,6 @@ export default function ResourcesForAthletesPage() {
                   </a>
                 </div>
                 <a
-                  href="/documents/CAPIS-PIS-e-practitioners.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: "inline-block",
-                    padding: "10px 24px",
-                    backgroundColor: NAVY,
-                    color: "#FFFFFF",
-                    textDecoration: "none",
-                    fontSize: "13px",
-                    fontWeight: 600,
-                    borderRadius: "4px",
-                  }}
-                >
-                  View PIS - e-Delphi (soon)
-                </a>
-                <a
                   href="/documents/CAPIS-PIS-s-practitioners.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -261,6 +244,23 @@ export default function ResourcesForAthletesPage() {
                   }}
                 >
                   Mira aquí la hoja de información para participantes - Grupo focal
+                </a>
+                <a
+                  href="/documents/CAPIS-PIS-e-practitioners.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-block",
+                    padding: "10px 24px",
+                    backgroundColor: NAVY,
+                    color: "#FFFFFF",
+                    textDecoration: "none",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    borderRadius: "4px",
+                  }}
+                >
+                  View PIS - e-Delphi (soon)
                 </a>
                 <a
                   href="/documents/CAPIS-PIS-s-practitioners.pdf"
