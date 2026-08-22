@@ -181,40 +181,42 @@ export default function ResourcesForResearchersPage() {
                 Everything you need to know about taking part in the CAPIS project, including what to expect, how the e-Delphi survey works, and how your data will be used.
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center" }}>
-                <a
-                  href="/documents/CAPIS-PIS-e-academics.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: "inline-block",
-                    padding: "10px 24px",
-                    backgroundColor: NAVY,
-                    color: "#FFFFFF",
-                    textDecoration: "none",
-                    fontSize: "13px",
-                    fontWeight: 600,
-                    borderRadius: "4px",
-                  }}
-                >
-                  View PIS - Focus group
-                </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: "inline-block",
-                    padding: "10px 24px",
-                    backgroundColor: "#3C7887",
-                    color: "#FFFFFF",
-                    textDecoration: "none",
-                    fontSize: "13px",
-                    fontWeight: 600,
-                    borderRadius: "4px",
-                  }}
-                >
-                  View Consent Form
-                </a>
+                <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}>
+                  <a
+                    href="/documents/CAPIS-PIS-e-academics.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "inline-block",
+                      padding: "10px 24px",
+                      backgroundColor: NAVY,
+                      color: "#FFFFFF",
+                      textDecoration: "none",
+                      fontSize: "13px",
+                      fontWeight: 600,
+                      borderRadius: "4px",
+                    }}
+                  >
+                    View PIS - Focus group
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "inline-block",
+                      padding: "10px 24px",
+                      backgroundColor: NAVY,
+                      color: "#FFFFFF",
+                      textDecoration: "none",
+                      fontSize: "13px",
+                      fontWeight: 600,
+                      borderRadius: "4px",
+                    }}
+                  >
+                    View Consent Form
+                  </a>
+                </div>
                 <a
                   href="/documents/CAPIS-PIS-e-academics.pdf"
                   target="_blank"
