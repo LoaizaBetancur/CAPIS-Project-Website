@@ -181,7 +181,7 @@ export default function ResourcesForCoachesPage() {
                 Everything you need to know about taking part in the CAPIS project, including what to expect, how the e-Delphi survey works, and how your data will be used.
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center" }}>
-                <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}>
+                <div style={{ display: "flex", flexDirection: "row", gap: "10px", justifyContent: "center" }}>
                   <a
                     href="/documents/CAPIS-PIS-e-practitioners.pdf"
                     target="_blank"
@@ -195,6 +195,7 @@ export default function ResourcesForCoachesPage() {
                       fontSize: "13px",
                       fontWeight: 600,
                       borderRadius: "4px",
+                      whiteSpace: "nowrap",
                     }}
                   >
                     View PIS - Focus group
@@ -212,6 +213,7 @@ export default function ResourcesForCoachesPage() {
                       fontSize: "13px",
                       fontWeight: 600,
                       borderRadius: "4px",
+                      whiteSpace: "nowrap",
                     }}
                   >
                     View Consent Form

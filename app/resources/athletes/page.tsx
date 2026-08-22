@@ -190,7 +190,7 @@ export default function ResourcesForAthletesPage() {
                 Everything you need to know about taking part in the CAPIS project, including what to expect, how the e-Delphi survey works, and how your data will be used. Available in English and Spanish.
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center" }}>
-                <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}>
+                <div style={{ display: "flex", flexDirection: "row", gap: "10px", justifyContent: "center" }}>
                   <a
                     href="/documents/CAPIS-PIS-e-practitioners.pdf"
                     target="_blank"
@@ -204,6 +204,7 @@ export default function ResourcesForAthletesPage() {
                       fontSize: "13px",
                       fontWeight: 600,
                       borderRadius: "4px",
+                      whiteSpace: "nowrap",
                     }}
                   >
                     View PIS - Focus group
@@ -221,6 +222,7 @@ export default function ResourcesForAthletesPage() {
                       fontSize: "13px",
                       fontWeight: 600,
                       borderRadius: "4px",
+                      whiteSpace: "nowrap",
                     }}
                   >
                     View Consent Form
