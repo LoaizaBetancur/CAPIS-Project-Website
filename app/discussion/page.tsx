@@ -74,13 +74,16 @@ export default async function DiscussionPage() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              overflow: "hidden",
             }}
           >
             <div
               style={{
                 position: "relative",
-                width: "380px",
-                height: "300px",
+                width: "280px",
+                height: "220px",
+                transform: "scale(1.4)",
+                transformOrigin: "center center",
               }}
             >
               <Image
