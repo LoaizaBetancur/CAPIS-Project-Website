@@ -342,6 +342,7 @@ export default function TeamPage() {
               <li>PhD María Cinta Gómez</li>
               <li>M.Sc. Andrés M. Echavarría-Rodríguez</li>
               <li>PhD Juan Osvaldo Jiménez Trujillo</li>
+              <li>Post-doc. Julia Bidonde</li>
             </ul>
           </div>
         </div>
