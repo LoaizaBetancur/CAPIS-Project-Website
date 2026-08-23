@@ -79,8 +79,8 @@ export default async function DiscussionPage() {
             <div
               style={{
                 position: "relative",
-                width: "280px",
-                height: "220px",
+                width: "380px",
+                height: "300px",
               }}
             >
               <Image
