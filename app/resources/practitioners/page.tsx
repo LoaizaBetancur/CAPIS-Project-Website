@@ -1,9 +1,21 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import ShareButtons from "@/components/ShareButtons";
 
 export const metadata: Metadata = {
-  title: "Resources for practitioners",
+  title: "Resources for Practitioners",
   description: "Information sheets and resources for practitioners taking part in the CAPIS project.",
+  openGraph: {
+    title: "Resources for Practitioners | The CAPIS Project",
+    description: "Information sheets and resources for practitioners taking part in the CAPIS project.",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Resources for Practitioners | The CAPIS Project",
+    description: "Information sheets and resources for practitioners taking part in the CAPIS project.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 const NAVY = "#2A3F5F";
@@ -426,6 +438,26 @@ export default function ResourcesForCoachesPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <div style={{ height: "4px", backgroundColor: NAVY }} />
+
+      <section style={{ backgroundColor: "#F7FAFC", padding: "32px 24px" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", textAlign: "center" }}>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#4A5568",
+              marginBottom: "8px",
+            }}
+          >
+            Share this page
+          </p>
+          <ShareButtons
+            title="Resources for Practitioners | The CAPIS Project"
+            description="Information sheets and resources for practitioners taking part in the CAPIS project."
+          />
         </div>
       </section>
     </main>

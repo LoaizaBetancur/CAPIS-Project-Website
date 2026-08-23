@@ -2,11 +2,25 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { getTopics } from "./actions";
 import TopicList from "./TopicList";
+import ShareButtons from "@/components/ShareButtons";
 
 export const metadata: Metadata = {
   title: "Discussion Forum",
   description:
     "Engage with the CAPIS community on topics in concussion and athletic performance science.",
+  openGraph: {
+    title: "Discussion Forum | The CAPIS Project",
+    description:
+      "Engage with the CAPIS community on topics in concussion and athletic performance science.",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Discussion Forum | The CAPIS Project",
+    description:
+      "Engage with the CAPIS community on topics in concussion and athletic performance science.",
+    images: ["/images/og-default.png"],
+  },
 };
 
 const NAVY = "#2A3F5F";
@@ -86,6 +100,26 @@ export default async function DiscussionPage() {
       <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <TopicList initialTopics={topics} />
+        </div>
+      </section>
+
+      <div style={{ height: "4px", backgroundColor: NAVY }} />
+
+      <section style={{ backgroundColor: "#F7FAFC", padding: "32px 24px" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", textAlign: "center" }}>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#4A5568",
+              marginBottom: "8px",
+            }}
+          >
+            Share this page
+          </p>
+          <ShareButtons
+            title="Discussion Forum | The CAPIS Project"
+            description="Engage with the CAPIS community on topics in concussion and athletic performance science."
+          />
         </div>
       </section>
     </main>

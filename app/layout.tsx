@@ -40,6 +40,24 @@ export const metadata: Metadata = {
     title: "The CAPIS Project",
     description:
       "Core Athletic Performance-based Intervention Set for Athletes. Developing a core outcome set for plyometric training in elite football.",
+    images: [
+      {
+        url: "/images/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "The CAPIS Project — Core Athletic Performance-based Intervention Set",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The CAPIS Project",
+    description:
+      "Developing a core outcome set for plyometric training in elite football. An international 5-phase research initiative.",
+    images: ["/images/og-default.png"],
+  },
+  other: {
+    "theme-color": "#2A3F5F",
   },
 };
 
