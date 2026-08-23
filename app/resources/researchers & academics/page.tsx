@@ -222,7 +222,7 @@ export default function ResourcesForResearchersPage() {
                     View PIS - Focus group
                   </a>
                   <a
-                    href="#"
+                    href="https://adelaideuniwide.qualtrics.com/jfe/form/SV_0ODPsMjQSkOhmvA"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
