@@ -61,6 +61,11 @@ const publications = [
 
 const presentations = [
   {
+    title: "QPR Conference 2026",
+    location: "National Wine Centre, Adelaide",
+    status: "Completed",
+  },
+  {
     title: "JBI iGNITE 2026",
     location: "Online",
     status: "Accepted",

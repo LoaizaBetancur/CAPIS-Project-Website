@@ -712,7 +712,7 @@ export default function HomePage() {
             Presentations & Conferences
           </h2>
           <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#2D3748", marginBottom: "24px" }}>
-            The CAPIS project has been accepted for presentation at the following international conferences.
+            The CAPIS project has been presented at and accepted for presentation at the following international conferences.
           </p>
 
           <div
@@ -722,6 +722,48 @@ export default function HomePage() {
               gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
             }}
           >
+            <div
+              style={{
+                borderRadius: "8px",
+                border: "1px solid #E2E8F0",
+                backgroundColor: "#F7FAFC",
+                padding: "20px",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  color: TEAL,
+                  marginBottom: "8px",
+                }}
+              >
+                Poster Presentation · Completed
+              </p>
+              <h3
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "16px",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  marginBottom: "6px",
+                }}
+              >
+                QPR Conference 2026
+              </h3>
+              <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "4px" }}>
+                National Wine Centre, Adelaide · 15–17 April 2026
+              </p>
+              <p style={{ fontSize: "12px", color: "#2D3748", marginBottom: "10px" }}>
+                Digital poster displayed in conference concourse
+              </p>
+              <p style={{ fontSize: "12px", color: "#2D3748", fontStyle: "italic" }}>
+                &ldquo;Core Athletic Performance-based Intervention Set for athletes: The CAPIS study&rdquo;
+              </p>
+            </div>
+
             <div
               style={{
                 borderRadius: "8px",
