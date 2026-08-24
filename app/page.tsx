@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import ParticipantCard from "@/components/ParticipantCard";
-import StageCard from "@/components/StageCard";
 import RelatedProjects from "@/components/RelatedProjects";
 
 export const metadata: Metadata = {
@@ -37,39 +36,6 @@ const participants = [
     description: "Chief performance officers and directors of performance involved in athletic performance decision-making.",
     icon: "📋",
     image: "/images/andresm.jpg",
-  },
-];
-
-const stages = [
-  {
-    number: 1,
-    title: "Scoping Review",
-    description: "A comprehensive review of scientific literature to identify all outcome domains already measured in plyometric training studies with Tier 3, 4, or 5 football players.",
-    image: "🔍",
-  },
-  {
-    number: 2,
-    title: "Focus Groups",
-    description: "Semi-structured interviews with players, coaches, and experts to discover outcomes that matter in practice but may be missing from research.",
-    image: "👥",
-  },
-  {
-    number: 3,
-    title: "Winnowing & Binning",
-    description: "Online meetings with each interest-holder group to organise and group outcome domains into a clear, manageable list of candidates.",
-    image: "🗂️",
-  },
-  {
-    number: 4,
-    title: "e-Delphi Surveys",
-    description: "Two rounds of online surveys where players, coaches, academics, and researchers vote on which outcomes are most important using a 9-point scale.",
-    image: "📊",
-  },
-  {
-    number: 5,
-    title: "Consensus Meeting",
-    description: "A half-day online meeting to reach final agreement on the core outcome set that all future plyometric training trials should measure.",
-    image: "🤝",
   },
 ];
 
@@ -418,18 +384,6 @@ export default function HomePage() {
                 sizes="(max-width: 768px) 100vw, 700px"
               />
             </div>
-          </div>
-
-          <div
-            style={{
-              display: "grid",
-              gap: "20px",
-              gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-            }}
-          >
-            {stages.map((stage) => (
-              <StageCard key={stage.number} {...stage} />
-            ))}
           </div>
         </div>
       </section>
