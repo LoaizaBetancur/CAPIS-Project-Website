@@ -45,31 +45,31 @@ const stages = [
     number: 1,
     title: "Scoping Review",
     description: "A comprehensive review of scientific literature to identify all outcome domains already measured in plyometric training studies with Tier 3, 4, or 5 football players.",
-    image: "/images/phase1.png",
+    image: "🔍",
   },
   {
     number: 2,
     title: "Focus Groups",
     description: "Semi-structured interviews with players, coaches, and experts to discover outcomes that matter in practice but may be missing from research.",
-    image: "/images/phase2.png",
+    image: "👥",
   },
   {
     number: 3,
     title: "Winnowing & Binning",
     description: "Online meetings with each interest-holder group to organise and group outcome domains into a clear, manageable list of candidates.",
-    image: "/images/phase3.png",
+    image: "🗂️",
   },
   {
     number: 4,
     title: "e-Delphi Surveys",
     description: "Two rounds of online surveys where players, coaches, academics, and researchers vote on which outcomes are most important using a 9-point scale.",
-    image: "/images/phase4.png",
+    image: "📊",
   },
   {
     number: 5,
     title: "Consensus Meeting",
     description: "A half-day online meeting to reach final agreement on the core outcome set that all future plyometric training trials should measure.",
-    image: "/images/phase5.png",
+    image: "🤝",
   },
 ];
 
@@ -399,6 +399,27 @@ export default function HomePage() {
           >
             You would have been invited to take part in Stage 2 or Stage 3. You can find out more about each stage from the videos and information sheets in the resources page!
           </p>
+
+          {/* Full methodology figure */}
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginBottom: "40px",
+            }}
+          >
+            <div style={{ position: "relative", width: "100%", maxWidth: "700px" }}>
+              <Image
+                src="/images/Figure_1.png"
+                alt="CAPIS Project methodology: 5 phases from Scoping Review to Consensus"
+                width={1400}
+                height={1600}
+                style={{ width: "100%", height: "auto" }}
+                sizes="(max-width: 768px) 100vw, 700px"
+              />
+            </div>
+          </div>
+
           <div
             style={{
               display: "grid",
