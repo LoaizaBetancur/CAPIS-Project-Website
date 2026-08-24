@@ -236,8 +236,8 @@ export default function HomePage() {
               We call this agreed-upon minimum list a <strong>core domain set</strong>.
             </p>
           </div>
-          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <div style={{ position: "relative", width: "280px", height: "220px", overflow: "hidden" }}>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" }}>
+            <div style={{ position: "relative", width: "280px", height: "220px", transform: "scale(1.3)", transformOrigin: "center top" }}>
               <Image
                 src="/images/andres1.JPG"
                 alt="Andres Loaiza-Betancur presenting the CAPIS project"
