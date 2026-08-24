@@ -239,8 +239,8 @@ export default function HomePage() {
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <div style={{ position: "relative", width: "280px", height: "220px" }}>
               <Image
-                src="/images/why-pic.png"
-                alt="Graphic representing the CAPIS project"
+                src="/images/andres1.JPG"
+                alt="Andres Loaiza-Betancur presenting the CAPIS project"
                 fill
                 style={{ objectFit: "contain" }}
                 sizes="280px"
