@@ -24,6 +24,7 @@ const participants = [
     name: "Coaches & Performance Staff",
     description: "Strength and conditioning coaches, football coaches, and sports physicians working with elite players.",
     icon: "🏋️",
+    image: "/images/pexels-women-coach.jpg",
   },
   {
     name: "Academics & Researchers",
@@ -35,6 +36,7 @@ const participants = [
     name: "Policymakers",
     description: "Chief performance officers and directors of performance involved in athletic performance decision-making.",
     icon: "📋",
+    image: "/images/pexels-diverse-training.jpg",
   },
 ];
 
