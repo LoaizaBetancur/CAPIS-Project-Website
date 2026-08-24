@@ -37,19 +37,19 @@ export default function ShareButtons({ title, description, url }: ShareButtonsPr
 
   return (
     <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginTop: "16px" }}>
-      {/* Twitter/X */}
+      {/* X */}
       <a
         href={`https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Share on Twitter"
+        aria-label="Share on X"
         style={{
           display: "inline-flex",
           alignItems: "center",
           gap: "6px",
           padding: "8px 12px",
           borderRadius: "6px",
-          backgroundColor: "#1DA1F2",
+          backgroundColor: "#000000",
           color: "#FFFFFF",
           fontSize: "13px",
           fontWeight: 500,
@@ -62,7 +62,7 @@ export default function ShareButtons({ title, description, url }: ShareButtonsPr
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
           <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
         </svg>
-        Twitter
+        X
       </a>
 
       {/* LinkedIn */}

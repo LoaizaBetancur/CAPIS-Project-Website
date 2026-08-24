@@ -47,10 +47,10 @@ export default function Footer() {
         {/* MIDDLE: Social Links */}
         <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
           <a
-            href="https://twitter.com/CAPIS_Project"
+            href="https://x.com/CAPIS_Project"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Follow us on Twitter"
+            aria-label="Follow us on X"
             style={{
               color: "#B0C4DE",
               transition: "color 150ms",
