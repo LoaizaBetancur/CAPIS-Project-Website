@@ -135,7 +135,15 @@ export default function ResourcesForCoachesPage() {
               alignItems: "center",
             }}
           >
-            <span style={{ fontSize: "120px" }}>🤔</span>
+            <div style={{ position: "relative", width: "200px", height: "160px" }}>
+              <Image
+                src="/images/take-part-pic.png"
+                alt="Why participate in CAPIS"
+                fill
+                style={{ objectFit: "contain" }}
+                sizes="200px"
+              />
+            </div>
           </div>
         </div>
       </section>
