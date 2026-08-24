@@ -4,7 +4,6 @@
 - **LinkedIn**: Professional tone, 1,300 characters max, hashtags: 3-5
 - **Twitter/X**: Concise, 280 characters per tweet, thread format for longer content, hashtags: 2-3
 - **Instagram**: Visual-first, caption up to 2,200 characters, 5-10 hashtags
-- **YouTube**: Description up to 5,000 characters, include links and timestamps
 
 ---
 
@@ -150,43 +149,6 @@ Proud to represent this work on the global stage. More to come.
 🔗 https://capis-project-website.vercel.app
 
 #Conference #SportScience #Cochrane #AcademicLife #Football
-
----
-
-## YouTube Video Descriptions
-
-**Video 1 — Project Introduction (existing video: fYMz7wH3wKM)**
-
-Description:
-The CAPIS Project (Core Athletic Performance-based Intervention Set) is an international five-phase research initiative to develop a core outcome set for plyometric training interventions in Tier 3, 4, or 5 football players.
-
-In this video, we explain:
-• What the CAPIS Project is
-• Why a core outcome set is needed
-• How you can participate
-• The five phases of the project
-
-🔗 Website: https://capis-project-website.vercel.app
-📧 Contact: andresfelipe.loaizabetancur@adelaide.edu.au
-
-This project is registered with the COMET Initiative as Study 3589 and approved by the Adelaide University Human Research Ethics Committee (HREC/HREC-1/2026/1233(v5)).
-
-#CAPIS #CoreOutcomeSet #Football #SportScience #PlyometricTraining
-
----
-
-**Video 2 — What are Core Outcome Sets? (existing video: Sb7sZRKC26o)**
-
-Description:
-What is a core outcome set (COS)? Why do researchers need to agree on which outcomes to measure?
-
-In this video, we explain the concept of core outcome sets and why they matter for evidence-based practice in sport and exercise science.
-
-Learn more from the COMET Initiative: https://www.comet-initiative.org/
-
-🔗 CAPIS Project: https://capis-project-website.vercel.app
-
-#CoreOutcomeSet #COS #Research #SportScience #EvidenceBased
 
 ---
 

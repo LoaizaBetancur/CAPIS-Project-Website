@@ -377,7 +377,6 @@ export default function ResourcesForResearchersPage() {
                   Watch Video
                 </a>
                 <a
-                  href="https://www.youtube.com/watch?v=Sb7sZRKC26o"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{

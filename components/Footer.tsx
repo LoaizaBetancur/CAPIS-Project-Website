@@ -47,7 +47,7 @@ export default function Footer() {
         {/* MIDDLE: Social Links */}
         <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
           <a
-            href="https://x.com/CAPIS_Project"
+            href="https://x.com/theCAPISproject"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Follow us on X"
@@ -63,7 +63,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/company/capis-project"
+            href="https://www.linkedin.com/in/andresfelipeloaizabetancur"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Follow us on LinkedIn"
@@ -79,7 +79,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="https://www.instagram.com/capis_project"
+            href="https://www.instagram.com/thecapisproject/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Follow us on Instagram"
@@ -95,10 +95,10 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="https://www.youtube.com/@CAPISProject"
+            href="https://bsky.app/profile/loaizabetancur.bsky.social"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Subscribe on YouTube"
+            aria-label="Follow us on Bluesky"
             style={{
               color: "#B0C4DE",
               transition: "color 150ms",
@@ -107,7 +107,7 @@ export default function Footer() {
             onMouseLeave={(e) => { e.currentTarget.style.color = "#B0C4DE"; }}
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.588 3.496 6.152 3.218-3.92.584-7.288 2.317-2.688 8.295C7.152 18.104 10.634 14.5 12 12.2c1.366 2.3 3.624 4.576 7.912 9.565 4.816-6.168 1.336-7.879-2.536-8.295 2.564.278 5.367-.591 6.152-3.218C23.622 9.418 24 4.458 24 3.768c0-.688-.139-1.86-.902-2.203-.659-.299-1.664-.621-4.3 1.24C16.046 4.747 13.087 8.686 12 10.8z" />
             </svg>
           </a>
         </div>
