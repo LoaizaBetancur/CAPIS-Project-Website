@@ -66,7 +66,7 @@ const projects: Project[] = [
   },
   {
     title: "Analysis of reporting completeness in plyometric football trials: a systematic review",
-    status: "Recruiting",
+    status: "Ongoing",
     description:
       "Thesis",
     meta: [
