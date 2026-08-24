@@ -29,6 +29,7 @@ const participants = [
     name: "Academics & Researchers",
     description: "Sport science lecturers, students, trialists, and systematic reviewers in athletic performance research.",
     icon: "🎓",
+    image: "/images/andres3.JPG",
   },
   {
     name: "Policymakers",
