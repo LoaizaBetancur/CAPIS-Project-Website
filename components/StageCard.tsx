@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface StageCardProps {
   number: number;
   title: string;
@@ -25,11 +27,21 @@ export default function StageCard({ number, title, description, image }: StageCa
           alignItems: "center",
           justifyContent: "center",
           marginBottom: "16px",
-          fontSize: "72px",
-          lineHeight: 1,
+          overflow: "hidden",
         }}
       >
-        {image}
+        {image.startsWith("/") ? (
+          <Image
+            src={image}
+            alt={`Stage ${number}`}
+            width={280}
+            height={140}
+            style={{ objectFit: "contain" }}
+            sizes="280px"
+          />
+        ) : (
+          <div style={{ fontSize: "72px", lineHeight: 1 }}>{image}</div>
+        )}
       </div>
       <h3
         style={{
