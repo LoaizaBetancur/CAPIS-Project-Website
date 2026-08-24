@@ -135,13 +135,13 @@ export default function ResourcesForAthletesPage() {
               alignItems: "center",
             }}
           >
-            <div style={{ position: "relative", width: "200px", height: "160px" }}>
+            <div style={{ position: "relative", width: "280px", height: "200px", overflow: "hidden", borderRadius: "12px" }}>
               <Image
-                src="/images/take-part-pic.png"
-                alt="Why participate in CAPIS"
+                src="/images/andres9.jpg"
+                alt="Andres Loaiza-Betancur playing football"
                 fill
-                style={{ objectFit: "contain" }}
-                sizes="200px"
+                style={{ objectFit: "cover", objectPosition: "center center" }}
+                sizes="280px"
               />
             </div>
           </div>
