@@ -56,6 +56,7 @@ export default function FundingPage() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              overflow: "hidden",
             }}
           >
             <div
@@ -63,6 +64,8 @@ export default function FundingPage() {
                 position: "relative",
                 width: "280px",
                 height: "220px",
+                transform: "scale(1.4)",
+                transformOrigin: "center center",
               }}
             >
               <Image
@@ -121,20 +124,6 @@ export default function FundingPage() {
             We are particularly interested in partnerships that align with our
             mission to improve the consistency and quality of outcome measurement
             in sports science research.
-          </p>
-          <p
-            style={{
-              fontSize: "15px",
-              lineHeight: 1.7,
-              color: "#2D3748",
-              marginBottom: "24px",
-              maxWidth: "720px",
-            }}
-          >
-            At this stage, CAPIS is not accepting formal funding applications
-            directly. However, we are happy to discuss potential collaborations
-            and can provide letters of support for aligned grant proposals
-            submitted through appropriate institutional channels.
           </p>
         </div>
       </section>
