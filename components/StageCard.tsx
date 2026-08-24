@@ -22,22 +22,23 @@ export default function StageCard({ number, title, description, image }: StageCa
         style={{
           backgroundColor: "#F7FAFC",
           borderRadius: "8px",
-          height: "140px",
+          height: "160px",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           marginBottom: "16px",
           overflow: "hidden",
+          padding: "8px",
         }}
       >
         {image.startsWith("/") ? (
           <Image
             src={image}
             alt={`Stage ${number}`}
-            width={280}
-            height={140}
-            style={{ objectFit: "contain" }}
-            sizes="280px"
+            width={560}
+            height={120}
+            style={{ width: "100%", height: "auto", objectFit: "contain" }}
+            sizes="(max-width: 768px) 100vw, 25vw"
           />
         ) : (
           <div style={{ fontSize: "72px", lineHeight: 1 }}>{image}</div>
