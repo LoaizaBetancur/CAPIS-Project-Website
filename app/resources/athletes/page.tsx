@@ -220,7 +220,7 @@ export default function ResourcesForAthletesPage() {
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center" }}>
                 <div style={{ display: "flex", flexDirection: "row", gap: "10px", justifyContent: "center" }}>
                   <a
-                    href="/documents/CAPIS-PIS-e-practitioners.pdf"
+                    href="/documents/PIS-English.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
@@ -257,7 +257,7 @@ export default function ResourcesForAthletesPage() {
                   </a>
                 </div>
                 <a
-                  href="/documents/CAPIS-PIS-s-practitioners.pdf"
+                  href="/documents/PIS-Spanish.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -274,7 +274,7 @@ export default function ResourcesForAthletesPage() {
                   Mira aquí la hoja de información para participantes - Grupo focal
                 </a>
                 <a
-                  href="/documents/CAPIS-PIS-e-practitioners.pdf"
+                  href="/documents/PIS-English.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -291,7 +291,7 @@ export default function ResourcesForAthletesPage() {
                   View PIS - e-Delphi (soon)
                 </a>
                 <a
-                  href="/documents/CAPIS-PIS-s-practitioners.pdf"
+                  href="/documents/PIS-Spanish.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -351,7 +351,7 @@ export default function ResourcesForAthletesPage() {
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center" }}>
                 <a
-                  href="/documents/CAPIS-PLS-e.pdf"
+                  href="/documents/PSL-English.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -368,7 +368,7 @@ export default function ResourcesForAthletesPage() {
                   Plain Language Summary
                 </a>
                 <a
-                  href="/documents/CAPIS-PLS-e.pdf"
+                  href="/documents/PSL-English.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{

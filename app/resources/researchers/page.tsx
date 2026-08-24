@@ -182,7 +182,7 @@ export default function ResourcesForResearchersPage() {
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center" }}>
                 <a
-                  href="/documents/CAPIS-PIS-e-academics.pdf"
+                  href="/documents/PIS-English.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -199,7 +199,7 @@ export default function ResourcesForResearchersPage() {
                   View PIS - Focus group
                 </a>
                 <a
-                  href="/documents/CAPIS-PIS-e-academics.pdf"
+                  href="/documents/PIS-English.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -216,7 +216,7 @@ export default function ResourcesForResearchersPage() {
                   View PIS - e-Delphi (soon)
                 </a>
                 <a
-                  href="/documents/CAPIS-PIS-s-academics.pdf"
+                  href="/documents/PIS-Spanish.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -233,7 +233,7 @@ export default function ResourcesForResearchersPage() {
                   Mira aquí la hoja de información para participantes - Grupo focal
                 </a>
                 <a
-                  href="/documents/CAPIS-PIS-s-academics.pdf"
+                  href="/documents/PIS-Spanish.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -288,7 +288,7 @@ export default function ResourcesForResearchersPage() {
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "center" }}>
                 <a
-                  href="/documents/CAPIS-PLS-e.pdf"
+                  href="/documents/PSL-English.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -305,7 +305,7 @@ export default function ResourcesForResearchersPage() {
                   Plain Language Summary
                 </a>
                 <a
-                  href="/documents/CAPIS-PLS-e.pdf"
+                  href="/documents/PSL-English.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
