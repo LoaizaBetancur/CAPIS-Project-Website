@@ -21,18 +21,20 @@ export default function ParticipantCard({ name, description, icon, image }: Part
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          minHeight: "140px",
+          minHeight: "180px",
           overflow: "hidden",
         }}
       >
         {image ? (
-          <div style={{ position: "relative", width: "120px", height: "120px" }}>
+          <div style={{ position: "relative", width: "160px", height: "160px" }}>
             <Image
               src={image}
               alt={name}
-              fill
+              width={160}
+              height={160}
               style={{ objectFit: "cover", borderRadius: "8px" }}
-              sizes="120px"
+              sizes="240px"
+              quality={90}
             />
           </div>
         ) : (

@@ -36,7 +36,7 @@ const participants = [
     name: "Policymakers",
     description: "Chief performance officers and directors of performance involved in athletic performance decision-making.",
     icon: "📋",
-    image: "/images/pexels-diverse-training.jpg",
+    image: "/images/andresm.jpg",
   },
 ];
 
