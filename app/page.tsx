@@ -719,23 +719,38 @@ export default function HomePage() {
       {/* ── Presentations & Conferences ── */}
       <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
-          <h2
-            style={{
-              fontFamily: "var(--font-display)",
-              fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
-              fontWeight: 600,
-              color: "#1A202C",
-              lineHeight: 1.3,
-              textDecoration: "underline",
-              textUnderlineOffset: "4px",
-              marginBottom: "16px",
-            }}
-          >
-            Presentations & Conferences
-          </h2>
-          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#2D3748", marginBottom: "24px" }}>
-            The CAPIS project has been accepted for presentation at the following international conferences.
-          </p>
+          <div style={{ display: "grid", alignItems: "center", gap: "32px", gridTemplateColumns: "1fr 1fr", marginBottom: "24px" }} className="content-grid">
+            <div>
+              <h2
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
+                  fontWeight: 600,
+                  color: "#1A202C",
+                  lineHeight: 1.3,
+                  textDecoration: "underline",
+                  textUnderlineOffset: "4px",
+                  marginBottom: "16px",
+                }}
+              >
+                Presentations & Conferences
+              </h2>
+              <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#2D3748", marginBottom: "24px" }}>
+                The CAPIS project has been accepted for presentation at the following international conferences.
+              </p>
+            </div>
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" }}>
+              <div style={{ position: "relative", width: "380px", height: "280px", transform: "scale(1.15)", transformOrigin: "center center" }}>
+                <Image
+                  src="/images/andres3.JPG"
+                  alt="Andres Loaiza-Betancur presenting at conference"
+                  fill
+                  style={{ objectFit: "cover", objectPosition: "center top" }}
+                  sizes="380px"
+                />
+              </div>
+            </div>
+          </div>
 
           <div
             style={{
