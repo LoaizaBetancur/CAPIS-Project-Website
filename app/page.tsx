@@ -237,12 +237,12 @@ export default function HomePage() {
             </p>
           </div>
           <div style={{ display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden" }}>
-            <div style={{ position: "relative", width: "280px", height: "220px", transform: "scale(1.3)", transformOrigin: "center top" }}>
+            <div style={{ position: "relative", width: "280px", height: "220px", transform: "scale(1.15)", transformOrigin: "center 30%" }}>
               <Image
                 src="/images/andres1.JPG"
                 alt="Andres Loaiza-Betancur presenting the CAPIS project"
                 fill
-                style={{ objectFit: "cover", objectPosition: "center top" }}
+                style={{ objectFit: "cover", objectPosition: "center 20%" }}
                 sizes="280px"
               />
             </div>
