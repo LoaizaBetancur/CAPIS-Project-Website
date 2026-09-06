@@ -537,7 +537,7 @@ export default function HomePage() {
                 Cochrane Database of Systematic Reviews · 2026
               </p>
               <p style={{ fontSize: "12px", color: "#4A5568", marginBottom: "8px", lineHeight: 1.4 }}>
-                <strong>Andrés F. Loaiza-Betancur</strong>; Lisette Ethel Iglesias Gonzalez; Nathaly Chavez Guapo; Camila Micaela Escobar Liquitay; Julia Bidonde
+                <strong>Loaiza-Betancur AF</strong>, Iglesias Gonzalez LE, Chavez Guapo N, Escobar Liquitay CM, Bidonde J
               </p>
               <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
                 DOI: <a 
@@ -587,7 +587,7 @@ export default function HomePage() {
                 Cochrane Database of Systematic Reviews · 2026
               </p>
               <p style={{ fontSize: "12px", color: "#4A5568", marginBottom: "8px", lineHeight: 1.4 }}>
-                Jose F. Meneses-Echavez; Nathaly Chavez Guapo; <strong>Andrés F. Loaiza-Betancur</strong>; Lisette Ethel Iglesias Gonzalez; Camila Micaela Escobar Liquitay; Julia Bidonde
+                Meneses-Echavez JF, Chavez Guapo N, <strong>Loaiza-Betancur AF</strong>, Iglesias Gonzalez LE, Escobar Liquitay CM, Bidonde J
               </p>
               <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
                 DOI: <a 
@@ -637,7 +637,7 @@ export default function HomePage() {
                 PLOS ONE · 2026
               </p>
               <p style={{ fontSize: "12px", color: "#4A5568", marginBottom: "8px", lineHeight: 1.4 }}>
-                <strong>Andrés F. Loaiza-Betancur</strong>; Cristian González-González; Alejandro Díaz-Franco; Jeferson Castaño-Soto; Alejandro Alzate-Toro; Elias Areiza-Usuga; Diego A. Zuluaga-M; Juan Osvaldo Jiménez-Trujillo; Andrés M. Echavarría‑Rodríguez; Víctor Díaz‑López; Iván Chulvi-Medrano; Lisette Ethel Iglesias-González
+                <strong>Loaiza-Betancur AF</strong>, González-González C, Díaz-Franco A, Castaño-Soto J, Alzate-Toro A, Areiza-Usuga E, Zuluaga-M DA, Jiménez-Trujillo JO, Echavarría‑Rodríguez AM, Díaz‑López V, Chulvi-Medrano I, Iglesias-González LE
               </p>
               <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
                 DOI: <a 
@@ -687,7 +687,7 @@ export default function HomePage() {
                 Journal of Sports Sciences · 2025
               </p>
               <p style={{ fontSize: "12px", color: "#4A5568", marginBottom: "8px", lineHeight: 1.4 }}>
-                <strong>Andrés F. Loaiza-Betancur</strong>; Lisette Ethel Iglesias-González; Víctor Díaz-López; Andrés M. Echavarría-Rodríguez; Iván Chulvi-Medrano; Edison Andrés Pérez Bedoya; Luis Andrés Téllez; Jose F. Meneses-Echavez
+                <strong>Loaiza-Betancur AF</strong>, Iglesias-González LE, Díaz‑López V, Echavarría‑Rodríguez AM, Chulvi-Medrano I, Pérez Bedoya EA, Téllez LA, Meneses-Echavez JF
               </p>
               <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
                 DOI: <a 
