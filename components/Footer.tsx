@@ -112,7 +112,7 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* CENTER: Institutional Logos — equal height 30px preserves ratio, gap 20px, footer size unchanged */}
+        {/* CENTER: Institutional Logos — optical balance: JBI taller (36px) than Adelaide (28px) */}
         <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
           <a
             href="https://jbi.global"
@@ -124,9 +124,9 @@ export default function Footer() {
             <Image
               src="/images/Logos-JBI-AU/jbi-logo-wht.png"
               alt="JBI"
-              width={63}
-              height={30}
-              style={{ height: "30px", width: "auto", objectFit: "contain" }}
+              width={75}
+              height={36}
+              style={{ height: "36px", width: "auto", objectFit: "contain" }}
             />
           </a>
           <a
@@ -139,9 +139,9 @@ export default function Footer() {
             <Image
               src="/images/Logos-JBI-AU/au-logo-primary-rev.png"
               alt="University of Adelaide"
-              width={126}
-              height={30}
-              style={{ height: "30px", width: "auto", objectFit: "contain" }}
+              width={118}
+              height={28}
+              style={{ height: "28px", width: "auto", objectFit: "contain" }}
             />
           </a>
         </div>
