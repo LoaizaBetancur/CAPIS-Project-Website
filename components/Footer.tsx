@@ -112,6 +112,40 @@ export default function Footer() {
           </a>
         </div>
 
+        {/* CENTER: Institutional Logos — height 28px preservesFooter padding, width auto keeps ratio */}
+        <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+          <a
+            href="https://www.adelaide.edu.au"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="The University of Adelaide"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <Image
+              src="/images/Logos-JBI-AU/au-logo-primary-rev.png"
+              alt="University of Adelaide"
+              width={118}
+              height={28}
+              style={{ height: "28px", width: "auto", objectFit: "contain" }}
+            />
+          </a>
+          <a
+            href="https://jbi.global"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="JBI"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <Image
+              src="/images/Logos-JBI-AU/jbi-logo-wht.png"
+              alt="JBI"
+              width={58}
+              height={28}
+              style={{ height: "28px", width: "auto", objectFit: "contain" }}
+            />
+          </a>
+        </div>
+
         {/* RIGHT: Ethics + Contact */}
         <div
           style={{
