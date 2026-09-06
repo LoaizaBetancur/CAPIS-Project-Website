@@ -447,6 +447,9 @@ export default function TeamPage() {
               <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "8px" }}>
                 Cochrane Database of Systematic Reviews · 2026
               </p>
+              <p style={{ fontSize: "12px", color: "#4A5568", marginBottom: "8px", lineHeight: 1.4 }}>
+                <strong>Andrés F. Loaiza-Betancur</strong>; Lisette Ethel Iglesias Gonzalez; Nathaly Chavez Guapo; Camila Micaela Escobar Liquitay; Julia Bidonde
+              </p>
               <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
                 DOI: <a 
                   href="https://doi.org/10.1002/14651858.CD015988" 
@@ -493,6 +496,9 @@ export default function TeamPage() {
               </h3>
               <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "8px" }}>
                 Cochrane Database of Systematic Reviews · 2026
+              </p>
+              <p style={{ fontSize: "12px", color: "#4A5568", marginBottom: "8px", lineHeight: 1.4 }}>
+                Jose F. Meneses-Echavez; Nathaly Chavez Guapo; <strong>Andrés F. Loaiza-Betancur</strong>; Lisette Ethel Iglesias Gonzalez; Camila Micaela Escobar Liquitay; Julia Bidonde
               </p>
               <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
                 DOI: <a 
@@ -541,6 +547,9 @@ export default function TeamPage() {
               <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "8px" }}>
                 PLOS ONE · 2026
               </p>
+              <p style={{ fontSize: "12px", color: "#4A5568", marginBottom: "8px", lineHeight: 1.4 }}>
+                <strong>Andrés F. Loaiza-Betancur</strong>; Cristian González-González; Alejandro Díaz-Franco; Jeferson Castaño-Soto; Alejandro Alzate-Toro; Elias Areiza-Usuga; Diego A. Zuluaga-M; Juan Osvaldo Jiménez-Trujillo; Andrés M. Echavarría‑Rodríguez; Víctor Díaz‑López; Iván Chulvi-Medrano; Lisette Ethel Iglesias-González
+              </p>
               <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
                 DOI: <a 
                   href="https://doi.org/10.1371/journal.pone.0342992" 
@@ -587,6 +596,9 @@ export default function TeamPage() {
               </h3>
               <p style={{ fontSize: "13px", color: "#2D3748", marginBottom: "8px" }}>
                 Journal of Sports Sciences · 2025
+              </p>
+              <p style={{ fontSize: "12px", color: "#4A5568", marginBottom: "8px", lineHeight: 1.4 }}>
+                <strong>Andrés F. Loaiza-Betancur</strong>; Lisette Ethel Iglesias-González; Víctor Díaz-López; Andrés M. Echavarría-Rodríguez; Iván Chulvi-Medrano; Edison Andrés Pérez Bedoya; Luis Andrés Téllez; Jose F. Meneses-Echavez
               </p>
               <p style={{ fontSize: "12px", fontFamily: "var(--font-mono)", color: "#2D3748" }}>
                 DOI: <a 
