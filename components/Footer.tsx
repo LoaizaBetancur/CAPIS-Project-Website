@@ -112,23 +112,8 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* CENTER: Institutional Logos — optical balance: JBI taller (36px) than Adelaide (28px) */}
+        {/* CENTER: Institutional Logos — Adelaide left-leading per branding guidelines */}
         <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
-          <a
-            href="https://jbi.global"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="JBI"
-            style={{ display: "flex", alignItems: "center" }}
-          >
-            <Image
-              src="/images/Logos-JBI-AU/jbi-logo-wht.png"
-              alt="JBI"
-              width={75}
-              height={36}
-              style={{ height: "36px", width: "auto", objectFit: "contain" }}
-            />
-          </a>
           <a
             href="https://www.adelaide.edu.au"
             target="_blank"
@@ -142,6 +127,21 @@ export default function Footer() {
               width={118}
               height={28}
               style={{ height: "28px", width: "auto", objectFit: "contain" }}
+            />
+          </a>
+          <a
+            href="https://jbi.global"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="JBI"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <Image
+              src="/images/Logos-JBI-AU/jbi-logo-wht.png"
+              alt="JBI"
+              width={75}
+              height={36}
+              style={{ height: "36px", width: "auto", objectFit: "contain" }}
             />
           </a>
         </div>
