@@ -368,7 +368,7 @@ export default function ResourcesForCoachesPage() {
                   Plain Language Summary
                 </a>
                 <a
-                  href="/documents/PSL-English.pdf"
+                  href="/documents/PLS_español.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
