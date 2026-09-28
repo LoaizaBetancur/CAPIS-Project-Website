@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import GalleryLightbox from "@/components/GalleryLightbox";
 
 export const metadata: Metadata = {
   title: "Gallery",
@@ -24,51 +25,6 @@ const events = [
     poster: "JBIiGNITE_Poster.jpeg",
   },
 ];
-
-function PhotoGrid({ photos, eventTitle }: { photos: string[]; eventTitle: string }) {
-  return (
-    <div
-      style={{
-        display: "grid",
-        gap: "16px",
-        gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-      }}
-    >
-      {photos.map((file) => (
-        <figure key={file} style={{ margin: 0 }}>
-          <a
-            href={`${IMG}/${file}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Click to view full size"
-            style={{ display: "block", textDecoration: "none" }}
-          >
-            <div
-              style={{
-                position: "relative",
-                width: "100%",
-                aspectRatio: "4 / 3",
-                overflow: "hidden",
-                borderRadius: "8px",
-                border: "1px solid #E2E8F0",
-                backgroundColor: "#EDF2F7",
-              }}
-            >
-              <Image
-                src={`${IMG}/${file}`}
-                alt={`${eventTitle} — photo (click to view full size)`}
-                fill
-                style={{ objectFit: "cover" }}
-                sizes="(max-width: 768px) 100vw, 600px"
-                quality={90}
-              />
-            </div>
-          </a>
-        </figure>
-      ))}
-    </div>
-  );
-}
 
 export default function GalleryPage() {
   return (
@@ -156,7 +112,11 @@ export default function GalleryPage() {
               >
                 {event.title}
               </h2>
-              <PhotoGrid photos={event.photos} eventTitle={event.title} />
+              <GalleryLightbox
+                photos={event.photos.map((f) => `${IMG}/${f}`)}
+                eventTitle={event.title}
+                maxWidth={event.photos.length === 1 ? 560 : undefined}
+              />
               {event.poster && (
                 <div style={{ marginTop: "24px" }}>
                   <h3
@@ -170,37 +130,15 @@ export default function GalleryPage() {
                   >
                     Conference poster{" "}
                     <span style={{ fontWeight: 400, fontSize: "13px", color: "#4A5568" }}>
-                      (click to view full size)
+                      (click to view)
                     </span>
                   </h3>
-                  <a
-                    href={`${IMG}/${event.poster}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Click to view full size"
-                    style={{ display: "block", textDecoration: "none" }}
-                  >
-                  <div
-                    style={{
-                      position: "relative",
-                      width: "100%",
-                      aspectRatio: "16 / 9",
-                      overflow: "hidden",
-                      borderRadius: "8px",
-                      border: "1px solid #E2E8F0",
-                      backgroundColor: "#EDF2F7",
-                    }}
-                  >
-                    <Image
-                      src={`${IMG}/${event.poster}`}
-                      alt={`${event.title} — conference poster (click to view full size)`}
-                      fill
-                      style={{ objectFit: "contain" }}
-                      sizes="900px"
-                      quality={90}
-                    />
-                  </div>
-                  </a>
+                  <GalleryLightbox
+                    photos={[`${IMG}/${event.poster}`]}
+                    eventTitle={`${event.title} poster`}
+                    aspect="16 / 9"
+                    fit="contain"
+                  />
                 </div>
               )}
             </div>
