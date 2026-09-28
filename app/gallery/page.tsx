@@ -21,8 +21,8 @@ const events = [
   {
     title: "JBI iGNITE 2026",
     location: "Online",
-    photos: ["JBIiGNITE1.jpeg"],
-    poster: "JBIiGNITE_Poster.jpeg",
+    photos: ["JBIiGNITE1.jpeg", "JBIiGNITE_Poster.jpeg"],
+    fits: ["cover", "contain"] as ("cover" | "contain")[],
   },
 ];
 
@@ -115,33 +115,9 @@ export default function GalleryPage() {
               <GalleryLightbox
                 photos={event.photos.map((f) => `${IMG}/${f}`)}
                 eventTitle={event.title}
+                fits={"fits" in event ? event.fits : undefined}
                 maxWidth={event.photos.length === 1 ? 560 : undefined}
               />
-              {event.poster && (
-                <div style={{ marginTop: "24px" }}>
-                  <h3
-                    style={{
-                      fontFamily: "var(--font-display)",
-                      fontSize: "15px",
-                      fontWeight: 600,
-                      color: "#1A202C",
-                      marginBottom: "12px",
-                    }}
-                  >
-                    Conference poster{" "}
-                    <span style={{ fontWeight: 400, fontSize: "13px", color: "#4A5568" }}>
-                      (click to view)
-                    </span>
-                  </h3>
-                  <GalleryLightbox
-                    photos={[`${IMG}/${event.poster}`]}
-                    eventTitle={`${event.title} poster`}
-                    aspect="16 / 9"
-                    fit="contain"
-                    maxWidth={560}
-                  />
-                </div>
-              )}
             </div>
           </section>
           <div style={{ height: "4px", backgroundColor: NAVY }} />

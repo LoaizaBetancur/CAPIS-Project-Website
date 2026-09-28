@@ -11,6 +11,8 @@ interface GalleryLightboxProps {
   /** Thumbnail box shape — defaults to a uniform 4:3 crop like the QPR grid */
   aspect?: string;
   fit?: "cover" | "contain";
+  /** Per-photo thumbnail fit (falls back to `fit`); use "contain" for posters so nothing is cropped */
+  fits?: ("cover" | "contain")[];
   /** Keeps single-photo grids from stretching full-width */
   maxWidth?: number;
 }
@@ -20,6 +22,7 @@ export default function GalleryLightbox({
   eventTitle,
   aspect = "4 / 3",
   fit = "cover",
+  fits,
   maxWidth,
 }: GalleryLightboxProps) {
   const [index, setIndex] = useState<number | null>(null);
@@ -102,7 +105,7 @@ export default function GalleryLightbox({
                   src={file}
                   alt={`${eventTitle} — photo ${i + 1}`}
                   fill
-                  style={{ objectFit: fit }}
+                  style={{ objectFit: fits?.[i] ?? fit }}
                   sizes="(max-width: 768px) 100vw, 600px"
                   quality={90}
                 />
