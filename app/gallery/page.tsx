@@ -138,6 +138,7 @@ export default function GalleryPage() {
                     eventTitle={`${event.title} poster`}
                     aspect="16 / 9"
                     fit="contain"
+                    maxWidth={560}
                   />
                 </div>
               )}
