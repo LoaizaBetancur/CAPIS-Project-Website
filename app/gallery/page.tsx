@@ -16,7 +16,19 @@ const events = [
   {
     title: "QPR Conference 2026",
     location: "National Wine Centre, Adelaide",
-    photos: ["QPR1.jpg", "QPR2.JPG", "QPR3.JPG", "QPR4.JPG", "QPR5.JPG", "QPR6.JPG"],
+    photos: [
+      "QPR1.jpg",
+      "QPR2.JPG",
+      "QPR3.JPG",
+      "QPR4.JPG",
+      "QPR5.JPG",
+      "QPR6.JPG",
+      "Loaiza-Betancur_Core Athletic Performance-based Intervention Set for athletes The CAPIS study.jpg",
+    ],
+    fits: ["cover", "cover", "cover", "cover", "cover", "cover", "contain"] as (
+      | "cover"
+      | "contain"
+    )[],
   },
   {
     title: "JBI iGNITE 2026",
