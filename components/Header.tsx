@@ -9,6 +9,7 @@ import MobileMenu from "./MobileMenu";
 const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Study Team", href: "/team" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Resources for athletes", href: "/resources/athletes" },
   { label: "Resources for practitioners", href: "/resources/practitioners" },
   { label: "Resources for researchers & academics", href: "/resources/researchers & academics" },
