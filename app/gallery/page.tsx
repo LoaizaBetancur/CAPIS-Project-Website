@@ -20,8 +20,8 @@ const events = [
   {
     title: "JBI iGNITE 2026",
     location: "Online",
-    photos: ["JBIiGNITE.png"],
-    poster: "Poster_JBIiGNITE.png",
+    photos: ["JBIiGNITE1.jpeg"],
+    poster: "JBIiGNITE_Poster.jpeg",
   },
 ];
 
