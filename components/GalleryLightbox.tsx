@@ -160,8 +160,8 @@ export default function GalleryLightbox({
               alt={`${eventTitle} — photo ${index + 1} of ${photos.length}`}
               fill
               style={{ objectFit: "contain" }}
-              sizes="1100px"
-              quality={95}
+              sizes="2048px"
+              quality={90}
               priority
             />
           </div>
@@ -209,7 +209,16 @@ export default function GalleryLightbox({
               whiteSpace: "nowrap",
             }}
           >
-            {eventTitle} — {index + 1} of {photos.length}
+            {eventTitle} — {index + 1} of {photos.length} ·{" "}
+            <a
+              href={photos[index]}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              style={{ color: "#FFFFFF", textDecoration: "underline" }}
+            >
+              open full size
+            </a>
           </p>
         </div>
       )}
