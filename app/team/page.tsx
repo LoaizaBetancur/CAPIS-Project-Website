@@ -63,6 +63,21 @@ const reviewTeam = [
     bio: "Contributing to the evidence synthesis of the CAPIS study.",
     image: "/images/team/Lubin.jpeg",
   },
+  {
+    name: "María Cinta Gómez",
+    role: "PhD",
+    bio: "Contributing to the evidence synthesis of the CAPIS study.",
+  },
+  {
+    name: "Andrés M. Echavarría-Rodríguez",
+    role: "MSc",
+    bio: "Contributing to the evidence synthesis of the CAPIS study.",
+  },
+  {
+    name: "Julia Bidonde",
+    role: "Post-doc",
+    bio: "Contributing to the evidence synthesis of the CAPIS study.",
+  },
 ];
 
 const publications = [
@@ -212,7 +227,14 @@ function ProfileCard({ member }: { member: typeof leadInvestigator }) {
   );
 }
 
-function ReviewCard({ member }: { member: (typeof reviewTeam)[number] }) {
+function ReviewCard({ member }: { member: { name: string; role: string; affiliation?: string; bio: string; image?: string } }) {
+  const initials = member.name
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((w) => w[0])
+    .join("")
+    .toUpperCase();
   return (
     <div
       style={{
@@ -236,15 +258,31 @@ function ReviewCard({ member }: { member: (typeof reviewTeam)[number] }) {
           borderRadius: "12px",
           border: `3px solid ${NAVY}`,
           backgroundColor: "#E2E8F0",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
-        <Image
-          src={member.image}
-          alt={`Photo of ${member.name}`}
-          fill
-          style={{ objectFit: "cover", objectPosition: "center 20%" }}
-          sizes="160px"
-        />
+        {member.image ? (
+          <Image
+            src={member.image}
+            alt={`Photo of ${member.name}`}
+            fill
+            style={{ objectFit: "cover", objectPosition: "center 20%" }}
+            sizes="160px"
+          />
+        ) : (
+          <span
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "32px",
+              fontWeight: 700,
+              color: NAVY,
+            }}
+          >
+            {initials}
+          </span>
+        )}
       </div>
       <div>
         <h3
@@ -261,17 +299,19 @@ function ReviewCard({ member }: { member: (typeof reviewTeam)[number] }) {
         <p style={{ fontSize: "13px", fontWeight: 600, color: NAVY, marginBottom: "4px" }}>
           {member.role}
         </p>
-        <p
-          style={{
-            fontSize: "12px",
-            color: "#4A5568",
-            fontStyle: "italic",
-            marginBottom: "10px",
-            lineHeight: 1.4,
-          }}
-        >
-          {member.affiliation}
-        </p>
+        {member.affiliation && (
+          <p
+            style={{
+              fontSize: "12px",
+              color: "#4A5568",
+              fontStyle: "italic",
+              marginBottom: "10px",
+              lineHeight: 1.4,
+            }}
+          >
+            {member.affiliation}
+          </p>
+        )}
         <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#2D3748" }}>{member.bio}</p>
       </div>
     </div>
