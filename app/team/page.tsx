@@ -459,60 +459,6 @@ export default function TeamPage() {
 
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
-      {/* ── Acknowledgment ── */}
-      <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
-          <div
-            style={{
-              background: "linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%)",
-              border: "1px solid #bae6fd",
-              borderRadius: "10px",
-              padding: "28px",
-            }}
-          >
-            <h3
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "17px",
-                fontWeight: 600,
-                color: NAVY,
-                marginBottom: "12px",
-              }}
-            >
-            Acknowledgment
-            </h3>
-            <p
-              style={{
-                fontSize: "14px",
-                lineHeight: 1.7,
-                color: "#2D3748",
-              }}
-           >
-              The CAPIS project would like to extend its sincere gratitude to the
-              following researchers for their valuable contributions and involvement in
-              the project:
-            </p>
-            <ul
-              style={{
-                fontSize: "14px",
-                lineHeight: 1.7,
-                color: "#2D3748",
-                paddingLeft: "20px",
-                marginTop: "8px",
-              }}
-            >
-              <li>M.Sc. Lubin Fernando Betancur Sepulveda</li>
-              <li>PhD María Cinta Gómez</li>
-              <li>M.Sc. Andrés M. Echavarría-Rodríguez</li>
-              <li>PhD Juan Osvaldo Jiménez Trujillo</li>
-              <li>Post-doc. Julia Bidonde</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div style={{ height: "4px", backgroundColor: NAVY }} />
-
       {/* ── Related Projects & Thesis Work ── */}
       <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
