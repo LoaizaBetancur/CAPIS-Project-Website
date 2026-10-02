@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import GalleryLightbox from "@/components/GalleryLightbox";
 
 export const metadata: Metadata = {
   title: "Funding Expression of Interest",
@@ -312,6 +313,38 @@ export default function FundingPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <div style={{ height: "4px", backgroundColor: NAVY }} />
+
+      {/* ── Case Study ── */}
+      <section style={{ backgroundColor: "#FFFFFF", padding: "32px 24px" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+          <h2
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(1.25rem, 2.5vw, 1.75rem)",
+              fontWeight: 600,
+              color: "#1A202C",
+              lineHeight: 1.3,
+              textDecoration: "underline",
+              textUnderlineOffset: "4px",
+              marginBottom: "16px",
+            }}
+          >
+            Case Study
+          </h2>
+          <p style={{ fontSize: "14px", color: "#4A5568", marginBottom: "16px" }}>
+            Click the image to view full size.
+          </p>
+          <GalleryLightbox
+            photos={["/images/Funding/Case%20study%202.png"]}
+            eventTitle="Case study"
+            aspect="16 / 9"
+            fit="contain"
+            maxWidth={700}
+          />
         </div>
       </section>
     </main>
