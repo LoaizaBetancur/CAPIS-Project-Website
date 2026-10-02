@@ -24,7 +24,7 @@ const studyTeam = [
     name: "Jennifer Stone",
     role: "Primary Supervisor",
     affiliation: "JBI, School of Public Health, Adelaide University",
-    bio: "Jennifer provides overall methodological guidance for the CAPIS project, contributing expertise in evidence synthesis, systematic review methodology, and implementation science.",
+    bio: "Jennifer is a Senior Research Fellow at JBI, University of Adelaide, at the forefront of research on risk-of-bias assessment for evidence synthesis. An NHMRC Investigator Grant holder, she ensures the methodological rigour and reporting quality of the CAPIS project.",
     image: "/images/team/jennifer.png",
     email: "jennifer.stone@adelaide.edu.au",
   },
