@@ -252,7 +252,7 @@ export default function FundingPage() {
                 marginBottom: "16px",
               }}
             >
-              Case Study
+              Case Study: Why Fund Us?
             </h2>
             <p style={{ fontSize: "14px", color: "#4A5568", marginBottom: "16px" }}>
               Click the image to view full size.
