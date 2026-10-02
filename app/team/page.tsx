@@ -46,6 +46,25 @@ const studyTeam = [
   },
 ];
 
+const reviewTeam = [
+  {
+    name: "Juan Osvaldo Jiménez Trujillo",
+    role: "PhD, Professor",
+    affiliation:
+      "Institute of Physical Education and Sport, University of Antioquia (Instituto de Educación Física y Deporte, Universidad de Antioquia)",
+    bio: "Contributing to the evidence synthesis of the CAPIS study.",
+    image: "/images/team/Osvaldo.jpg",
+  },
+  {
+    name: "Lubin Fernando Betancur Sepúlveda",
+    role: "MSc in Sport and Physical Activity",
+    affiliation:
+      "Institute of Physical Education and Sport, University of Antioquia (Instituto de Educación Física y Deporte, Universidad de Antioquia)",
+    bio: "Contributing to the evidence synthesis of the CAPIS study.",
+    image: "/images/team/Lubin.jpeg",
+  },
+];
+
 const publications = [
   {
     title: "A critical appraisal of systematic reviews assessing chronic velocity-based resistance training",
@@ -68,7 +87,7 @@ const presentations = [
   {
     title: "JBI iGNITE 2026",
     location: "Online",
-    status: "Accepted",
+    status: "Completed",
   },
   {
     title: "World Congress of Sports Physiotherapy",
@@ -193,6 +212,72 @@ function ProfileCard({ member }: { member: typeof leadInvestigator }) {
   );
 }
 
+function ReviewCard({ member }: { member: (typeof reviewTeam)[number] }) {
+  return (
+    <div
+      style={{
+        border: `1px solid ${NAVY}`,
+        backgroundColor: "#FFFFFF",
+        padding: "24px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        textAlign: "center",
+        gap: "14px",
+      }}
+    >
+      <div
+        style={{
+          position: "relative",
+          width: "160px",
+          height: "190px",
+          flexShrink: 0,
+          overflow: "hidden",
+          borderRadius: "12px",
+          border: `3px solid ${NAVY}`,
+          backgroundColor: "#E2E8F0",
+        }}
+      >
+        <Image
+          src={member.image}
+          alt={`Photo of ${member.name}`}
+          fill
+          style={{ objectFit: "cover", objectPosition: "center 20%" }}
+          sizes="160px"
+        />
+      </div>
+      <div>
+        <h3
+          style={{
+            fontFamily: "var(--font-display)",
+            fontSize: "16px",
+            fontWeight: 700,
+            color: "#1A202C",
+            marginBottom: "4px",
+          }}
+        >
+          {member.name}
+        </h3>
+        <p style={{ fontSize: "13px", fontWeight: 600, color: NAVY, marginBottom: "4px" }}>
+          {member.role}
+        </p>
+        <p
+          style={{
+            fontSize: "12px",
+            color: "#4A5568",
+            fontStyle: "italic",
+            marginBottom: "10px",
+            lineHeight: 1.4,
+          }}
+        >
+          {member.affiliation}
+        </p>
+        <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#2D3748" }}>{member.bio}</p>
+      </div>
+    </div>
+  );
+}
+
 export default function TeamPage() {
   return (
     <main>
@@ -274,7 +359,7 @@ export default function TeamPage() {
 
       <div style={{ height: "4px", backgroundColor: NAVY }} />
 
-      {/* ── Study Team ── */}
+      {/* ── Steering Group ── */}
       <section style={{ backgroundColor: "#F7FAFC", padding: "32px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <h2
@@ -289,11 +374,44 @@ export default function TeamPage() {
               textAlign: "center",
             }}
           >
-            Study Team
+            Steering Group
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
             {studyTeam.map((member) => (
               <ProfileCard key={member.name} member={member} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div style={{ height: "4px", backgroundColor: NAVY }} />
+
+      {/* ── Study Review Team ── */}
+      <section style={{ backgroundColor: "#FFFFFF", padding: "32px 24px" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+          <h2
+            style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "clamp(1.1rem, 2vw, 1.35rem)",
+              fontWeight: 600,
+              color: "#1A202C",
+              textDecoration: "underline",
+              textUnderlineOffset: "4px",
+              marginBottom: "24px",
+              textAlign: "center",
+            }}
+          >
+            Study Review Team
+          </h2>
+          <div
+            style={{
+              display: "grid",
+              gap: "24px",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            }}
+          >
+            {reviewTeam.map((member) => (
+              <ReviewCard key={member.name} member={member} />
             ))}
           </div>
         </div>
