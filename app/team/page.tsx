@@ -14,7 +14,7 @@ const leadInvestigator = {
   name: "Andrés F. Loaiza-Betancur",
   role: "PhD Candidate & Lead Researcher",
   affiliation: "JBI, School of Public Health, Adelaide University",
-  bio: "Andrés leads all phases of the CAPIS research programme — from the scoping review and focus groups through to the Delphi consensus and dissemination. He is supported by an Adelaide University research scholarship.",
+  bio: "Andrés leads all phases of the CAPIS research project. From the scoping review and focus groups through to the Delphi consensus and dissemination. He is supported by an Adelaide University research scholarship.",
   image: "/images/team/andres.png",
   email: "andresfelipe.loaizabetancur@adelaide.edu.au",
 };
@@ -48,20 +48,20 @@ const studyTeam = [
 
 const reviewTeam = [
   {
-    name: "Juan Osvaldo Jiménez Trujillo",
-    role: "PhD, Professor",
-    affiliation:
-      "Institute of Physical Education and Sport, University of Antioquia (Instituto de Educación Física y Deporte, Universidad de Antioquia)",
-    bio: "Contributing to the evidence synthesis of the CAPIS study.",
-    image: "/images/team/Osvaldo.jpg",
-  },
-  {
     name: "Lubin Fernando Betancur Sepúlveda",
     role: "MSc in Sport and Physical Activity",
     affiliation:
       "Institute of Physical Education and Sport, University of Antioquia (Instituto de Educación Física y Deporte, Universidad de Antioquia)",
     bio: "Contributing to the evidence synthesis of the CAPIS study.",
     image: "/images/team/Lubin.jpeg",
+  },
+  {
+    name: "Juan Osvaldo Jiménez Trujillo",
+    role: "PhD, Professor",
+    affiliation:
+      "Institute of Physical Education and Sport, University of Antioquia (Instituto de Educación Física y Deporte, Universidad de Antioquia)",
+    bio: "Contributing to the evidence synthesis of the CAPIS study.",
+    image: "/images/team/Osvaldo.jpg",
   },
   {
     name: "María Cinta Gómez",
