@@ -64,9 +64,12 @@ const reviewTeam = [
     image: "/images/team/Osvaldo.jpg",
   },
   {
-    name: "María Cinta Gómez",
-    role: "PhD",
+    name: "Cinta Gómez Tomás",
+    role: "PhD, Assistant Professor",
+    affiliation:
+      "Department of Physiotherapy, University of Valencia. Member of the EXINH Research Group",
     bio: "Contributing to the evidence synthesis of the CAPIS study.",
+    image: "/images/team/Cinta.jpeg",
   },
   {
     name: "Andrés M. Echavarría-Rodríguez",
