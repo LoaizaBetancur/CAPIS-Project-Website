@@ -794,7 +794,7 @@ export default function HomePage() {
                   marginBottom: "8px",
                 }}
               >
-                Poster Presentation
+                Poster Presentation · Completed
               </p>
               <h3
                 style={{
