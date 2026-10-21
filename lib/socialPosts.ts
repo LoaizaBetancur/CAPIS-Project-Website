@@ -63,7 +63,8 @@ export function visibleSocialPosts(): SocialPost[] {
 // Instagram does not expose pinned status to any app, so set it here (one
 // commit via GitHub) whenever you pin a different post on Instagram.
 // Leave as "" to fall back to showing the 2 most recent posts on the Home page.
-export const pinnedInstagramPostUrl = "";
+export const pinnedInstagramPostUrl =
+  "https://www.instagram.com/p/DeG_0eJlLLy/";
 
 // Home page: pinned posts plus the most recent non-pinned post.
 export function socialPostsForHome(): SocialPost[] {
