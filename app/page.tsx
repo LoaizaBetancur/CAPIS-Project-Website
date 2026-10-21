@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import Image from "next/image";
 import ParticipantCard from "@/components/ParticipantCard";
 import RelatedProjects from "@/components/RelatedProjects";
-import SocialPostsSection from "@/components/SocialPostsSection";
 import BeholdInstagramFeed from "@/components/BeholdInstagramFeed";
+import InstagramAutoFeed from "@/components/InstagramAutoFeed";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -323,28 +323,7 @@ export default function HomePage() {
 
       {/* ── Social Media (recruitment) ── */}
       <section style={{ backgroundColor: "#FFFFFF", padding: "48px 24px" }}>
-        <div style={{ maxWidth: "1280px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "48px" }}>
-          <BeholdInstagramFeed />
-          <div>
-            <p
-              style={{
-                fontSize: "11px",
-                fontWeight: 600,
-                textTransform: "uppercase",
-                letterSpacing: "0.05em",
-                color: TEAL,
-                marginBottom: "12px",
-              }}
-            >
-              Highlights
-            </p>
-            <SocialPostsSection
-              title="Follow The CAPIS Project"
-              subtitle="Posts and announcements from our social media channels."
-              featured
-            />
-          </div>
-        </div>
+        <InstagramAutoFeed featured />
       </section>
 
       <div style={{ height: "4px", backgroundColor: NAVY }} />

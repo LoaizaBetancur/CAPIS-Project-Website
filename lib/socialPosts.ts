@@ -59,6 +59,12 @@ export function visibleSocialPosts(): SocialPost[] {
   return socialPosts.filter((p) => p.visible);
 }
 
+// Instagram: URL of the post currently pinned on the @thecapisproject profile.
+// Instagram does not expose pinned status to any app, so set it here (one
+// commit via GitHub) whenever you pin a different post on Instagram.
+// Leave as "" to fall back to showing the 2 most recent posts on the Home page.
+export const pinnedInstagramPostUrl = "";
+
 // Home page: pinned posts plus the most recent non-pinned post.
 export function socialPostsForHome(): SocialPost[] {
   const visible = visibleSocialPosts().sort((a, b) => b.date.localeCompare(a.date));
