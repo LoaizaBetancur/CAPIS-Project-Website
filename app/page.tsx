@@ -341,7 +341,7 @@ export default function HomePage() {
             <SocialPostsSection
               title="Follow The CAPIS Project"
               subtitle="Posts and announcements from our social media channels."
-              limit={2}
+              featured
             />
           </div>
         </div>

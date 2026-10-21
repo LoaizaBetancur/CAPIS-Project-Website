@@ -12,6 +12,8 @@ export type SocialPost = {
   // Optional link to the live post / relevant page (e.g., registration form)
   link?: string;
   linkLabel?: string;
+  // Pinned posts (e.g., the recruitment call) are always shown on the Home page
+  pinned?: boolean;
   visible: boolean;
 };
 
@@ -25,6 +27,7 @@ export const socialPosts: SocialPost[] = [
     platform: "Instagram",
     link: "/resources/athletes",
     linkLabel: "Register your interest",
+    pinned: true,
     visible: true,
   },
   {
@@ -54,4 +57,12 @@ export const socialPosts: SocialPost[] = [
 // Helper: only posts whose `visible` flag is true appear on the website.
 export function visibleSocialPosts(): SocialPost[] {
   return socialPosts.filter((p) => p.visible);
+}
+
+// Home page: pinned posts plus the most recent non-pinned post.
+export function socialPostsForHome(): SocialPost[] {
+  const visible = visibleSocialPosts().sort((a, b) => b.date.localeCompare(a.date));
+  const pinned = visible.filter((p) => p.pinned);
+  const latest = visible.find((p) => !p.pinned);
+  return latest ? [...pinned, latest] : pinned;
 }

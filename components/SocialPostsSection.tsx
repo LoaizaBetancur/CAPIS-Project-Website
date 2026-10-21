@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SocialPost, visibleSocialPosts } from "@/lib/socialPosts";
+import { SocialPost, socialPostsForHome, visibleSocialPosts } from "@/lib/socialPosts";
 
 const NAVY = "#2A3F5F";
 const TEAL = "#3C7887";
@@ -17,14 +17,19 @@ type Props = {
   title?: string;
   subtitle?: string;
   limit?: number;
+  // When true, show pinned posts + latest instead of all posts (Home mode)
+  featured?: boolean;
 };
 
 export default function SocialPostsSection({
   title = "Follow The CAPIS Project",
   subtitle = "Updates and recruitment posts from our social media channels.",
   limit,
+  featured = false,
 }: Props) {
-  let posts = visibleSocialPosts().sort((a, b) => b.date.localeCompare(a.date));
+  let posts = featured
+    ? socialPostsForHome()
+    : visibleSocialPosts().sort((a, b) => b.date.localeCompare(a.date));
   if (limit) posts = posts.slice(0, limit);
 
   if (posts.length === 0) return null;
@@ -75,21 +80,40 @@ export default function SocialPostsSection({
                   justifyContent: "space-between",
                 }}
               >
-                <span
-                  style={{
-                    display: "inline-block",
-                    fontSize: "11px",
-                    fontWeight: 600,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.05em",
-                    color: "#FFFFFF",
-                    backgroundColor: PLATFORM_COLORS[post.platform],
-                    borderRadius: "999px",
-                    padding: "3px 10px",
-                  }}
-                >
-                  {post.platform}
-                </span>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <span
+                    style={{
+                      display: "inline-block",
+                      fontSize: "11px",
+                      fontWeight: 600,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.05em",
+                      color: "#FFFFFF",
+                      backgroundColor: PLATFORM_COLORS[post.platform],
+                      borderRadius: "999px",
+                      padding: "3px 10px",
+                    }}
+                  >
+                    {post.platform}
+                  </span>
+                  {post.pinned && (
+                    <span
+                      style={{
+                        display: "inline-block",
+                        fontSize: "11px",
+                        fontWeight: 600,
+                        textTransform: "uppercase",
+                        letterSpacing: "0.05em",
+                        color: NAVY,
+                        backgroundColor: "#E2E8F0",
+                        borderRadius: "999px",
+                        padding: "3px 10px",
+                      }}
+                    >
+                      📌 Pinned
+                    </span>
+                  )}
+                </div>
                 <span style={{ fontSize: "12px", color: "#4A5568" }}>{post.date}</span>
               </div>
             </div>
