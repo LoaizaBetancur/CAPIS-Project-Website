@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import GalleryLightbox from "@/components/GalleryLightbox";
+import SocialPostsSection from "@/components/SocialPostsSection";
+import BeholdInstagramFeed from "@/components/BeholdInstagramFeed";
 
 export const metadata: Metadata = {
   title: "Gallery",
@@ -135,6 +137,31 @@ export default function GalleryPage() {
           <div style={{ height: "4px", backgroundColor: NAVY }} />
         </div>
       ))}
+
+      {/* ── Social media posts ── */}
+      <section style={{ backgroundColor: "#F7FAFC", padding: "48px 24px" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "48px" }}>
+          <div>
+            <p
+              style={{
+                fontSize: "11px",
+                fontWeight: 600,
+                textTransform: "uppercase",
+                letterSpacing: "0.05em",
+                color: TEAL,
+                marginBottom: "12px",
+              }}
+            >
+              Highlights
+            </p>
+            <SocialPostsSection
+              title="Social media posts"
+              subtitle="Posts we have shared across the CAPIS social media channels, including project updates and recruitment."
+            />
+          </div>
+          <BeholdInstagramFeed />
+        </div>
+      </section>
     </main>
   );
 }
